@@ -1,0 +1,14 @@
+title: Logo
+fields:
+  -
+    handle: logo
+    field:
+      type: assets
+      display: Logo
+      container: assets
+      max_files: 1
+      restrict: false
+      folder: images/logos
+      allow_uploads: true
+      mode: list
+

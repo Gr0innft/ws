@@ -1,0 +1,38 @@
+title: Contact Information
+fields:
+  -
+    handle: phone
+    field:
+      type: text
+      display: Phone Number
+      default: '0800 472 786'
+  -
+    handle: email
+    field:
+      type: text
+      display: Email Address
+      input_type: email
+      default: 'partner@voyager.nz'
+  -
+    handle: offices
+    field:
+      type: replicator
+      display: Office Locations
+      sets:
+        office:
+          display: Office
+          fields:
+            -
+              handle: name
+              field:
+                type: text
+                display: Office Name
+                default: Auckland
+            -
+              handle: address
+              field:
+                type: textarea
+                display: Address
+                rows: 2
+                default: '11B Piermark Drive, Rosedale, Auckland 0632'
+

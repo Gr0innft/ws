@@ -1,46 +1,7 @@
 title: Footer
+blueprint: footer
 data:
-  logo: images/logos/ws-logo-dark-flat.png
   description: 'At Voyager, we are broadband and communication specialists. Proudly New Zealand owned, we keep Kiwis online at home and at work with our supersonic broadband speeds.'
-  phone: '0800 472 7863'
-  offices:
-    -
-      id: UaSjiTV0
-      type: office
-      enabled: true
-      name: Auckland
-      address: '11B Piermark Drive, Rosedale, Auckland 0632'
-    -
-      id: tjLJqUGU
-      type: office
-      enabled: true
-      name: Christchurch
-      address: 'Unit 1, 2 Barry Hogan Place, Riccarton, Christchurch 8041'
-  social_links:
-    -
-      id: rAI3nWKC
-      type: social
-      enabled: true
-      platform: facebook
-      url: 'https://www.facebook.com/voyagernz'
-    -
-      id: qCL4wqop
-      type: social
-      enabled: true
-      platform: instagram
-      url: 'https://www.instagram.com/voyagernz/'
-    -
-      id: mkRb2eR1
-      type: social
-      enabled: true
-      platform: twitter
-      url: 'https://x.com/voyagernz'
-    -
-      id: SdZis10i
-      type: social
-      enabled: true
-      platform: linkedin
-      url: 'https://www.linkedin.com/company/voyager-internet-ltd'
   solutions_links:
     -
       id: mkObj6xB

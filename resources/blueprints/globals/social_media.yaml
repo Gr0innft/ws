@@ -1,0 +1,30 @@
+title: Social Media
+fields:
+  -
+    handle: social_links
+    field:
+      type: replicator
+      display: Social Media Links
+      sets:
+        social:
+          display: Social Link
+          fields:
+            -
+              handle: platform
+              field:
+                type: select
+                display: Platform
+                options:
+                  facebook: Facebook
+                  instagram: Instagram
+                  linkedin: LinkedIn
+                  twitter: Twitter
+                default: facebook
+            -
+              handle: url
+              field:
+                type: text
+                display: URL
+                input_type: url
+                default: 'https://www.facebook.com/voyagernz'
+

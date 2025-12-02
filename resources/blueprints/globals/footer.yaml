@@ -8,47 +8,23 @@ fields:
       instructions: Footer description text
       rows: 3
   -
-    handle: solutions_links
+    handle: solutions_menu
     field:
-      type: replicator
-      display: Solutions Links
-      sets:
-        link:
-          display: Link
-          fields:
-            -
-              handle: title
-              field:
-                type: text
-                display: Title
-                default: Overview
-            -
-              handle: url
-              field:
-                type: text
-                display: URL
-                default: '/solutions'
+      type: select
+      display: Solutions Menu
+      instructions: Select the navigation menu to use for Solutions links
+      options:
+        solutions: Solutions
+      default: solutions
   -
-    handle: about_links
+    handle: about_menu
     field:
-      type: replicator
-      display: About Links
-      sets:
-        link:
-          display: Link
-          fields:
-            -
-              handle: title
-              field:
-                type: text
-                display: Title
-                default: Our Story
-            -
-              handle: url
-              field:
-                type: text
-                display: URL
-                default: '/about'
+      type: select
+      display: About Us Menu
+      instructions: Select the navigation menu to use for About links
+      options:
+        about: About Us
+      default: about
   -
     handle: copyright_text
     field:

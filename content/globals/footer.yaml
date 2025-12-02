@@ -2,56 +2,8 @@ title: Footer
 blueprint: footer
 data:
   description: 'At Voyager, we are broadband and communication specialists. Proudly New Zealand owned, we keep Kiwis online at home and at work with our supersonic broadband speeds.'
-  solutions_links:
-    -
-      id: mkObj6xB
-      type: link
-      enabled: true
-      title: Overview
-      url: /solutions
-    -
-      id: vgT6lyuD
-      type: link
-      enabled: true
-      title: Cloud
-      url: /solutions/cloud
-    -
-      id: l58lFGm0
-      type: link
-      enabled: true
-      title: Communication
-      url: /solutions/communication
-    -
-      id: AGgr3Imw
-      type: link
-      enabled: true
-      title: Connectivity
-      url: /solutions/connectivity
-    -
-      id: IxZGeBzN
-      type: link
-      enabled: true
-      title: Cybersecurity
-      url: /solutions/cybersecurity
-  about_links:
-    -
-      id: pXTWIozS
-      type: link
-      enabled: true
-      title: 'Our Story'
-      url: /about
-    -
-      id: 64oQY2LK
-      type: link
-      enabled: true
-      title: 'Our Team'
-      url: /team
-    -
-      id: INJxddyW
-      type: link
-      enabled: true
-      title: 'Why Partner?'
-      url: /benefits
+  solutions_menu: solutions
+  about_menu: about
   copyright_text: 'Voyager Wholesale'
   privacy_link: /privacy
   terms_link: /terms

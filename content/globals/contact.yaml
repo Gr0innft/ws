@@ -1,17 +1,17 @@
 title: 'Contact Information'
 data:
   phone: '0800 472 786111'
-  email: partner@voyager.nz
+  email: partner111@voyager.nz
   offices:
     -
       id: UaSjiTV0
       type: office
       enabled: true
       name: Auckland
-      address: '11B Piermark Drive, Rosedale, Auckland 0632'
+      address: '11B Piermark Drive, Rosedale, Auckland 0632111'
     -
       id: tjLJqUGU
       type: office
       enabled: true
       name: Christchurch
-      address: 'Unit 1, 2 Barry Hogan Place, Riccarton, Christchurch 8041'
+      address: 'Unit 1, 2 Barry Hogan Place, Riccarton, Christchurch 8041111'

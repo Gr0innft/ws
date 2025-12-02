@@ -1,0 +1,22 @@
+title: Header Bar
+fields:
+  -
+    handle: top_bar_text
+    field:
+      type: text
+      display: Top Bar Text
+      default: 'Trusted partner in business excellence'
+  -
+    handle: link_text
+    field:
+      type: text
+      display: Link Text
+      default: 'Join us now'
+  -
+    handle: link_url
+    field:
+      type: text
+      display: Link URL
+      input_type: url
+      default: '#'
+

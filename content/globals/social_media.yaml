@@ -10,7 +10,7 @@ data:
     -
       id: qCL4wqop
       type: social
-      enabled: false
+      enabled: true
       platform: instagram
       url: 'https://www.instagram.com/voyagernz/'
     -

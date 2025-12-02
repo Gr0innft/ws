@@ -1,5 +1,7 @@
 title: 'Header Bar'
+blueprint: header_bar
 data:
   top_bar_text: 'Trusted partner in business excellence'
   link_text: 'Join us now'
   link_url: '#'
+

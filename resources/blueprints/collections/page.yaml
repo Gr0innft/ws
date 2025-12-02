@@ -1,0 +1,37 @@
+title: Page
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: content
+        field:
+          type: markdown
+          display: Content
+          localizable: true
+      -
+        handle: show_become_wholesaler
+        field:
+          type: toggle
+          display: Show "Become a Wholesaler" Section
+          instructions: Enable this to show the "Become a Wholesaler" section on this page
+          default: false
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: author
+        field:
+          type: users
+          display: Author
+          default: current
+          localizable: true
+          max_items: 1
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
+

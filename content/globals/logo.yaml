@@ -1,3 +1,4 @@
 title: Logo
+blueprint: logo
 data:
-  logo: images/logos/ws-logo-dark-flat.png
+  logo: /assets/images/logos/ws-logo-dark.png

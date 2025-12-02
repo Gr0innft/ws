@@ -3,6 +3,7 @@ id: home
 blueprint: pages
 title: Home
 template: home
+show_become_wholesaler: true
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_at: 1759808128

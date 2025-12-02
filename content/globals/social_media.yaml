@@ -1,5 +1,4 @@
 title: 'Social Media'
-blueprint: social_media
 data:
   social_links:
     -
@@ -11,7 +10,7 @@ data:
     -
       id: qCL4wqop
       type: social
-      enabled: true
+      enabled: false
       platform: instagram
       url: 'https://www.instagram.com/voyagernz/'
     -

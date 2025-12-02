@@ -1,8 +1,7 @@
-title: Contact Information
-blueprint: contact
+title: 'Contact Information'
 data:
-  phone: '0800 472 786'
-  email: 'partner@voyager.nz'
+  phone: '0800 472 786111'
+  email: partner@voyager.nz
   offices:
     -
       id: UaSjiTV0
@@ -16,4 +15,3 @@ data:
       enabled: true
       name: Christchurch
       address: 'Unit 1, 2 Barry Hogan Place, Riccarton, Christchurch 8041'
-

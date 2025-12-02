@@ -1,0 +1,136 @@
+title: Footer
+fields:
+  -
+    handle: logo
+    field:
+      type: assets
+      display: Logo
+      container: assets
+      max_files: 1
+      restrict: false
+      folder: images/logos
+      allow_uploads: true
+      mode: list
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+      instructions: Footer description text
+      rows: 3
+  -
+    handle: phone
+    field:
+      type: text
+      display: Phone Number
+      default: '0800 472 786'
+  -
+    handle: offices
+    field:
+      type: replicator
+      display: Offices
+      sets:
+        office:
+          display: Office
+          fields:
+            -
+              handle: name
+              field:
+                type: text
+                display: Office Name
+                default: Auckland
+            -
+              handle: address
+              field:
+                type: textarea
+                display: Address
+                rows: 2
+                default: '11B Piermark Drive, Rosedale, Auckland 0632'
+  -
+    handle: social_links
+    field:
+      type: replicator
+      display: Social Links
+      sets:
+        social:
+          display: Social Link
+          fields:
+            -
+              handle: platform
+              field:
+                type: select
+                display: Platform
+                options:
+                  facebook: Facebook
+                  instagram: Instagram
+                  linkedin: LinkedIn
+                  twitter: Twitter
+                default: facebook
+            -
+              handle: url
+              field:
+                type: text
+                display: URL
+                input_type: url
+                default: 'https://www.facebook.com/voyagernz'
+  -
+    handle: solutions_links
+    field:
+      type: replicator
+      display: Solutions Links
+      sets:
+        link:
+          display: Link
+          fields:
+            -
+              handle: title
+              field:
+                type: text
+                display: Title
+                default: Overview
+            -
+              handle: url
+              field:
+                type: text
+                display: URL
+                default: '/solutions'
+  -
+    handle: about_links
+    field:
+      type: replicator
+      display: About Links
+      sets:
+        link:
+          display: Link
+          fields:
+            -
+              handle: title
+              field:
+                type: text
+                display: Title
+                default: Our Story
+            -
+              handle: url
+              field:
+                type: text
+                display: URL
+                default: '/about'
+  -
+    handle: copyright_text
+    field:
+      type: text
+      display: Copyright Text
+      default: 'Voyager Wholesale'
+  -
+    handle: privacy_link
+    field:
+      type: text
+      display: Privacy Policy Link
+      default: '/privacy'
+  -
+    handle: terms_link
+    field:
+      type: text
+      display: Terms & Conditions Link
+      default: '/terms'
+

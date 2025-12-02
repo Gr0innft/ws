@@ -1,11 +1,10 @@
-title: Social Media
-blueprint: social_media
+title: 'Social Media'
 data:
   social_links:
     -
       id: rAI3nWKC
       type: social
-      enabled: true
+      enabled: false
       platform: facebook
       url: 'https://www.facebook.com/voyagernz'
     -
@@ -26,4 +25,3 @@ data:
       enabled: true
       platform: linkedin
       url: 'https://www.linkedin.com/company/voyager-internet-ltd'
-

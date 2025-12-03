@@ -7,7 +7,10 @@ template: home
 seo_title: 'Test Page - Different SEO Title'
 seo_description: 'This is a test page with completely different SEO information from the home page.'
 seo_keywords: 'test, testing, example, demo'
+seo_seo_title: 'tester page'
+seo_seo_description: 'tester page'
+seo_seo_keywords: 'tester page'
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1759807903
+updated_at: 1764725861
 ---
 testering

@@ -1,0 +1,19 @@
+title: Main Navigation
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: icon
+        field:
+          type: text
+          display: Icon Class
+          instructions: Enter a Phosphor icon class (e.g., "ph ph-list-magnifying-glass"). Leave empty to use default dropdown style.
+          placeholder: ph ph-list-magnifying-glass
+      -
+        handle: menu_title
+        field:
+          type: text
+          display: Menu Title Override
+          instructions: Optional custom title for the menu item. Leave empty to use the page title.
+

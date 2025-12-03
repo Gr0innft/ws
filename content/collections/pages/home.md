@@ -18,9 +18,6 @@ content_blocks:
     text: tester
     type: text_block
     enabled: true
-seo_seo_title: 'Home page'
-seo_seo_description: 'testing homepage'
-seo_seo_keywords: 'test home'
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_at: 1764725787
 ---

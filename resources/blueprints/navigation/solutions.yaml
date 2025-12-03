@@ -1,0 +1,24 @@
+title: 'Solutions Navigation'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: icon
+            field:
+              type: text
+              display: 'Icon Class'
+              instructions: |-
+                (e.g., "ph ph-list-magnifying-glass"). Leave empty to use default dropdown style.
+
+                visit <a href="https://phosphoricons.com/" target="blank">https://phosphoricons.com/</a> to view a full list of icons
+              placeholder: 'ph ph-list-magnifying-glass'
+          -
+            handle: menu_title
+            field:
+              type: text
+              display: 'Menu Title Override'
+              instructions: 'Optional custom title for the menu item. Leave empty to use the page title.'
+

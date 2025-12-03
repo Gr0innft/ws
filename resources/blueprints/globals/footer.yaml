@@ -1,46 +1,51 @@
 title: Footer
-fields:
-  -
-    handle: description
-    field:
-      type: textarea
-      display: Description
-      instructions: Footer description text
-      rows: 3
-  -
-    handle: solutions_menu
-    field:
-      type: select
-      display: Solutions Menu
-      instructions: Select the navigation menu to use for Solutions links
-      options:
-        solutions: Solutions
-      default: solutions
-  -
-    handle: about_menu
-    field:
-      type: select
-      display: About Us Menu
-      instructions: Select the navigation menu to use for About links
-      options:
-        about: About Us
-      default: about
-  -
-    handle: copyright_text
-    field:
-      type: text
-      display: Copyright Text
-      default: 'Voyager Wholesale'
-  -
-    handle: privacy_link
-    field:
-      type: text
-      display: Privacy Policy Link
-      default: '/privacy'
-  -
-    handle: terms_link
-    field:
-      type: text
-      display: Terms & Conditions Link
-      default: '/terms'
-
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: Footer
+        fields:
+          -
+            handle: description
+            field:
+              type: textarea
+              display: Description
+              instructions: 'Footer description text'
+              rows: 3
+          -
+            handle: solutions_menu
+            field:
+              type: select
+              display: 'Solutions Menu'
+              instructions: 'Select the navigation menu to use for Solutions links'
+              options:
+                solutions: Solutions
+              default: solutions
+          -
+            handle: about_menu
+            field:
+              type: select
+              display: 'About Us Menu'
+              instructions: 'Select the navigation menu to use for About links'
+              options:
+                about: 'About Us'
+              default: about
+          -
+            handle: copyright_text
+            field:
+              type: text
+              display: 'Copyright Text'
+              default: 'Voyager Wholesale'
+          -
+            handle: privacy_link
+            field:
+              type: text
+              display: 'Privacy Policy Link'
+              default: /privacy
+          -
+            handle: terms_link
+            field:
+              type: text
+              display: 'Terms & Conditions Link'
+              default: /terms

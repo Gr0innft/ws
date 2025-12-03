@@ -4,6 +4,9 @@ blueprint: pages
 title: Home
 template: home
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
+seo_title: 'Home Page - Voyager Wholesale'
+seo_description: 'Welcome to Voyager Wholesale. Your trusted partner for business excellence in New Zealand.'
+seo_keywords: 'wholesale, business, New Zealand, Voyager'
 content_blocks:
   -
     id: mipbk0ue

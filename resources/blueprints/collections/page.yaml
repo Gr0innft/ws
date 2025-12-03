@@ -51,4 +51,7 @@ sections:
           type: template
           display: Template
           localizable: true
+      -
+        import: seo
+        prefix: seo_
 

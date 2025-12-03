@@ -61,6 +61,9 @@ tabs:
               localizable: true
               validate: 'max:200'
           -
+            import: seo
+            prefix: seo_
+          -
             handle: parent
             field:
               type: entries

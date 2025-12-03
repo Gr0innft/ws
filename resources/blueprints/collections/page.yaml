@@ -4,6 +4,13 @@ sections:
     display: Main
     fields:
       -
+        handle: title
+        field:
+          type: text
+          display: Title
+          required: true
+          localizable: true
+      -
         handle: content
         field:
           type: markdown

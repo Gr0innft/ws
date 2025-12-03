@@ -1,10 +1,10 @@
-title: 'Header Bar'
+title: 'Header Top Bar'
 tabs:
   main:
     display: Main
     sections:
       -
-        display: 'Top Bar'
+        display: 'Header Top Bar'
         fields:
           -
             handle: top_bar_text

@@ -4,7 +4,7 @@ fields:
     handle: social_links
     field:
       type: replicator
-      display: Social Media Links
+      display: Social Media
       sets:
         social:
           display: Social Link

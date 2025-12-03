@@ -1,4 +1,5 @@
 title: 'Contact Information'
+blueprint: contact
 data:
   phone: '0800 472 786'
   email: partner@voyager.nz

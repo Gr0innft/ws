@@ -17,6 +17,24 @@ sections:
           display: Content
           localizable: true
       -
+        handle: content_blocks
+        field:
+          type: replicator
+          display: Content Blocks
+          instructions: Add reusable content blocks to this page. Drag to reorder.
+          max_sets: null
+          sets:
+            text_block:
+              display: Text Block
+              fields:
+                -
+                  handle: text
+                  field:
+                    type: textarea
+                    display: Text Content
+                    instructions: Enter the text content for this block
+                    localizable: true
+      -
         handle: show_become_wholesaler
         field:
           type: toggle

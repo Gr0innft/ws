@@ -7,19 +7,8 @@ author: 356414f5-9cc4-49da-9bea-35e11000edbb
 seo_title: 'Home Page - Voyager Wholesale'
 seo_description: 'Welcome to Voyager Wholesale. Your trusted partner for business excellence in New Zealand.'
 seo_keywords: 'wholesale, business, New Zealand, Voyager'
-content_blocks:
-  -
-    id: mipbk0ue
-    text: tester
-    type: text_block
-    enabled: true
-  -
-    id: mipbkdd0
-    text: tester
-    type: text_block
-    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764812580
+updated_at: 1764813154
 ---
 ## Welcome to your brand new Statamic site!
 

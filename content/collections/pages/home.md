@@ -72,6 +72,19 @@ page_builder:
     type: image_content_block
     enabled: true
   -
+    id: mis297u2
+    image: images/home/home1.png
+    subtitle: '// Why Partner with Voyager'
+    heading: 'Your Partner in Performance and Growth'
+    text: 'Voyager partners with service providers, MSPs, and technology resellers to help them scale faster and serve customers better. With direct access to our engineers, product owners, and partner managers, you get the tools, flexibility, and support to grow with confidence.'
+    link_url: /benefits
+    link_text: 'Partnership Benefits'
+    image_position: left
+    has_background: false
+    style: hero
+    type: image_content_block
+    enabled: true
+  -
     id: mis24mos
     image: images/solutions/communication-voice.jpg
     subtitle: '// Recognition & Trust'
@@ -81,6 +94,19 @@ page_builder:
     link_text: "Let's Talkj"
     image_position: left
     has_background: true
+    style: simple
+    type: image_content_block
+    enabled: true
+  -
+    id: mis29kyo
+    image: images/solutions/communication-voice.jpg
+    subtitle: '// Recognition & Trust'
+    heading: 'Proudly recognised by our partners and industry'
+    text: "We're proud to have been recognised with three consecutive NZ Compare People's Choice Awards, a reflection of our investment in infrastructure, service and support. Our latest partner survey returned a great satisfaction score, demonstrating the trust and loyalty of our partner community."
+    link_url: '#'
+    link_text: "Let's Talkj"
+    image_position: left
+    has_background: false
     style: simple
     type: image_content_block
     enabled: true
@@ -97,8 +123,21 @@ page_builder:
     style: simple
     type: image_content_block
     enabled: true
+  -
+    id: mis29qkw
+    image: images/solutions/communication-voice.jpg
+    subtitle: '// Recognition & Trust'
+    heading: 'Proudly recognised by our partners and industry'
+    text: "We're proud to have been recognised with three consecutive NZ Compare People's Choice Awards, a reflection of our investment in infrastructure, service and support. Our latest partner survey returned a great satisfaction score, demonstrating the trust and loyalty of our partner community."
+    link_url: '#'
+    link_text: "Let's Talkj"
+    image_position: right
+    has_background: false
+    style: simple
+    type: image_content_block
+    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764890473
+updated_at: 1764890568
 ---
 ## Welcome to your brand new Statamic site!
 

@@ -50,6 +50,15 @@ content_blocks:
     type: paragraph
 page_builder:
   -
+    id: miqwptex
+    background_color: '#dc2626'
+    heading: test
+    sub_text: test
+    link_url: test
+    link_text: 'Learn More'
+    type: hero_banner
+    enabled: true
+  -
     id: miqvs59t
     content:
       -
@@ -64,17 +73,8 @@ page_builder:
     id: miqvsa4y
     type: features
     enabled: true
-  -
-    id: miqwptex
-    background_color: '#dc2626'
-    heading: test
-    sub_text: test
-    link_url: test
-    link_text: 'Learn More'
-    type: hero_banner
-    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764820775
+updated_at: 1764820915
 ---
 ## Welcome to your brand new Statamic site!
 

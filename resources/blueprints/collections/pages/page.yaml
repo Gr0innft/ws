@@ -56,21 +56,21 @@ tabs:
         display: 'Meta Tags'
         fields:
           -
-            handle: seo_title
+            handle: meta_title
             field:
               type: text
               display: 'Meta Title'
               instructions: 'Custom title for search engines (leave blank to use page title)'
               localizable: true
           -
-            handle: seo_description
+            handle: meta_description
             field:
               type: textarea
               display: 'Meta Description'
               instructions: 'Meta description for search engines (recommended: 150-160 characters)'
               localizable: true
           -
-            handle: seo_keywords
+            handle: meta_keywords
             field:
               type: text
               display: 'Meta Keywords'

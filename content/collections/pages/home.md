@@ -48,8 +48,33 @@ content_blocks:
         link_text: 'Learn More'
   -
     type: paragraph
+page_builder:
+  -
+    id: miqvs59t
+    content:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'testing this content block'
+    type: content
+    enabled: true
+  -
+    id: miqvsa4y
+    type: features
+    enabled: true
+  -
+    id: miqwptex
+    background_color: '#dc2626'
+    heading: test
+    sub_text: test
+    link_url: test
+    link_text: 'Learn More'
+    type: hero_banner
+    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764818302
+updated_at: 1764820775
 ---
 ## Welcome to your brand new Statamic site!
 

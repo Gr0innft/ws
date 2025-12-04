@@ -12,13 +12,7 @@ meta_description: 'testing decription'
 meta_keywords: 'testing keywords'
 content_blocks:
   -
-    type: heading
-    attrs:
-      level: 2
-    content:
-      -
-        type: text
-        text: test
+    type: paragraph
   -
     type: set
     attrs:
@@ -31,8 +25,6 @@ content_blocks:
         link_url: '#'
         link_text: 'Learn More'
   -
-    type: paragraph
-  -
     type: set
     attrs:
       id: miqunp2i
@@ -44,9 +36,20 @@ content_blocks:
         link_url: 'http://voyager.nz'
         link_text: 'Learn More'
   -
+    type: set
+    attrs:
+      id: miqv8u1d
+      values:
+        type: hero_banner
+        background_color: '#dc2626'
+        heading: 'Built for Partners Backed by experts'
+        sub_text: 'A smarter, faster way to deliver cloud, communication, connectivity, and security - all on a network you can trust.'
+        link_url: '#'
+        link_text: 'Learn More'
+  -
     type: paragraph
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764817734
+updated_at: 1764818302
 ---
 ## Welcome to your brand new Statamic site!
 

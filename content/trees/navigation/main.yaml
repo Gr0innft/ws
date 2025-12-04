@@ -10,6 +10,8 @@ tree:
         id: d1122d54-cd4c-41f8-8049-19e5a1ad0ad4
         entry: 7e0952eb-08d7-4371-b1cb-fb1c7e8c0e1f
         title: About
+        data:
+          icon: 'ph ph-arrow-circle-down-right'
       -
         id: b882f891-fd7a-4042-9036-37d3190ed352
         entry: ad13107b-4613-4b21-b96b-6c95b91b6890

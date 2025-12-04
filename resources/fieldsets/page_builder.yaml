@@ -20,3 +20,75 @@ fields:
               display: Features
               icon: layout-three-columns
               fields: {  }
+            hero_banner:
+              display: 'Hero Banner'
+              icon: image
+              fields:
+                -
+                  handle: background_color
+                  field:
+                    type: color
+                    display: 'Background Color'
+                    default: '#dc2626'
+                    instructions: 'Background color for the hero banner'
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                    validate:
+                      - required
+                -
+                  handle: sub_text
+                  field:
+                    type: textarea
+                    display: 'Sub Text'
+                -
+                  handle: link_url
+                  field:
+                    type: text
+                    display: 'Link URL'
+                    instructions: 'URL for the button/link'
+                -
+                  handle: link_text
+                  field:
+                    type: text
+                    display: 'Link Text'
+                    default: 'Learn More'
+            image_content_block:
+              display: 'Image Content Block'
+              icon: image
+              fields:
+                -
+                  handle: image
+                  field:
+                    type: assets
+                    display: Image
+                    max_files: 1
+                    container: assets
+                    validate:
+                      - required
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                    validate:
+                      - required
+                -
+                  handle: text
+                  field:
+                    type: textarea
+                    display: Text
+                -
+                  handle: link_url
+                  field:
+                    type: text
+                    display: 'Link URL'
+                    instructions: 'URL for the button/link'
+                -
+                  handle: link_text
+                  field:
+                    type: text
+                    display: 'Link Text'
+                    default: 'Learn More'

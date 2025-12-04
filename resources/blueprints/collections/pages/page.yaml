@@ -53,7 +53,7 @@ tabs:
               listable: false
               localizable: true
       -
-        display: 'New Section'
+        display: Meta
         fields:
           -
             import: seo

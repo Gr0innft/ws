@@ -58,8 +58,18 @@ page_builder:
     link_text: 'Learn More'
     type: hero_banner
     enabled: true
+  -
+    id: mir0kww5
+    image: images/home/home1.png
+    heading: 'Your Partner in Performance and Growth'
+    text: 'Voyager partners with service providers, MSPs, and technology resellers to help them scale faster and serve customers better. With direct access to our engineers, product owners, and partner managers, you get the tools, flexibility, and support to grow with confidence.'
+    link_url: /benefits
+    link_text: 'Parntership Benefits'
+    image_position: left
+    type: image_content_left
+    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764826863
+updated_at: 1764827330
 ---
 ## Welcome to your brand new Statamic site!
 

@@ -68,8 +68,9 @@ page_builder:
     image_position: left
     type: image_content_left
     enabled: true
+    subtitle: '// Why Partner with Voyager'
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764828359
+updated_at: 1764828570
 ---
 ## Welcome to your brand new Statamic site!
 

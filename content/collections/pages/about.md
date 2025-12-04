@@ -4,8 +4,9 @@ blueprint: page
 title: 'Our Story'
 slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
+template: home
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764732298
+updated_at: 1764815335
 ---
 ## Welcome to your brand new Statamic site!
 

@@ -53,26 +53,7 @@ tabs:
               listable: false
               localizable: true
       -
-        display: 'Meta Tags'
+        display: 'New Section'
         fields:
           -
-            handle: meta_title
-            field:
-              type: text
-              display: 'Meta Title'
-              instructions: 'Custom title for search engines (leave blank to use page title)'
-              localizable: true
-          -
-            handle: meta_description
-            field:
-              type: textarea
-              display: 'Meta Description'
-              instructions: 'Meta description for search engines (recommended: 150-160 characters)'
-              localizable: true
-          -
-            handle: meta_keywords
-            field:
-              type: text
-              display: 'Meta Keywords'
-              instructions: 'Keywords for SEO (comma-separated)'
-              localizable: true
+            import: seo

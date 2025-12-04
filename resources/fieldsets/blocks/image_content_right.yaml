@@ -1,0 +1,41 @@
+title: Image Content (Right)
+fields:
+  -
+    handle: image
+    field:
+      type: assets
+      display: Image
+      max_files: 1
+      container: assets
+      validate:
+        - required
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+      validate:
+        - required
+  -
+    handle: text
+    field:
+      type: textarea
+      display: Text
+  -
+    handle: link_url
+    field:
+      type: text
+      display: 'Link URL'
+      instructions: 'URL for the button/link'
+  -
+    handle: link_text
+    field:
+      type: text
+      display: 'Link Text'
+      default: 'Learn More'
+  -
+    handle: image_position
+    field:
+      type: hidden
+      default: right
+

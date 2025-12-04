@@ -6,78 +6,192 @@ fields:
       type: replicator
       display: 'Page Builder'
       sets:
-        new_set_group:
-          display: 'New Set Group'
-          sets:
-            hero_banner:
-              display: 'Hero Banner'
-              icon: image
-              fields:
-                -
-                  handle: background_color
-                  field:
-                    type: color
-                    display: 'Background Color'
-                    default: '#dc2626'
-                    instructions: 'Background color for the hero banner'
-                -
-                  handle: heading
-                  field:
-                    type: text
-                    display: Heading
-                    validate:
-                      - required
-                -
-                  handle: sub_text
-                  field:
-                    type: textarea
-                    display: 'Sub Text'
-                -
-                  handle: link_url
-                  field:
-                    type: text
-                    display: 'Link URL'
-                    instructions: 'URL for the button/link'
-                -
-                  handle: link_text
-                  field:
-                    type: text
-                    display: 'Link Text'
-                    default: 'Learn More'
-            image_content_block:
-              display: 'Image Content Block'
-              icon: image
-              fields:
-                -
-                  handle: image
-                  field:
-                    type: assets
-                    display: Image
-                    max_files: 1
-                    container: assets
-                    validate:
-                      - required
-                -
-                  handle: heading
-                  field:
-                    type: text
-                    display: Heading
-                    validate:
-                      - required
-                -
-                  handle: text
-                  field:
-                    type: textarea
-                    display: Text
-                -
-                  handle: link_url
-                  field:
-                    type: text
-                    display: 'Link URL'
-                    instructions: 'URL for the button/link'
-                -
-                  handle: link_text
-                  field:
-                    type: text
-                    display: 'Link Text'
-                    default: 'Learn More'
+        content:
+          display: Content
+          icon: text-formatting-image-left
+          fields:
+            -
+              handle: content
+              field: common.content
+        features:
+          display: Features
+          icon: layout-three-columns
+          fields: {  }
+        hero_banner:
+          display: 'Hero Banner'
+          icon: image
+          fields:
+            -
+              handle: background_color
+              field:
+                type: color
+                display: 'Background Color'
+                default: '#dc2626'
+                instructions: 'Background color for the hero banner'
+            -
+              handle: heading
+              field:
+                type: text
+                display: Heading
+                validate:
+                  - required
+            -
+              handle: sub_text
+              field:
+                type: textarea
+                display: 'Sub Text'
+            -
+              handle: link_url
+              field:
+                type: text
+                display: 'Link URL'
+                instructions: 'URL for the button/link'
+            -
+              handle: link_text
+              field:
+                type: text
+                display: 'Link Text'
+                default: 'Learn More'
+        image_content_left:
+          display: 'Image Content (Left)'
+          icon: image
+          fields:
+            -
+              handle: image
+              field:
+                type: assets
+                display: Image
+                max_files: 1
+                container: assets
+                validate:
+                  - required
+            -
+              handle: heading
+              field:
+                type: text
+                display: Heading
+                validate:
+                  - required
+            -
+              handle: text
+              field:
+                type: textarea
+                display: Text
+            -
+              handle: link_url
+              field:
+                type: text
+                display: 'Link URL'
+                instructions: 'URL for the button/link'
+            -
+              handle: link_text
+              field:
+                type: text
+                display: 'Link Text'
+                default: 'Learn More'
+            -
+              handle: image_position
+              field:
+                type: hidden
+                default: left
+        image_content_right:
+          display: 'Image Content (Right)'
+          icon: image
+          fields:
+            -
+              handle: image
+              field:
+                type: assets
+                display: Image
+                max_files: 1
+                container: assets
+                validate:
+                  - required
+            -
+              handle: heading
+              field:
+                type: text
+                display: Heading
+                validate:
+                  - required
+            -
+              handle: text
+              field:
+                type: textarea
+                display: Text
+            -
+              handle: link_url
+              field:
+                type: text
+                display: 'Link URL'
+                instructions: 'URL for the button/link'
+            -
+              handle: link_text
+              field:
+                type: text
+                display: 'Link Text'
+                default: 'Learn More'
+            -
+              handle: image_position
+              field:
+                type: hidden
+                default: right
+        image_slider:
+          display: 'Image Slider'
+          icon: image
+          fields:
+            -
+              handle: images
+              field:
+                type: assets
+                display: Images
+                container: assets
+                validate:
+                  - required
+                instructions: 'Add multiple images for the slider'
+            -
+              handle: heading
+              field:
+                type: text
+                display: Heading
+            -
+              handle: text
+              field:
+                type: textarea
+                display: Text
+            -
+              handle: autoplay
+              field:
+                type: toggle
+                display: Autoplay
+                default: true
+            -
+              handle: slide_duration
+              field:
+                type: integer
+                display: 'Slide Duration (seconds)'
+                default: 5
+                instructions: 'How long each slide displays'
+        image_static:
+          display: 'Image Static'
+          icon: image
+          fields:
+            -
+              handle: image
+              field:
+                type: assets
+                display: Image
+                max_files: 1
+                container: assets
+                validate:
+                  - required
+            -
+              handle: heading
+              field:
+                type: text
+                display: Heading
+            -
+              handle: caption
+              field:
+                type: textarea
+                display: Caption

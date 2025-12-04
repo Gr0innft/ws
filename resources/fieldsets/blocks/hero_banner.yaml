@@ -1,0 +1,34 @@
+title: Hero Banner
+fields:
+  -
+    handle: background_color
+    field:
+      type: color
+      display: 'Background Color'
+      default: '#dc2626'
+      instructions: 'Background color for the hero banner'
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+      validate:
+        - required
+  -
+    handle: sub_text
+    field:
+      type: textarea
+      display: 'Sub Text'
+  -
+    handle: link_url
+    field:
+      type: text
+      display: 'Link URL'
+      instructions: 'URL for the button/link'
+  -
+    handle: link_text
+    field:
+      type: text
+      display: 'Link Text'
+      default: 'Learn More'
+

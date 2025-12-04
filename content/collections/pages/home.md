@@ -10,8 +10,24 @@ seo_keywords: 'wholesale, business, New Zealand, Voyager'
 meta_title: 'Voyager Wholesale testing title'
 meta_description: 'testing decription'
 meta_keywords: 'testing keywords'
+content_blocks:
+  -
+    type: paragraph
+  -
+    type: set
+    attrs:
+      id: miqunp2i
+      values:
+        type: image_content_block
+        image: images/home/home1.png
+        heading: 'testing this block'
+        text: 'ipsum lorem goes here'
+        link_url: 'http://voyager.nz'
+        link_text: 'Learn More'
+  -
+    type: paragraph
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764816365
+updated_at: 1764817390
 ---
 ## Welcome to your brand new Statamic site!
 

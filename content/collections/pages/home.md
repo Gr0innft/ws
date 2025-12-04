@@ -58,23 +58,8 @@ page_builder:
     link_text: 'Learn More'
     type: hero_banner
     enabled: true
-  -
-    id: miqvs59t
-    content:
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'testing this content block'
-    type: content
-    enabled: true
-  -
-    id: miqvsa4y
-    type: features
-    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764826815
+updated_at: 1764826863
 ---
 ## Welcome to your brand new Statamic site!
 

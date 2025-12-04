@@ -9,17 +9,6 @@ fields:
         new_set_group:
           display: 'New Set Group'
           sets:
-            content:
-              display: Content
-              icon: text-formatting-image-left
-              fields:
-                -
-                  handle: content
-                  field: common.content
-            features:
-              display: Features
-              icon: layout-three-columns
-              fields: {  }
             hero_banner:
               display: 'Hero Banner'
               icon: image

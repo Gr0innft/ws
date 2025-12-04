@@ -114,6 +114,11 @@ tabs:
               type: template
               display: Template
               localizable: true
+      -
+        display: Content
+        fields:
+          -
+            import: page_builder
   sidebar:
     display: Sidebar
     sections:

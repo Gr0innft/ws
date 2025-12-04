@@ -19,6 +19,81 @@ tabs:
               display: Content
               localizable: true
           -
+            handle: content_blocks
+            field:
+              type: bard
+              display: Content Blocks
+              instructions: 'Add reusable content blocks to build your page'
+              localizable: true
+              sets:
+                hero_banner:
+                  display: Hero Banner
+                  fields:
+                    -
+                      handle: background_color
+                      field:
+                        type: color
+                        display: Background Color
+                        default: '#dc2626'
+                        instructions: 'Background color for the hero banner'
+                    -
+                      handle: heading
+                      field:
+                        type: text
+                        display: Heading
+                        required: true
+                    -
+                      handle: sub_text
+                      field:
+                        type: textarea
+                        display: Sub Text
+                    -
+                      handle: link_url
+                      field:
+                        type: text
+                        display: Link URL
+                        instructions: 'URL for the button/link'
+                    -
+                      handle: link_text
+                      field:
+                        type: text
+                        display: Link Text
+                        default: 'Learn More'
+                image_content_block:
+                  display: Image Content Block
+                  fields:
+                    -
+                      handle: image
+                      field:
+                        type: assets
+                        display: Image
+                        max_files: 1
+                        container: assets
+                        required: true
+                    -
+                      handle: heading
+                      field:
+                        type: text
+                        display: Heading
+                        required: true
+                    -
+                      handle: text
+                      field:
+                        type: textarea
+                        display: Text
+                    -
+                      handle: link_url
+                      field:
+                        type: text
+                        display: Link URL
+                        instructions: 'URL for the button/link'
+                    -
+                      handle: link_text
+                      field:
+                        type: text
+                        display: Link Text
+                        default: 'Learn More'
+          -
             handle: author
             field:
               type: users

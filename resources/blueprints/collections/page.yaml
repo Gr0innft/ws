@@ -11,36 +11,369 @@ sections:
           required: true
           localizable: true
       -
-        handle: content
-        field:
-          type: markdown
-          display: Content
-          localizable: true
-      -
         handle: content_blocks
         field:
           type: replicator
           display: Content Blocks
-          instructions: Add reusable content blocks to this page. Drag to reorder.
+          instructions: Add and arrange content blocks to build your page. Drag blocks to reorder.
           sets:
-            text_block:
-              display: Text Block
+            why_partner:
+              display: Why Partner (Highlight Feature)
+              instructions: A feature section with subtitle, title, description, button, and background image
               fields:
                 -
-                  handle: text
+                  handle: subtitle
+                  field:
+                    type: text
+                    display: Subtitle
+                    placeholder: // WHY PARTNER WITH VOYAGER
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                    required: true
+                -
+                  handle: description
                   field:
                     type: textarea
-                    display: Text Content
-                    instructions: Enter the text content for this block
-                    localizable: true
-      -
-        handle: show_become_wholesaler
-        field:
-          type: toggle
-          display: Show "Become a Wholesaler" Section
-          instructions: Enable this to show the "Become a Wholesaler" section on this page
-          default: false
-          localizable: true
+                    display: Description
+                -
+                  handle: button_text
+                  field:
+                    type: text
+                    display: Button Text
+                -
+                  handle: button_url
+                  field:
+                    type: link
+                    display: Button URL
+                -
+                  handle: background_image
+                  field:
+                    type: assets
+                    display: Background Image
+                    max_files: 1
+                    container: images
+            how_we_help:
+              display: How We Help (Features Block)
+              instructions: A grid of feature items with icons, titles, and descriptions
+              fields:
+                -
+                  handle: subtitle
+                  field:
+                    type: text
+                    display: Subtitle
+                    placeholder: // HOW WE HELP
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                    required: true
+                -
+                  handle: features
+                  field:
+                    type: replicator
+                    display: Features
+                    sets:
+                      feature:
+                        display: Feature
+                        fields:
+                          -
+                            handle: icon
+                            field:
+                              type: text
+                              display: Icon Class
+                              placeholder: tji-strategic
+                          -
+                            handle: title
+                            field:
+                              type: text
+                              display: Title
+                              required: true
+                          -
+                            handle: description
+                            field:
+                              type: textarea
+                              display: Description
+                -
+                  handle: button_text
+                  field:
+                    type: text
+                    display: Learn More Button Text
+                -
+                  handle: button_url
+                  field:
+                    type: link
+                    display: Learn More Button URL
+            what_we_do:
+              display: What We Do (Shuffle Cards)
+              instructions: Service cards with images, icons, numbers, and descriptions
+              fields:
+                -
+                  handle: subtitle
+                  field:
+                    type: text
+                    display: Subtitle
+                    placeholder: // WHAT WE DO
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                    required: true
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    display: Description
+                -
+                  handle: show_rating
+                  field:
+                    type: toggle
+                    display: Show Rating
+                    default: true
+                -
+                  handle: rating_value
+                  field:
+                    type: text
+                    display: Rating Value
+                    default: 4.8
+                    show_when:
+                      show_rating: true
+                -
+                  handle: rating_label
+                  field:
+                    type: text
+                    display: Rating Label
+                    default: Customers review
+                    show_when:
+                      show_rating: true
+                -
+                  handle: services
+                  field:
+                    type: replicator
+                    display: Services
+                    sets:
+                      service:
+                        display: Service
+                        fields:
+                          -
+                            handle: number
+                            field:
+                              type: integer
+                              display: Card Number
+                          -
+                            handle: icon
+                            field:
+                              type: text
+                              display: Icon Class
+                              placeholder: ph ph-cloud-arrow-up
+                          -
+                            handle: title
+                            field:
+                              type: text
+                              display: Title
+                              required: true
+                          -
+                            handle: description
+                            field:
+                              type: textarea
+                              display: Description
+                          -
+                            handle: image
+                            field:
+                              type: assets
+                              display: Image
+                              max_files: 1
+                              container: images
+                          -
+                            handle: button_text
+                            field:
+                              type: text
+                              display: Button Text
+                          -
+                            handle: button_url
+                            field:
+                              type: link
+                              display: Button URL
+            statistics:
+              display: Statistics (Stats Block)
+              instructions: Counter/statistics display with numbers and labels
+              fields:
+                -
+                  handle: stats
+                  field:
+                    type: replicator
+                    display: Statistics
+                    sets:
+                      stat:
+                        display: Statistic
+                        fields:
+                          -
+                            handle: number
+                            field:
+                              type: text
+                              display: Number/Value
+                              required: true
+                              placeholder: 93x
+                          -
+                            handle: label
+                            field:
+                              type: text
+                              display: Label
+                              required: true
+            cta_grow:
+              display: Let's Grow Together (CTA Block)
+              instructions: Call-to-action section with form
+              fields:
+                -
+                  handle: subtitle
+                  field:
+                    type: text
+                    display: Subtitle
+                    placeholder: // Let's Grow Together
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                    required: true
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    display: Description
+                -
+                  handle: button_text
+                  field:
+                    type: text
+                    display: Button Text
+                    default: 0800 4 PARTNER
+                -
+                  handle: button_url
+                  field:
+                    type: link
+                    display: Button URL
+                -
+                  handle: background_image
+                  field:
+                    type: assets
+                    display: Background Image
+                    max_files: 1
+                    container: images
+                -
+                  handle: form_title
+                  field:
+                    type: text
+                    display: Form Title
+            partner_success:
+              display: Partner Success (Hero Testimonial)
+              instructions: Testimonial section with quote, author, and image
+              fields:
+                -
+                  handle: subtitle
+                  field:
+                    type: text
+                    display: Subtitle
+                    placeholder: // PARTNER SUCCESS
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                    required: true
+                -
+                  handle: quote
+                  field:
+                    type: textarea
+                    display: Testimonial Quote
+                    required: true
+                -
+                  handle: author_name
+                  field:
+                    type: text
+                    display: Author Name
+                    required: true
+                -
+                  handle: author_title
+                  field:
+                    type: text
+                    display: Author Title/Position
+                -
+                  handle: author_image
+                  field:
+                    type: assets
+                    display: Author Image
+                    max_files: 1
+                    container: images
+                -
+                  handle: testimonial_image
+                  field:
+                    type: assets
+                    display: Testimonial Background Image
+                    max_files: 1
+                    container: images
+                -
+                  handle: rating_display
+                  field:
+                    type: text
+                    display: Rating Display
+                    placeholder: 4.7/5
+                -
+                  handle: rating_label
+                  field:
+                    type: text
+                    display: Rating Label
+                    placeholder: Customers survey review score
+            bottom_cta:
+              display: Want to Become a Wholesaler (Bottom CTA)
+              instructions: Simple CTA section with title, description, and buttons
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                    required: true
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    display: Description
+                -
+                  handle: primary_button_text
+                  field:
+                    type: text
+                    display: Primary Button Text
+                -
+                  handle: primary_button_url
+                  field:
+                    type: link
+                    display: Primary Button URL
+                -
+                  handle: primary_button_icon
+                  field:
+                    type: text
+                    display: Primary Button Icon Class
+                    placeholder: tji-email
+                -
+                  handle: secondary_button_text
+                  field:
+                    type: text
+                    display: Secondary Button Text
+                -
+                  handle: secondary_button_url
+                  field:
+                    type: link
+                    display: Secondary Button URL
+                -
+                  handle: secondary_button_icon
+                  field:
+                    type: text
+                    display: Secondary Button Icon Class
+                    placeholder: tji-phone
   sidebar:
     display: Sidebar
     fields:
@@ -61,4 +394,3 @@ sections:
       -
         import: seo
         prefix: seo_
-

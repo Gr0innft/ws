@@ -77,13 +77,13 @@ page_builder:
     text: 'Voyager partners with service providers, MSPs, and technology resellers to help them scale faster and serve customers better. With direct access to our engineers, product owners, and partner managers, you get the tools, flexibility, and support to grow with confidence.'
     link_url: /benefits
     link_text: 'Partnership Benefits'
-    image_position: left
+    image_position: right
     has_background: false
     style: hero
     type: image_content_block
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764890186
+updated_at: 1764890227
 ---
 ## Welcome to your brand new Statamic site!
 

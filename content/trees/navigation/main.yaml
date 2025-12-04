@@ -13,12 +13,6 @@ tree:
         data:
           icon: null
       -
-        id: 395b02e6-c60e-451c-8e03-0d8d62e8cb36
-        entry: 0aecd50a-c3fd-4599-8076-27bd0174540a
-        title: Overview
-        data:
-          icon: 'ph-fill ph-list-magnifying-glass'
-      -
         id: b882f891-fd7a-4042-9036-37d3190ed352
         entry: ad13107b-4613-4b21-b96b-6c95b91b6890
         data:
@@ -27,6 +21,12 @@ tree:
     id: 47ff7a46-432a-47cc-8452-529afdfc5a64
     entry: 0aecd50a-c3fd-4599-8076-27bd0174540a
     children:
+      -
+        id: 395b02e6-c60e-451c-8e03-0d8d62e8cb36
+        entry: 0aecd50a-c3fd-4599-8076-27bd0174540a
+        title: Overview
+        data:
+          icon: 'ph-fill ph-list-magnifying-glass'
       -
         id: 5ac4c530-27eb-476c-ab3d-8b3bad9febc3
         entry: ddc91fdd-2a48-4f43-ab79-dbfd254196d7

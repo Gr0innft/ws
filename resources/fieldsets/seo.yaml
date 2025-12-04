@@ -1,14 +1,14 @@
 title: 'Meta Fields'
 fields:
   -
-    handle: title
+    handle: meta_title
     field:
       type: text
       display: 'Meta Title'
       instructions: 'Custom title for search engines (leave blank to use page title)'
       localizable: true
   -
-    handle: description
+    handle: meta_description
     field:
       type: textarea
       display: 'Meta Description'
@@ -19,3 +19,5 @@ fields:
     field:
       type: text
       display: 'Meta Keywords'
+      instructions: 'Keywords for SEO (comma-separated)'
+      localizable: true

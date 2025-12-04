@@ -1,7 +1,7 @@
 ---
 id: home
 blueprint: page
-title: Home
+title: Home1
 template: home
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 seo_title: 'Home Page - Voyager Wholesale'
@@ -74,7 +74,7 @@ page_builder:
     type: features
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764820915
+updated_at: 1764826797
 ---
 ## Welcome to your brand new Statamic site!
 

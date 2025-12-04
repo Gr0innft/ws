@@ -12,6 +12,12 @@ meta_description: 'testing decription'
 meta_keywords: 'testing keywords'
 content_blocks:
   -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: test
+  -
     type: set
     attrs:
       id: miqur87m
@@ -38,7 +44,7 @@ content_blocks:
   -
     type: paragraph
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764817570
+updated_at: 1764817701
 ---
 ## Welcome to your brand new Statamic site!
 

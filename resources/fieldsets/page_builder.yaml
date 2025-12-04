@@ -1,2 +1,22 @@
 title: 'Page Builder'
-fields: {  }
+fields:
+  -
+    handle: page_builder
+    field:
+      type: replicator
+      display: 'Page Builder'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            content:
+              display: Content
+              icon: text-formatting-image-left
+              fields:
+                -
+                  handle: content
+                  field: common.content
+            features:
+              display: Features
+              icon: layout-three-columns
+              fields: {  }

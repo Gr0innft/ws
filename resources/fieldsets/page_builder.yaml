@@ -73,6 +73,11 @@ fields:
                 validate:
                   - required
             -
+              handle: subtitle
+              field:
+                type: text
+                display: Subtitle
+            -
               handle: text
               field:
                 type: textarea

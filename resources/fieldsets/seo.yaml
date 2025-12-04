@@ -1,24 +1,16 @@
-title: SEO Fields
+title: 'Meta Fields'
 fields:
   -
     handle: title
     field:
       type: text
-      display: SEO Title
+      display: 'Meta Title'
       instructions: 'Custom title for search engines (leave blank to use page title)'
       localizable: true
   -
     handle: description
     field:
       type: textarea
-      display: SEO Description
+      display: 'Meta Description'
       instructions: 'Meta description for search engines (recommended: 150-160 characters)'
       localizable: true
-  -
-    handle: keywords
-    field:
-      type: text
-      display: SEO Keywords
-      instructions: 'Keywords for SEO (comma-separated)'
-      localizable: true
-

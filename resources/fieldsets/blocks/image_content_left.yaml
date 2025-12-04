@@ -1,4 +1,4 @@
-title: Image Content (Left)
+title: 'Image Content (Left)'
 fields:
   -
     handle: image
@@ -9,6 +9,11 @@ fields:
       container: assets
       validate:
         - required
+  -
+    handle: sub_title
+    field:
+      type: text
+      display: 'Sub Title'
   -
     handle: heading
     field:
@@ -22,20 +27,19 @@ fields:
       type: textarea
       display: Text
   -
-    handle: link_url
-    field:
-      type: text
-      display: 'Link URL'
-      instructions: 'URL for the button/link'
-  -
     handle: link_text
     field:
       type: text
       display: 'Link Text'
       default: 'Learn More'
   -
+    handle: link_url
+    field:
+      type: text
+      display: 'Link URL'
+      instructions: 'URL for the button/link'
+  -
     handle: image_position
     field:
       type: hidden
       default: left
-

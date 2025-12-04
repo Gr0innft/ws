@@ -14,3 +14,8 @@ fields:
       display: 'Meta Description'
       instructions: 'Meta description for search engines (recommended: 150-160 characters)'
       localizable: true
+  -
+    handle: meta_keywords
+    field:
+      type: text
+      display: 'Meta Keywords'

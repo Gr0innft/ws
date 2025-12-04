@@ -1,0 +1,12 @@
+title: 'Bottom CTA'
+blueprint: become_wholesaler
+data:
+  title: 'Want to become a wholesaler?'
+  description: "Contact us with your details and we'll be in touch to chat further."
+  primary_button_text: "Let's talk"
+  primary_button_url: '#contact'
+  primary_button_icon: tji-email
+  secondary_button_text: '0800 472 7863'
+  secondary_button_url: 'tel:08004727863'
+  secondary_button_icon: tji-phone
+

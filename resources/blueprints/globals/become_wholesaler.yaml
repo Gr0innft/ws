@@ -1,0 +1,54 @@
+title: Bottom CTA
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      default: 'Want to become a wholesaler?'
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+      rows: 2
+      default: "Contact us with your details and we'll be in touch to chat further."
+  -
+    handle: primary_button_text
+    field:
+      type: text
+      display: Primary Button Text
+      default: "Let's talk"
+  -
+    handle: primary_button_url
+    field:
+      type: text
+      display: Primary Button URL
+      default: '#contact'
+  -
+    handle: primary_button_icon
+    field:
+      type: text
+      display: Primary Button Icon Class
+      default: 'tji-email'
+  -
+    handle: secondary_button_text
+    field:
+      type: text
+      display: Secondary Button Text
+      default: '0800 4 PARTNER'
+  -
+    handle: secondary_button_url
+    field:
+      type: text
+      display: Secondary Button URL
+      default: 'tel:08004727863'
+  -
+    handle: secondary_button_icon
+    field:
+      type: text
+      display: Secondary Button Icon Class
+      default: 'tji-phone'
+
+
+

@@ -178,3 +178,75 @@ fields:
               field:
                 type: textarea
                 display: Caption
+        card_block:
+          display: 'Card Block'
+          icon: layout-three-columns
+          fields:
+            -
+              handle: subtitle
+              field:
+                type: text
+                display: Subtitle
+            -
+              handle: title
+              field:
+                type: text
+                display: Title
+                validate:
+                  - required
+            -
+              handle: description
+              field:
+                type: textarea
+                display: Description
+            -
+              handle: cards
+              field:
+                type: replicator
+                display: Cards
+                instructions: 'Add cards to display'
+                sets:
+                  card:
+                    display: Card
+                    fields:
+                      -
+                        handle: icon
+                        field:
+                          type: text
+                          display: Icon Class
+                          instructions: 'Phosphor icon class (e.g., ph ph-cloud-arrow-up)'
+                      -
+                        handle: label
+                        field:
+                          type: text
+                          display: Label/Title
+                          validate:
+                            - required
+                      -
+                        handle: text
+                        field:
+                          type: textarea
+                          display: Description
+                      -
+                        handle: button_text
+                        field:
+                          type: text
+                          display: 'Button Text'
+                          default: 'Learn More'
+                      -
+                        handle: link_url
+                        field:
+                          type: text
+                          display: 'Link URL'
+                          instructions: 'URL for the card link and button'
+                          validate:
+                            - required
+                      -
+                        handle: image
+                        field:
+                          type: assets
+                          display: Image
+                          max_files: 1
+                          container: assets
+                          validate:
+                            - required

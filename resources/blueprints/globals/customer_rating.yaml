@@ -1,0 +1,17 @@
+title: Customer Rating
+fields:
+  -
+    handle: rating_score
+    field:
+      type: text
+      display: 'Rating Score'
+      default: '4.7'
+      instructions: 'Customer rating score (e.g., 4.7)'
+  -
+    handle: rating_text
+    field:
+      type: text
+      display: 'Rating Text'
+      default: 'Customers review'
+      instructions: 'Text to display before the rating'
+

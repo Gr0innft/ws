@@ -1,0 +1,6 @@
+title: Customer Rating
+blueprint: customer_rating
+data:
+  rating_score: '4.7'
+  rating_text: 'Customers review'
+

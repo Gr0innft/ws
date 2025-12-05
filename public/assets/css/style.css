@@ -3793,6 +3793,16 @@ body {
   transform: translateY(-50%);
   z-index: 0;
 }
+.tj-about-section .about-bg-images .about-shape-1-right {
+  position: absolute;
+  max-width: 745px;
+  width: 100%;
+  height: 676px;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  z-index: 0;
+}
 
 .tj-about-section .about-bg-images .about-shape-1 img {
   height: 100%;
@@ -3900,6 +3910,17 @@ body {
   height: 676px;
   top: 50%;
   left: 0px;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.tj-about-section-no-bg .about-bg-images .about-shape-1-right {
+  position: absolute;
+  max-width: 745px;
+  width: 100%;
+  height: 676px;
+  top: 50%;
+  right: 0px;
   transform: translateY(-50%);
   z-index: 0;
 }

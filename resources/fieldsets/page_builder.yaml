@@ -314,14 +314,6 @@ fields:
               field:
                 type: text
                 display: 'Author Designation'
-            -
-              handle: divider_image
-              field:
-                type: assets
-                display: 'Divider Image (Optional)'
-                max_files: 1
-                container: assets
-                instructions: 'Optional divider shape image'
         testimonial_slider:
           display: 'Testimonial Slider'
           icon: chat-circle-dots

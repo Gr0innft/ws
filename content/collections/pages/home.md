@@ -136,8 +136,56 @@ page_builder:
     style: simple
     type: image_content_block
     enabled: true
+  -
+    id: mis6qgkh
+    subtitle: '// WHAT WE DO'
+    title: 'Smart Solutions That Power Connection'
+    description: 'Voyager’s network, expertise, and partner-first approach keep your business connected and growing.'
+    cards:
+      -
+        id: mis6qyhx
+        icon: 'ph ph-cloud-arrow-up'
+        label: Cloud
+        text: 'High-performance virtual infrastructure and colocation options designed for reliability, flexibility, and scale.'
+        button_text: 'Cloud Solutions'
+        link_url: /solutions/cloud
+        image: images/solutions/cloud-card.jpg
+        type: card
+        enabled: true
+      -
+        id: mis6s99w
+        icon: 'ph ph-phone-call'
+        label: Communications
+        text: 'Reliable wholesale voice and collaboration services that help you connect customers anywhere, anytime.'
+        button_text: 'Communication Solutions'
+        link_url: /solutions/communication
+        image: images/solutions/communication-card.jpg
+        type: card
+        enabled: true
+      -
+        id: mis6tu0n
+        icon: 'ph ph-browsers'
+        label: Connectivity
+        text: 'Nationwide backbone and broadband network delivering unmatched speed, diversity, and uptime.'
+        button_text: 'Connectivity Solutions'
+        link_url: /solutions/connectivity
+        image: images/solutions/connectivity-card.jpg
+        type: card
+        enabled: true
+      -
+        id: mis6v6rb
+        icon: 'ph ph-shield-check'
+        label: Cybersecurity
+        text: 'Managed protection powered by Fortinet, Acronis, and Cloudflare — safeguarding networks and data.'
+        button_text: 'Cybersecurity Solutions'
+        link_url: /solutions/cybersecurity
+        image: images/solutions/cybersecurity-card.jpg
+        type: card
+        enabled: true
+    type: card_block
+    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764897036
+updated_at: 1764898347
 ---
 ## Welcome to your brand new Statamic site!
 

@@ -197,8 +197,42 @@ page_builder:
     author_designation: 'CEO Voyager Internet'
     type: testimonial_single
     enabled: true
+  -
+    id: misa5ltz
+    subtitle: '// Testimonials'
+    title: 'Listening to our clients'
+    testimonials:
+      -
+        id: misa5y2n
+        testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
+        author_image: images/seeby-profile.jpg
+        author_name: 'John Doe'
+        author_designation: 'Business Owner'
+        rating: '5'
+        type: testimonial
+        enabled: true
+      -
+        id: misa70g3
+        testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
+        author_image: images/seeby-profile.jpg
+        author_name: 'John Doe'
+        author_designation: 'Business Owner'
+        rating: '5'
+        type: testimonial
+        enabled: true
+      -
+        id: misa6yyj
+        testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
+        author_image: images/seeby-profile.jpg
+        author_name: 'John Doe'
+        author_designation: 'Business Owner'
+        rating: '5'
+        type: testimonial
+        enabled: true
+    type: testimonial_slider
+    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764903626
+updated_at: 1764903878
 ---
 ## Welcome to your brand new Statamic site!
 

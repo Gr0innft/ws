@@ -3770,6 +3770,12 @@ body {
   transition: none;
 }
 
+.tj-about-section.right::before {
+  right: 0;
+  left: auto;
+  border-radius: 0 0 0 300px;
+}
+
 .tj-about-section .sec-heading {
   margin-bottom: 0px;
 }
@@ -3888,6 +3894,12 @@ body {
 
 .tj-about-section-no-bg::before {
   display: none;
+}
+
+.tj-about-section-no-bg.right::before {
+  right: 0;
+  left: auto;
+  border-radius: 0 0 0 300px;
 }
 
 .tj-about-section-no-bg .sec-heading {

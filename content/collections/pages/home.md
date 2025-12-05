@@ -111,19 +111,6 @@ page_builder:
     type: image_content_block
     enabled: true
   -
-    id: mis27ned
-    image: images/solutions/communication-voice.jpg
-    subtitle: '// Recognition & Trust'
-    heading: 'Proudly recognised by our partners and industry'
-    text: "We're proud to have been recognised with three consecutive NZ Compare People's Choice Awards, a reflection of our investment in infrastructure, service and support. Our latest partner survey returned a great satisfaction score, demonstrating the trust and loyalty of our partner community."
-    link_url: '#'
-    link_text: "Let's Talkj"
-    image_position: right
-    has_background: true
-    style: simple
-    type: image_content_block
-    enabled: true
-  -
     id: mis29qkw
     image: images/solutions/communication-voice.jpg
     subtitle: '// Recognition & Trust'
@@ -185,7 +172,7 @@ page_builder:
     type: card_block
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764898347
+updated_at: 1764899175
 ---
 ## Welcome to your brand new Statamic site!
 

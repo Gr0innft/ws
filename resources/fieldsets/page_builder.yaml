@@ -250,3 +250,134 @@ fields:
                           container: assets
                           validate:
                             - required
+        testimonial_single:
+          display: 'Testimonial Single'
+          icon: chat-circle
+          fields:
+            -
+              handle: subtitle
+              field:
+                type: text
+                display: Subtitle
+            -
+              handle: title
+              field:
+                type: text
+                display: Title
+            -
+              handle: testimonial_image
+              field:
+                type: assets
+                display: 'Testimonial Image'
+                max_files: 1
+                container: assets
+                validate:
+                  - required
+            -
+              handle: rating_score
+              field:
+                type: text
+                display: 'Rating Score'
+                default: '4.7'
+                instructions: 'Rating score (e.g., 4.7)'
+            -
+              handle: rating_text
+              field:
+                type: text
+                display: 'Rating Text'
+                default: 'Customers survey review score'
+            -
+              handle: testimonial_text
+              field:
+                type: textarea
+                display: 'Testimonial Text'
+                validate:
+                  - required
+            -
+              handle: author_image
+              field:
+                type: assets
+                display: 'Author Image'
+                max_files: 1
+                container: assets
+                validate:
+                  - required
+            -
+              handle: author_name
+              field:
+                type: text
+                display: 'Author Name'
+                validate:
+                  - required
+            -
+              handle: author_designation
+              field:
+                type: text
+                display: 'Author Designation'
+            -
+              handle: divider_image
+              field:
+                type: assets
+                display: 'Divider Image (Optional)'
+                max_files: 1
+                container: assets
+                instructions: 'Optional divider shape image'
+        testimonial_slider:
+          display: 'Testimonial Slider'
+          icon: chat-circle-dots
+          fields:
+            -
+              handle: subtitle
+              field:
+                type: text
+                display: Subtitle
+            -
+              handle: title
+              field:
+                type: text
+                display: Title
+            -
+              handle: testimonials
+              field:
+                type: replicator
+                display: Testimonials
+                instructions: 'Add testimonials to the slider'
+                sets:
+                  testimonial:
+                    display: Testimonial
+                    fields:
+                      -
+                        handle: testimonial_text
+                        field:
+                          type: textarea
+                          display: 'Testimonial Text'
+                          validate:
+                            - required
+                      -
+                        handle: author_image
+                        field:
+                          type: assets
+                          display: 'Author Image'
+                          max_files: 1
+                          container: assets
+                          validate:
+                            - required
+                      -
+                        handle: author_name
+                        field:
+                          type: text
+                          display: 'Author Name'
+                          validate:
+                            - required
+                      -
+                        handle: author_designation
+                        field:
+                          type: text
+                          display: 'Author Designation'
+                      -
+                        handle: rating
+                        field:
+                          type: text
+                          display: Rating
+                          default: '5'
+                          instructions: 'Rating out of 5 (e.g., 5, 4.5, 4)'

@@ -131,7 +131,7 @@ page_builder:
     text: "We're proud to have been recognised with three consecutive NZ Compare People's Choice Awards, a reflection of our investment in infrastructure, service and support. Our latest partner survey returned a great satisfaction score, demonstrating the trust and loyalty of our partner community."
     link_url: '#'
     link_text: "Let's Talkj"
-    image_position: left
+    image_position: right
     has_background: true
     style: simple
     type: image_content_block
@@ -370,7 +370,7 @@ page_builder:
     button_text: 'Learn More'
     button_url: '#'
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765150480
+updated_at: 1765150722
 ---
 ## Welcome to your brand new Statamic site!
 

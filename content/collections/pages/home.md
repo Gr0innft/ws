@@ -226,13 +226,13 @@ page_builder:
         author_image: images/seeby-profile.jpg
         author_name: 'John Doe'
         author_designation: 'Business Owner'
-        rating: '5'
+        rating: '4'
         type: testimonial
         enabled: true
     type: testimonial_slider
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1764903878
+updated_at: 1765144310
 ---
 ## Welcome to your brand new Statamic site!
 

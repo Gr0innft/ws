@@ -201,6 +201,13 @@ fields:
                 type: textarea
                 display: Description
             -
+              handle: show_rating
+              field:
+                type: toggle
+                display: 'Show Rating'
+                default: false
+                instructions: 'Show customer rating in the section header'
+            -
               handle: cards
               field:
                 type: replicator

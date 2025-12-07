@@ -5,6 +5,7 @@ fields:
     field:
       type: replicator
       display: 'Page Builder'
+      collapsed: true
       sets:
         content:
           display: Content

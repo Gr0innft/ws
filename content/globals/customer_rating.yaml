@@ -1,6 +1,4 @@
-title: Customer Rating
-blueprint: customer_rating
+title: 'Customer Rating'
 data:
-  rating_score: '4.7'
+  rating_score: '4.8'
   rating_text: 'Customers review'
-

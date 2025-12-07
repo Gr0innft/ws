@@ -369,7 +369,111 @@ fields:
                       -
                         handle: rating
                         field:
-                          type: text
+                          type: select
                           display: Rating
                           default: '5'
-                          instructions: 'Rating out of 5 (e.g., 5, 4.5, 4)'
+                          instructions: 'Rating out of 5 stars'
+                          options:
+                            '1': '1 Star'
+                            '2': '2 Stars'
+                            '3': '3 Stars'
+                            '4': '4 Stars'
+                            '5': '5 Stars'
+        service_block:
+          display: 'Service Block'
+          icon: layout-grid
+          fields:
+            -
+              handle: subtitle
+              field:
+                type: text
+                display: Subtitle
+            -
+              handle: title
+              field:
+                type: text
+                display: Title
+            -
+              handle: description
+              field:
+                type: textarea
+                display: Description
+            -
+              handle: layout
+              field:
+                type: select
+                display: Layout
+                default: grid
+                instructions: 'Choose how services are displayed'
+                options:
+                  grid: Grid (Static 4 Columns)
+                  slider: Slider (Scrolling)
+                  vertical: Vertical List
+            -
+              handle: show_rating
+              field:
+                type: toggle
+                display: 'Show Rating'
+                default: false
+                instructions: 'Show customer rating (for vertical layout)'
+            -
+              handle: show_button
+              field:
+                type: toggle
+                display: 'Show Learn More Button'
+                default: false
+                instructions: 'Show button at bottom (for grid layout)'
+            -
+              handle: button_text
+              field:
+                type: text
+                display: 'Button Text'
+                default: 'Learn More'
+            -
+              handle: button_url
+              field:
+                type: text
+                display: 'Button URL'
+            -
+              handle: services
+              field:
+                type: replicator
+                display: Services
+                instructions: 'Add service items'
+                sets:
+                  service:
+                    display: Service
+                    fields:
+                      -
+                        handle: icon
+                        field:
+                          type: text
+                          display: 'Icon Class'
+                          instructions: 'Phosphor icon class (e.g., ph ph-cloud-check or ph-fill ph-cloud-check)'
+                          validate:
+                            - required
+                      -
+                        handle: title
+                        field:
+                          type: text
+                          display: Title
+                          validate:
+                            - required
+                      -
+                        handle: text
+                        field:
+                          type: textarea
+                          display: Description
+                      -
+                        handle: link_url
+                        field:
+                          type: text
+                          display: 'Link URL'
+                          instructions: 'Optional link for the service item'
+                      -
+                        handle: link_text
+                        field:
+                          type: text
+                          display: 'Link Text'
+                          default: "Let's Talk"
+                          instructions: 'Link text (for vertical layout)'

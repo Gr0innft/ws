@@ -283,7 +283,7 @@ page_builder:
     title: 'Explore the benefits of partnering with Voyager'
     description: 'Voyager’s network, expertise, and partner-first approach keep your business connected and growing.'
     layout: vertical
-    show_rating: false
+    show_rating: true
     show_button: true
     services:
       -
@@ -370,7 +370,7 @@ page_builder:
     button_text: 'Learn More'
     button_url: '#'
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765150081
+updated_at: 1765150134
 ---
 ## Welcome to your brand new Statamic site!
 

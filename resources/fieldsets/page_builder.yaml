@@ -415,7 +415,7 @@ fields:
                 type: toggle
                 display: 'Show Rating'
                 default: false
-                instructions: 'Show customer rating (for vertical layout)'
+                instructions: 'Show customer rating in the section header'
             -
               handle: show_button
               field:

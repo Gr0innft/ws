@@ -5,7 +5,6 @@ fields:
     field:
       type: replicator
       display: 'Page Builder'
-      collapsed: true
       sets:
         hero_banner:
           display: 'Hero Banner'

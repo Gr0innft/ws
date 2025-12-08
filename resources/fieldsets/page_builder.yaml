@@ -695,3 +695,49 @@ fields:
                           validate:
                             - required
                           instructions: 'Label text for the stat (supports line breaks with <br>)'
+        team_members_block:
+          display: 'Team Members Block'
+          collapsed: true
+          icon: users
+          fields:
+            -
+              handle: subtitle
+              field:
+                type: text
+                display: Subtitle
+                instructions: 'Optional subtitle (e.g., // Meet We Do)'
+            -
+              handle: heading
+              field:
+                type: textarea
+                display: Heading
+                validate:
+                  - required
+                instructions: 'Main heading. Use HTML to make words blue: <span class="text-primary">your text</span>'
+            -
+              handle: description
+              field:
+                type: textarea
+                display: Description
+                instructions: 'Description text below the heading'
+            -
+              handle: button_text
+              field:
+                type: text
+                display: 'Button Text'
+                default: 'More members'
+            -
+              handle: button_url
+              field:
+                type: text
+                display: 'Button URL'
+                default: '/team'
+                instructions: 'URL for the "More members" button'
+            -
+              handle: team_members
+              field:
+                type: entries
+                display: 'Team Members'
+                collections:
+                  - team
+                instructions: 'Select team members to display. Changes to team members (image, name, etc.) will automatically update here.'

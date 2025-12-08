@@ -1,6 +1,5 @@
 title: Team
-routes:
-  /team/{slug}: team_member
+route: /team/{slug}
 structure:
   root: true
 taxonomies:

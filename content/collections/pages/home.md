@@ -66,9 +66,8 @@ page_builder:
     enabled: true
   -
     id: miwasyow
-    subtitle: '// Partner Advantages'
-    title: 'Explore the benefits of partnering with Voyager'
-    description: 'Voyager’s network, expertise, and partner-first approach keep your business connected and growing.'
+    subtitle: 'How we help'
+    title: 'Tools, Training, & Support to Help You Succeed'
     layout: grid
     show_rating: false
     show_button: true
@@ -76,11 +75,12 @@ page_builder:
       -
         id: miwauq78
         icon: 'ph ph-cell-tower'
-        title: 'Reliable Network'
-        text: 'Carrier-grade network across 17+ data centres and dual NZ routes for performance and uptime.'
+        title: 'Quick solutions'
+        text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
         link_text: "Let's Talk"
         type: service
         enabled: true
+        link_url: '#'
       -
         id: miwavkvu
         icon: 'ph ph-fingerprint'
@@ -108,8 +108,8 @@ page_builder:
         enabled: true
     type: service_block
     enabled: true
-    button_text: 'Learn More'
-    button_url: '#'
+    button_text: 'Our Solutions'
+    button_url: /solutions
     add_curve_to_top: true
   -
     id: mixmh1yv
@@ -519,7 +519,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765237753
+updated_at: 1765237860
 ---
 ## Welcome to your brand new Statamic site!
 

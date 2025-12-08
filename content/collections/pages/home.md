@@ -50,6 +50,21 @@ content_blocks:
     type: paragraph
 page_builder:
   -
+    id: miwfb5j9
+    background_image: images/bg/download.jpg
+    layout: product
+    show_breadcrumb: true
+    breadcrumb_text: About
+    breadcrumb_url: index.html
+    heading: 'Solutions Built to Power Partner Success'
+    text: 'Voyager’s cloud, communication, connectivity, and cybersecurity platforms work together to deliver the speed, control, and reliability partners need to grow.'
+    image: images/solutions/communication-hero3.jpg
+    button_text: "Let's talk"
+    button_url: '#'
+    show_scroll: true
+    type: hero_banner
+    enabled: true
+  -
     id: miwe8hkt
     slides:
       -
@@ -420,23 +435,8 @@ page_builder:
     show_scroll: false
     type: hero_banner
     enabled: true
-  -
-    id: miwfb5j9
-    background_image: images/bg/download.jpg
-    layout: product
-    show_breadcrumb: true
-    breadcrumb_text: About
-    breadcrumb_url: index.html
-    heading: 'Solutions Built to Power Partner Success'
-    text: 'Voyager’s cloud, communication, connectivity, and cybersecurity platforms work together to deliver the speed, control, and reliability partners need to grow.'
-    image: images/solutions/communication-hero3.jpg
-    button_text: "Let's talk"
-    button_url: '#'
-    show_scroll: true
-    type: hero_banner
-    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765154659
+updated_at: 1765155095
 ---
 ## Welcome to your brand new Statamic site!
 

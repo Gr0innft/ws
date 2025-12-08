@@ -73,6 +73,14 @@ page_builder:
     link_text: 'Learn More'
     type: hero_banner
     enabled: true
+    background_image: images/banners/download.webp
+    layout: centered
+    show_breadcrumb: false
+    breadcrumb_text: About
+    breadcrumb_url: index.html
+    button_text: "Let's talk"
+    button_url: '#'
+    show_scroll: false
   -
     id: mis1zpeq
     image: images/home/home1.png
@@ -385,8 +393,50 @@ page_builder:
     enabled: true
     button_text: 'Learn More'
     button_url: '#'
+  -
+    id: miwf27rx
+    background_image: images/banners/download.webp
+    layout: centered
+    show_breadcrumb: true
+    breadcrumb_text: About
+    breadcrumb_url: index.html
+    heading: 'What makes us different?'
+    button_text: "Let's talk"
+    button_url: '#'
+    show_scroll: false
+    type: hero_banner
+    enabled: true
+  -
+    id: miwf9r5h
+    background_image: images/banners/download.webp
+    layout: split_text
+    show_breadcrumb: true
+    breadcrumb_text: About
+    breadcrumb_url: index.html
+    heading: 'Contact us today to get started'
+    text: 'At Voyager, we know that strong relationships and tailored support is the foundation of great partnerships. We have a team of dedicated people working hard to make it all happen, and that are committed to knowing you and what you need to succeed.'
+    button_text: "Let's talk"
+    button_url: '#'
+    show_scroll: false
+    type: hero_banner
+    enabled: true
+  -
+    id: miwfb5j9
+    background_image: images/banners/download.webp
+    layout: product
+    show_breadcrumb: true
+    breadcrumb_text: About
+    breadcrumb_url: index.html
+    heading: 'Solutions Built to Power Partner Success'
+    text: 'Voyager’s cloud, communication, connectivity, and cybersecurity platforms work together to deliver the speed, control, and reliability partners need to grow.'
+    image: images/solutions/communication-hero3.jpg
+    button_text: "Let's talk"
+    button_url: '#'
+    show_scroll: true
+    type: hero_banner
+    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765153419
+updated_at: 1765154532
 ---
 ## Welcome to your brand new Statamic site!
 

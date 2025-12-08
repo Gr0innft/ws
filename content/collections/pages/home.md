@@ -443,7 +443,7 @@ page_builder:
     enabled: true
     button_text: 'Learn More'
     button_url: '#'
-    add_curve_to_top: true
+    add_curve_to_top: false
   -
     id: miwcrjln
     subtitle: '// Partner Advantages'
@@ -490,7 +490,7 @@ page_builder:
     enabled: true
     button_text: 'Learn More'
     button_url: '#'
-    add_curve_to_top: false
+    add_curve_to_top: true
   -
     id: miwf27rx
     background_image: images/banners/download.webp
@@ -519,7 +519,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765237293
+updated_at: 1765237370
 ---
 ## Welcome to your brand new Statamic site!
 

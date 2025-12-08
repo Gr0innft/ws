@@ -56,10 +56,11 @@ fields:
             -
               handle: heading
               field:
-                type: text
+                type: textarea
                 display: Heading
                 validate:
                   - required
+                instructions: 'Enter heading text. Use HTML to make words blue: <span class="text-primary">your text</span>'
             -
               handle: text
               field:
@@ -87,13 +88,6 @@ fields:
                 display: 'Button URL'
                 validate:
                   - required
-            -
-              handle: show_scroll
-              field:
-                type: toggle
-                display: 'Show Scroll Indicator'
-                default: false
-                instructions: 'Show scroll down indicator (for product layout)'
         image_content_block:
           display: 'Image Content Block'
           collapsed: true

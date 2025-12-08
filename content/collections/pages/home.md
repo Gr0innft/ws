@@ -50,6 +50,21 @@ content_blocks:
     type: paragraph
 page_builder:
   -
+    id: miwe8hkt
+    slides:
+      -
+        id: miwe8iyg
+        background_image: images/home/slider-2.jpg
+        subtitle: 'Voyager Wholesale'
+        title: 'Built for Partners Backed by Experts'
+        text: 'A smarter, faster way to deliver cloud, communication, connectivity, and security - all on a network you can trust.'
+        button_text: 'Discover Voyager Solutions'
+        button_url: /solutions
+        type: slide
+        enabled: true
+    type: hero_slider
+    enabled: true
+  -
     id: miqwptex
     background_color: '#dc2626'
     heading: test
@@ -371,7 +386,7 @@ page_builder:
     button_text: 'Learn More'
     button_url: '#'
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765150939
+updated_at: 1765153131
 ---
 ## Welcome to your brand new Statamic site!
 

@@ -1,3 +1,4 @@
 title: Team
 route: /team/{slug}
+revisions: false
 

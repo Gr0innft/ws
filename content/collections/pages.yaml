@@ -1,5 +1,5 @@
 title: Pages
-revisions: true
+revisions: false
 structure:
   root: true
 route: '{parent_uri}/{slug}'

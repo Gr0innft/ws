@@ -9,7 +9,7 @@ fields:
       sets:
         hero_banner:
           display: 'Hero Banner'
-          collapsed: false
+          collapsed: true
           icon: image
           fields:
             -

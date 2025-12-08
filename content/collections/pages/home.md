@@ -74,11 +74,12 @@ page_builder:
     services:
       -
         id: miwauq78
-        icon: 'ph ph-user-focus'
+        icon: 'ph-bold ph-books'
         title: 'Quick solutions'
         text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
         type: service
         enabled: true
+        link_text: "Let's Talk"
       -
         id: miwavkvu
         icon: 'ph ph-user-focus'
@@ -86,6 +87,7 @@ page_builder:
         text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
         type: service
         enabled: true
+        link_text: "Let's Talk"
       -
         id: miwaw72x
         icon: 'ph ph-strategy'
@@ -93,6 +95,7 @@ page_builder:
         text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
         type: service
         enabled: true
+        link_text: "Let's Talk"
       -
         id: miwaxmfh
         icon: 'ph ph-clock-clockwise'
@@ -100,6 +103,7 @@ page_builder:
         text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
         type: service
         enabled: true
+        link_text: "Let's Talk"
     type: service_block
     enabled: true
     button_text: 'Our Solutions'
@@ -513,7 +517,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765238157
+updated_at: 1765238294
 ---
 ## Welcome to your brand new Statamic site!
 

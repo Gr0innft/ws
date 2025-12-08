@@ -422,7 +422,7 @@ page_builder:
     enabled: true
   -
     id: miwfb5j9
-    background_image: images/banners/download.webp
+    background_image: images/bg/download.jpg
     layout: product
     show_breadcrumb: true
     breadcrumb_text: About
@@ -436,7 +436,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765154532
+updated_at: 1765154659
 ---
 ## Welcome to your brand new Statamic site!
 

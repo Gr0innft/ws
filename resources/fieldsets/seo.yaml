@@ -21,3 +21,12 @@ fields:
       display: 'Meta Keywords'
       instructions: 'Keywords for SEO (comma-separated)'
       localizable: true
+  -
+    handle: og_image
+    field:
+      type: assets
+      display: 'OG Image'
+      max_files: 1
+      container: assets
+      instructions: 'Open Graph image for social sharing (optional, uses site default if not set)'
+      localizable: true

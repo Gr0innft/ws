@@ -1,5 +1,3 @@
 title: Team
 route: /team/{slug}
-taxonomies:
-  - categories
 

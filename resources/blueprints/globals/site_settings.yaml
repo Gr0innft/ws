@@ -1,0 +1,26 @@
+title: Site Settings
+fields:
+  -
+    handle: site_name
+    field:
+      type: text
+      display: 'Site Name'
+      default: 'Voyager'
+      instructions: 'Site name used in meta tags and titles'
+  -
+    handle: fav_icon
+    field:
+      type: assets
+      display: 'Favicon'
+      max_files: 1
+      container: assets
+      instructions: 'Favicon image (PNG format recommended)'
+  -
+    handle: og_image
+    field:
+      type: assets
+      display: 'Default OG Image'
+      max_files: 1
+      container: assets
+      instructions: "Default Open Graph image (used when page doesn't have its own OG image)"
+

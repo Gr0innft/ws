@@ -351,53 +351,6 @@ page_builder:
     type: testimonial_slider
     enabled: true
   -
-    id: miwasyow
-    subtitle: '// Partner Advantages'
-    title: 'Explore the benefits of partnering with Voyager'
-    description: 'Voyager’s network, expertise, and partner-first approach keep your business connected and growing.'
-    layout: grid
-    show_rating: false
-    show_button: true
-    services:
-      -
-        id: miwauq78
-        icon: 'ph ph-cell-tower'
-        title: 'Reliable Network'
-        text: 'Carrier-grade network across 17+ data centres and dual NZ routes for performance and uptime.'
-        link_text: "Let's Talk"
-        type: service
-        enabled: true
-      -
-        id: miwavkvu
-        icon: 'ph ph-fingerprint'
-        title: 'Security & Resilience'
-        text: 'Multi-100 Gbps capacity, fraud detection, and geo-redundant voice systems keep every connection protected.'
-        link_text: "Let's Talk"
-        type: service
-        enabled: true
-      -
-        id: miwaw72x
-        icon: 'ph ph-graduation-cap'
-        title: 'Expert Access'
-        text: 'Direct access to architects, engineers, and partner managers when you need real help.'
-        link_text: "Let's Talk"
-        type: service
-        enabled: true
-      -
-        id: miwaxmfh
-        icon: 'ph ph-video-conference'
-        title: 'Partner Management'
-        text: 'Dedicated managers and executive visibility ensure collaboration, growth, & continuous service improvement.'
-        link_url: /
-        link_text: "Let's Talk"
-        type: service
-        enabled: true
-    type: service_block
-    enabled: true
-    button_text: 'Learn More'
-    button_url: '#'
-    add_curve_to_top: true
-  -
     id: miwcrkrs
     subtitle: '// Partner Advantages'
     title: 'Explore the benefits of partnering with Voyager'
@@ -444,6 +397,53 @@ page_builder:
     button_text: 'Learn More'
     button_url: '#'
     add_curve_to_top: false
+  -
+    id: miwasyow
+    subtitle: '// Partner Advantages'
+    title: 'Explore the benefits of partnering with Voyager'
+    description: 'Voyager’s network, expertise, and partner-first approach keep your business connected and growing.'
+    layout: grid
+    show_rating: false
+    show_button: true
+    services:
+      -
+        id: miwauq78
+        icon: 'ph ph-cell-tower'
+        title: 'Reliable Network'
+        text: 'Carrier-grade network across 17+ data centres and dual NZ routes for performance and uptime.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: miwavkvu
+        icon: 'ph ph-fingerprint'
+        title: 'Security & Resilience'
+        text: 'Multi-100 Gbps capacity, fraud detection, and geo-redundant voice systems keep every connection protected.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: miwaw72x
+        icon: 'ph ph-graduation-cap'
+        title: 'Expert Access'
+        text: 'Direct access to architects, engineers, and partner managers when you need real help.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: miwaxmfh
+        icon: 'ph ph-video-conference'
+        title: 'Partner Management'
+        text: 'Dedicated managers and executive visibility ensure collaboration, growth, & continuous service improvement.'
+        link_url: /
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+    type: service_block
+    enabled: true
+    button_text: 'Learn More'
+    button_url: '#'
+    add_curve_to_top: true
   -
     id: miwcrjln
     subtitle: '// Partner Advantages'
@@ -519,7 +519,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765237370
+updated_at: 1765237411
 ---
 ## Welcome to your brand new Statamic site!
 

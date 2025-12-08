@@ -7,19 +7,6 @@ fields:
       display: 'Page Builder'
       collapsed: true
       sets:
-        content:
-          display: Content
-          collapsed: true
-          icon: text-formatting-image-left
-          fields:
-            -
-              handle: content
-              field: common.content
-        features:
-          display: Features
-          collapsed: true
-          icon: layout-three-columns
-          fields: {  }
         hero_banner:
           display: 'Hero Banner'
           collapsed: false
@@ -156,67 +143,6 @@ fields:
                 options:
                   simple: Simple (Grid Layout)
                   hero: Hero (Overlay Layout)
-        image_slider:
-          display: 'Image Slider'
-          collapsed: true
-          icon: image
-          fields:
-            -
-              handle: images
-              field:
-                type: assets
-                display: Images
-                container: assets
-                validate:
-                  - required
-                instructions: 'Add multiple images for the slider'
-            -
-              handle: heading
-              field:
-                type: text
-                display: Heading
-            -
-              handle: text
-              field:
-                type: textarea
-                display: Text
-            -
-              handle: autoplay
-              field:
-                type: toggle
-                display: Autoplay
-                default: true
-            -
-              handle: slide_duration
-              field:
-                type: integer
-                display: 'Slide Duration (seconds)'
-                default: 5
-                instructions: 'How long each slide displays'
-        image_static:
-          display: 'Image Static'
-          collapsed: true
-          icon: image
-          fields:
-            -
-              handle: image
-              field:
-                type: assets
-                display: Image
-                max_files: 1
-                container: assets
-                validate:
-                  - required
-            -
-              handle: heading
-              field:
-                type: text
-                display: Heading
-            -
-              handle: caption
-              field:
-                type: textarea
-                display: Caption
         card_block:
           display: 'Card Block'
           collapsed: true
@@ -685,3 +611,87 @@ fields:
                 display: 'Show Background'
                 default: false
                 instructions: 'Add grey background (bg-section-bg)'
+        dark_image_content_block:
+          display: 'Dark Image Content Block'
+          collapsed: true
+          icon: image
+          fields:
+            -
+              handle: image
+              field:
+                type: assets
+                display: Image
+                max_files: 1
+                container: assets
+                validate:
+                  - required
+                instructions: 'Image for the dark content block'
+            -
+              handle: image_position
+              field:
+                type: select
+                display: 'Image Position'
+                default: left
+                options:
+                  left: Left
+                  right: Right
+            -
+              handle: subtitle
+              field:
+                type: text
+                display: Subtitle
+                instructions: 'Optional subtitle (e.g., // TOOL THAT REMOVE FRICTION)'
+            -
+              handle: heading
+              field:
+                type: textarea
+                display: Heading
+                validate:
+                  - required
+                instructions: 'Main heading. Use HTML to make words blue: <span class="text-primary">your text</span>'
+            -
+              handle: text
+              field:
+                type: textarea
+                display: Description
+                instructions: 'Description text content'
+            -
+              handle: button_text
+              field:
+                type: text
+                display: 'Button Text'
+                default: 'Learn More'
+            -
+              handle: button_url
+              field:
+                type: text
+                display: 'Button URL'
+                instructions: 'URL for the button'
+            -
+              handle: stats
+              field:
+                type: replicator
+                display: Stats
+                collapsed: true
+                instructions: 'Optional circular progress stats'
+                sets:
+                  stat:
+                    display: Stat
+                    collapsed: true
+                    fields:
+                      -
+                        handle: percentage
+                        field:
+                          type: integer
+                          display: Percentage
+                          validate:
+                            - required
+                          instructions: 'Percentage value (0-100)'
+                      -
+                        handle: label
+                        field:
+                          type: text
+                          display: Label
+                          validate:
+                            - required
+                          instructions: 'Label text for the stat (supports line breaks with <br>)'

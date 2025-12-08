@@ -760,7 +760,7 @@ fields:
                 type: text
                 display: Subtitle
                 default: "Let's Grow Together"
-                instructions: 'Subtitle text (defaults to "Let''s Grow Together")'
+                instructions: "Subtitle text (defaults to \"Let's Grow Together\")"
             -
               handle: heading
               field:

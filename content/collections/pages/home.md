@@ -473,7 +473,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765157515
+updated_at: 1765158933
 ---
 ## Welcome to your brand new Statamic site!
 

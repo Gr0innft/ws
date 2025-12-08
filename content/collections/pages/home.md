@@ -74,36 +74,30 @@ page_builder:
     services:
       -
         id: miwauq78
-        icon: 'ph ph-cell-tower'
+        icon: 'ph ph-user-focus'
         title: 'Quick solutions'
         text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
-        link_text: "Let's Talk"
         type: service
         enabled: true
-        link_url: '#'
       -
         id: miwavkvu
-        icon: 'ph ph-fingerprint'
-        title: 'Security & Resilience'
-        text: 'Multi-100 Gbps capacity, fraud detection, and geo-redundant voice systems keep every connection protected.'
-        link_text: "Let's Talk"
+        icon: 'ph ph-user-focus'
+        title: 'Expert advice'
+        text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
         type: service
         enabled: true
       -
         id: miwaw72x
-        icon: 'ph ph-graduation-cap'
-        title: 'Expert Access'
-        text: 'Direct access to architects, engineers, and partner managers when you need real help.'
-        link_text: "Let's Talk"
+        icon: 'ph ph-strategy'
+        title: 'Strategic planning'
+        text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
         type: service
         enabled: true
       -
         id: miwaxmfh
-        icon: 'ph ph-video-conference'
-        title: 'Partner Management'
-        text: 'Dedicated managers and executive visibility ensure collaboration, growth, & continuous service improvement.'
-        link_url: /
-        link_text: "Let's Talk"
+        icon: 'ph ph-clock-clockwise'
+        title: 'Efficient operations'
+        text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
         type: service
         enabled: true
     type: service_block
@@ -519,7 +513,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765237860
+updated_at: 1765238157
 ---
 ## Welcome to your brand new Statamic site!
 

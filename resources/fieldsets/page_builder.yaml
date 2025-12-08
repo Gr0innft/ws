@@ -22,16 +22,51 @@ fields:
           fields: {  }
         hero_banner:
           display: 'Hero Banner'
-          collapsed: true
+          collapsed: false
           icon: image
           fields:
             -
-              handle: background_color
+              handle: background_image
               field:
-                type: color
-                display: 'Background Color'
-                default: '#dc2626'
-                instructions: 'Background color for the hero banner'
+                type: assets
+                display: 'Background Image'
+                max_files: 1
+                container: assets
+                validate:
+                  - required
+                instructions: 'Background image for the hero banner'
+            -
+              handle: layout
+              field:
+                type: select
+                display: Layout
+                default: centered
+                instructions: 'Choose the hero banner layout style'
+                options:
+                  centered: Centered (with breadcrumb)
+                  split_text: Split Text (left title, right text with breadcrumb)
+                  product: Product (left content, right image)
+            -
+              handle: show_breadcrumb
+              field:
+                type: toggle
+                display: 'Show Breadcrumb'
+                default: false
+                instructions: 'Show breadcrumb navigation (for centered and split_text layouts)'
+            -
+              handle: breadcrumb_text
+              field:
+                type: text
+                display: 'Breadcrumb Text'
+                default: 'About'
+                instructions: 'Text for the breadcrumb (e.g., About, Contact us)'
+            -
+              handle: breadcrumb_url
+              field:
+                type: text
+                display: 'Breadcrumb URL'
+                default: 'index.html'
+                instructions: 'URL for the breadcrumb home link'
             -
               handle: heading
               field:
@@ -40,22 +75,39 @@ fields:
                 validate:
                   - required
             -
-              handle: sub_text
+              handle: text
               field:
                 type: textarea
-                display: 'Sub Text'
+                display: 'Description Text'
+                instructions: 'Text description (shown on right for split_text, below title for product)'
             -
-              handle: link_url
+              handle: image
+              field:
+                type: assets
+                display: Image
+                max_files: 1
+                container: assets
+                instructions: 'Image for product layout (shown on right side)'
+            -
+              handle: button_text
               field:
                 type: text
-                display: 'Link URL'
-                instructions: 'URL for the button/link'
+                display: 'Button Text'
+                default: "Let's talk"
             -
-              handle: link_text
+              handle: button_url
               field:
                 type: text
-                display: 'Link Text'
-                default: 'Learn More'
+                display: 'Button URL'
+                validate:
+                  - required
+            -
+              handle: show_scroll
+              field:
+                type: toggle
+                display: 'Show Scroll Indicator'
+                default: false
+                instructions: 'Show scroll down indicator (for product layout)'
         image_content_block:
           display: 'Image Content Block'
           collapsed: true

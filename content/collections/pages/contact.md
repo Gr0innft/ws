@@ -5,14 +5,6 @@ title: Contact
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 page_builder:
   -
-    id: mixnq939
-    background_image: images/bg/enquirybg.jpg
-    subtitle: "Let's Grow Together"
-    heading: 'Partner with Voyager, build on a Cloud You Can Trust.'
-    description: 'Join a wholesale partner built for performance and reliability. Voyager’s high-availability cloud platform, expert engineers, and flexible infrastructure make it easy to deploy scalable, secure hosting solutions your customers can trust.'
-    type: enquiry_cta_form
-    enabled: true
-  -
     id: mixmow69
     background_image: images/banners/download.webp
     layout: split_text
@@ -23,7 +15,15 @@ page_builder:
     button_url: '#scroll-hero'
     type: hero_banner
     enabled: true
+  -
+    id: mixnq939
+    background_image: images/bg/enquirybg.jpg
+    subtitle: "Let's Grow Together"
+    heading: 'Partner with Voyager, build on a Cloud You Can Trust.'
+    description: 'Join a wholesale partner built for performance and reliability. Voyager’s high-availability cloud platform, expert engineers, and flexible infrastructure make it easy to deploy scalable, secure hosting solutions your customers can trust.'
+    type: enquiry_cta_form
+    enabled: true
 template: contact
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765229132
+updated_at: 1765229238
 ---

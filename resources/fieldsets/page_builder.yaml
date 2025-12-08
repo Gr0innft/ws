@@ -568,10 +568,11 @@ fields:
                       -
                         handle: title
                         field:
-                          type: text
+                          type: textarea
                           display: Title
                           validate:
                             - required
+                          instructions: 'Enter title text. Use HTML to make words blue: <span class="text-primary">your text</span>'
                       -
                         handle: text
                         field:
@@ -590,3 +591,42 @@ fields:
                           display: 'Button URL'
                           validate:
                             - required
+        stats_block:
+          display: 'Stats Block'
+          collapsed: true
+          icon: chart-bar
+          fields:
+            -
+              handle: stats
+              field:
+                type: replicator
+                display: Stats
+                collapsed: true
+                instructions: 'Add stat items to display'
+                sets:
+                  stat:
+                    display: Stat
+                    collapsed: true
+                    fields:
+                      -
+                        handle: number
+                        field:
+                          type: text
+                          display: Number
+                          validate:
+                            - required
+                          instructions: 'The stat number (e.g., 93, 20, 4.7)'
+                      -
+                        handle: suffix
+                        field:
+                          type: text
+                          display: Suffix
+                          instructions: 'Optional suffix after number (e.g., x, +, /5)'
+                      -
+                        handle: label
+                        field:
+                          type: text
+                          display: Label
+                          validate:
+                            - required
+                          instructions: 'Description text for the stat'

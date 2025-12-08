@@ -183,7 +183,7 @@ page_builder:
     style: hero
     type: image_content_block
     enabled: true
-    add_curve_to_top: false
+    add_curve_to_top: true
   -
     id: mis297u2
     image: images/home/home1.png
@@ -516,7 +516,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765236993
+updated_at: 1765237033
 ---
 ## Welcome to your brand new Statamic site!
 

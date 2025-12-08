@@ -9,6 +9,7 @@ fields:
       sets:
         content:
           display: Content
+          collapsed: true
           icon: text-formatting-image-left
           fields:
             -
@@ -16,10 +17,12 @@ fields:
               field: common.content
         features:
           display: Features
+          collapsed: true
           icon: layout-three-columns
           fields: {  }
         hero_banner:
           display: 'Hero Banner'
+          collapsed: true
           icon: image
           fields:
             -
@@ -55,6 +58,7 @@ fields:
                 default: 'Learn More'
         image_content_block:
           display: 'Image Content Block'
+          collapsed: true
           icon: image
           fields:
             -
@@ -122,6 +126,7 @@ fields:
                   hero: Hero (Overlay Layout)
         image_slider:
           display: 'Image Slider'
+          collapsed: true
           icon: image
           fields:
             -
@@ -158,6 +163,7 @@ fields:
                 instructions: 'How long each slide displays'
         image_static:
           display: 'Image Static'
+          collapsed: true
           icon: image
           fields:
             -
@@ -181,6 +187,7 @@ fields:
                 display: Caption
         card_block:
           display: 'Card Block'
+          collapsed: true
           icon: layout-three-columns
           fields:
             -
@@ -217,6 +224,7 @@ fields:
                 sets:
                   card:
                     display: Card
+                    collapsed: true
                     fields:
                       -
                         handle: icon
@@ -261,6 +269,7 @@ fields:
                             - required
         testimonial_single:
           display: 'Testimonial Single'
+          collapsed: true
           icon: chat-circle
           fields:
             -
@@ -325,6 +334,7 @@ fields:
                 display: 'Author Designation'
         testimonial_slider:
           display: 'Testimonial Slider'
+          collapsed: true
           icon: chat-circle-dots
           fields:
             -
@@ -347,6 +357,7 @@ fields:
                 sets:
                   testimonial:
                     display: Testimonial
+                    collapsed: true
                     fields:
                       -
                         handle: testimonial_text
@@ -391,6 +402,7 @@ fields:
                             '5': '5 Stars'
         service_block:
           display: 'Service Block'
+          collapsed: true
           icon: layout-grid
           fields:
             -
@@ -454,6 +466,7 @@ fields:
                 sets:
                   service:
                     display: Service
+                    collapsed: true
                     fields:
                       -
                         handle: icon
@@ -490,6 +503,7 @@ fields:
                           instructions: 'Link text (for vertical layout)'
         hero_slider:
           display: 'Hero Slider'
+          collapsed: true
           icon: image
           fields:
             -
@@ -502,6 +516,7 @@ fields:
                 sets:
                   slide:
                     display: Slide
+                    collapsed: true
                     fields:
                       -
                         handle: background_image

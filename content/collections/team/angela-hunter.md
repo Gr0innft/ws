@@ -3,7 +3,6 @@ id: 8a477c74-174a-4224-b3d2-6540fc3932af
 blueprint: team_member
 title: 'Angela Hunter'
 template: team_member
-published: true
 slug: angela-hunter
 image: images/team/angela-lg.jpg
 job_title: 'Chief Revenue Officer'
@@ -26,5 +25,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765161020
+updated_at: 1765161574
+categories:
+  - execs
 ---

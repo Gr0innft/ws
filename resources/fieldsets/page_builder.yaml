@@ -630,3 +630,58 @@ fields:
                           validate:
                             - required
                           instructions: 'Description text for the stat'
+        text_content_block:
+          display: 'Text Content Block'
+          collapsed: true
+          icon: text-formatting
+          fields:
+            -
+              handle: subtitle
+              field:
+                type: text
+                display: Subtitle
+                instructions: 'Optional subtitle (e.g., // ABOUT VOYAGER WHOLESALE)'
+            -
+              handle: title
+              field:
+                type: textarea
+                display: Title
+                validate:
+                  - required
+                instructions: 'Main heading. Use HTML to make words blue: <span class="text-primary">your text</span>'
+            -
+              handle: text
+              field:
+                type: textarea
+                display: Description
+                instructions: 'Description text content'
+            -
+              handle: button_text
+              field:
+                type: text
+                display: 'Button Text'
+                default: 'Partnership Benefits'
+            -
+              handle: button_url
+              field:
+                type: text
+                display: 'Button URL'
+                validate:
+                  - required
+            -
+              handle: title_position
+              field:
+                type: select
+                display: 'Title Position'
+                default: left
+                instructions: 'Position of the title section'
+                options:
+                  left: Left
+                  right: Right
+            -
+              handle: has_background
+              field:
+                type: toggle
+                display: 'Show Background'
+                default: false
+                instructions: 'Add grey background (bg-section-bg)'

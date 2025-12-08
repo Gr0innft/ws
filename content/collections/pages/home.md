@@ -74,7 +74,7 @@ page_builder:
     services:
       -
         id: miwauq78
-        icon: 'ph-bold ph-books'
+        icon: 'ph ph-books'
         title: 'Quick solutions'
         text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
         type: service
@@ -517,7 +517,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765238294
+updated_at: 1765238312
 ---
 ## Welcome to your brand new Statamic site!
 

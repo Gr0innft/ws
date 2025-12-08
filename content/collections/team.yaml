@@ -1,0 +1,8 @@
+title: Team
+routes:
+  /team/{slug}: team_member
+structure:
+  root: true
+taxonomies:
+  - categories
+

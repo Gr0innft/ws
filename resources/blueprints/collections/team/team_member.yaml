@@ -1,0 +1,115 @@
+title: Team Member
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Name
+              required: true
+              validate:
+                - required
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              default: team_member
+              localizable: true
+      -
+        display: Team Details
+        fields:
+          -
+            handle: image
+            field:
+              type: assets
+              display: Image
+              max_files: 1
+              container: assets
+              validate:
+                - required
+              instructions: 'Team member photo'
+          -
+            handle: job_title
+            field:
+              type: text
+              display: Job Title
+              validate:
+                - required
+              instructions: 'e.g., Chief Revenue Officer'
+          -
+            handle: email
+            field:
+              type: text
+              display: Email
+              input_type: email
+              validate:
+                - required
+          -
+            handle: phone
+            field:
+              type: text
+              display: Phone
+              instructions: 'e.g., +64 9 777 7724'
+          -
+            handle: bio
+            field:
+              type: textarea
+              display: Bio
+              instructions: 'Team member biography (supports multiple paragraphs)'
+          -
+            handle: category
+            field:
+              type: terms
+              display: Category
+              taxonomies:
+                - categories
+              max_items: 1
+              instructions: 'Team category for filtering (Execs, Wholesale Team, Customer Success, Operations)'
+      -
+        display: Social Links
+        fields:
+          -
+            handle: linkedin_url
+            field:
+              type: text
+              display: LinkedIn URL
+              instructions: 'Full LinkedIn profile URL'
+          -
+            handle: facebook_url
+            field:
+              type: text
+              display: Facebook URL
+              instructions: 'Full Facebook profile URL'
+          -
+            handle: twitter_url
+            field:
+              type: text
+              display: Twitter/X URL
+              instructions: 'Full Twitter/X profile URL'
+      -
+        display: Content
+        fields:
+          -
+            import: page_builder
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+      -
+        display: Meta
+        fields:
+          -
+            import: seo
+

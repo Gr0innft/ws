@@ -52,21 +52,7 @@ fields:
                 type: toggle
                 display: 'Show Breadcrumb'
                 default: false
-                instructions: 'Show breadcrumb navigation (for centered and split_text layouts)'
-            -
-              handle: breadcrumb_text
-              field:
-                type: text
-                display: 'Breadcrumb Text'
-                default: 'About'
-                instructions: 'Text for the breadcrumb (e.g., About, Contact us)'
-            -
-              handle: breadcrumb_url
-              field:
-                type: text
-                display: 'Breadcrumb URL'
-                default: 'index.html'
-                instructions: 'URL for the breadcrumb home link'
+                instructions: 'Show breadcrumb navigation (for centered and split_text layouts) - automatically generated from page URL'
             -
               handle: heading
               field:

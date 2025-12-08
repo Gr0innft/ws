@@ -1,0 +1,18 @@
+title: Contact Information
+blueprint: contact_info
+data:
+  subtitle: 'CONTACT US'
+  heading: 'Our contact information'
+  email: 'partner@voyager.nz'
+  phone: '0800 472 786'
+  phone_url: 'tel:0800472786'
+  locations:
+    -
+      id: location-1
+      name: Auckland
+      address: '11B Piermark Drive, Rosedale, Auckland 0632'
+    -
+      id: location-2
+      name: Christchurch
+      address: 'Unit 1, 2 Barry Hogan Place, Riccarton, Christchurch 8041'
+

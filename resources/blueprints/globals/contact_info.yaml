@@ -1,0 +1,65 @@
+title: Contact Information
+fields:
+  -
+    handle: subtitle
+    field:
+      type: text
+      display: Subtitle
+      default: 'CONTACT US'
+      instructions: 'Subtitle for the contact section'
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+      default: 'Our contact information'
+      instructions: 'Main heading for the contact section'
+  -
+    handle: email
+    field:
+      type: text
+      display: Email
+      default: 'partner@voyager.nz'
+      instructions: 'Contact email address'
+  -
+    handle: phone
+    field:
+      type: text
+      display: Phone
+      default: '0800 472 786'
+      instructions: 'Contact phone number'
+  -
+    handle: phone_url
+    field:
+      type: text
+      display: 'Phone URL'
+      default: 'tel:0800472786'
+      instructions: 'Phone number as tel: link'
+  -
+    handle: locations
+    field:
+      type: replicator
+      display: Locations
+      instructions: 'Add office locations'
+      sets:
+        location:
+          display: Location
+          collapsed: true
+          fields:
+            -
+              handle: name
+              field:
+                type: text
+                display: 'Location Name'
+                validate:
+                  - required
+                instructions: 'e.g., Auckland, Christchurch'
+            -
+              handle: address
+              field:
+                type: textarea
+                display: Address
+                validate:
+                  - required
+                instructions: 'Full address'
+

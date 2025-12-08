@@ -24,7 +24,33 @@ page_builder:
     button_url: '#'
     type: hero_banner
     enabled: true
+  -
+    id: miwkmg27
+    stats:
+      -
+        id: miwkmidp
+        number: '4'
+        suffix: '4'
+        label: '4'
+        type: stat
+        enabled: true
+      -
+        id: miwkmmmj
+        number: '4'
+        suffix: '4'
+        label: '4'
+        type: stat
+        enabled: true
+      -
+        id: miwkmpr7
+        number: '4'
+        suffix: '4'
+        label: '4'
+        type: stat
+        enabled: true
+    type: stats_block
+    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765162763
+updated_at: 1765163268
 category: execs
 ---

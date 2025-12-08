@@ -15,6 +15,7 @@ page_builder:
     button_url: '#scroll-hero'
     type: hero_banner
     enabled: true
+template: contact
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765227315
+updated_at: 1765227855
 ---

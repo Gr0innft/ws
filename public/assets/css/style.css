@@ -3719,14 +3719,14 @@ body {
   background: #e1e8f0;
 }
 
-.tj-feature-section.with-shape-white {
+.tj-feature-section.with-shape-white, .with-shape-white {
   position: relative;
   z-index: 11;
   padding-top: 40px;
   margin-top: -40px;
 }
 
-.tj-feature-section.with-shape-white::before {
+.tj-feature-section.with-shape-white::before, .with-shape-white::before {
   position: absolute;
   content: "";
   top: 1px;

@@ -416,7 +416,7 @@ fields:
                 type: toggle
                 display: 'Add curve to top'
                 default: false
-                instructions: 'Add decorative curve shape to the top of the section. Note: Only works with Grid (Static) and Slider layouts, not Vertical layout.'
+                instructions: 'Add decorative curve shape to the top of the section. Note: Only works with Grid (Static) layout, not Slider or Vertical layouts.'
             -
               handle: button_text
               field:

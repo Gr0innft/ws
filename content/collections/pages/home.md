@@ -65,6 +65,32 @@ page_builder:
     type: hero_banner
     enabled: true
   -
+    id: miwg908o
+    stats:
+      -
+        id: miwg91dy
+        number: '4'
+        suffix: x
+        label: "NZ Compare People's Choice Award"
+        type: stat
+        enabled: true
+      -
+        id: miwg9n4s
+        number: '17'
+        suffix: +
+        label: 'Data Centers Across NZ'
+        type: stat
+        enabled: true
+      -
+        id: miwg9zkb
+        number: '4.7'
+        suffix: /5
+        label: 'Partner Satisfaction Score'
+        type: stat
+        enabled: true
+    type: stats_block
+    enabled: true
+  -
     id: miwe8hkt
     slides:
       -
@@ -436,7 +462,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765155656
+updated_at: 1765156004
 ---
 ## Welcome to your brand new Statamic site!
 

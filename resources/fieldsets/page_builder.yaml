@@ -149,7 +149,7 @@ fields:
                 type: toggle
                 display: 'Add curve to top'
                 default: false
-                instructions: 'Add decorative curve shape to the top of the section'
+                instructions: 'Add decorative curve shape to the top of the section. Note: Only works with Grid Image Layout (Simple style), not Hero style.'
         card_block:
           display: 'Card Block'
           collapsed: true
@@ -410,6 +410,13 @@ fields:
                 display: 'Show Learn More Button'
                 default: false
                 instructions: 'Show button at bottom (for grid layout)'
+            -
+              handle: add_curve_to_top
+              field:
+                type: toggle
+                display: 'Add curve to top'
+                default: false
+                instructions: 'Add decorative curve shape to the top of the section. Note: Only works with Grid (Static) and Slider layouts, not Vertical layout.'
             -
               handle: button_text
               field:

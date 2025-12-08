@@ -485,3 +485,57 @@ fields:
                           display: 'Link Text'
                           default: "Let's Talk"
                           instructions: 'Link text (for vertical layout)'
+        hero_slider:
+          display: 'Hero Slider'
+          icon: image
+          fields:
+            -
+              handle: slides
+              field:
+                type: replicator
+                display: Slides
+                instructions: 'Add slides to the hero slider'
+                sets:
+                  slide:
+                    display: Slide
+                    fields:
+                      -
+                        handle: background_image
+                        field:
+                          type: assets
+                          display: 'Background Image'
+                          max_files: 1
+                          container: assets
+                          validate:
+                            - required
+                          instructions: 'Background image for the slide'
+                      -
+                        handle: subtitle
+                        field:
+                          type: text
+                          display: Subtitle
+                      -
+                        handle: title
+                        field:
+                          type: text
+                          display: Title
+                          validate:
+                            - required
+                      -
+                        handle: text
+                        field:
+                          type: textarea
+                          display: Description
+                      -
+                        handle: button_text
+                        field:
+                          type: text
+                          display: 'Button Text'
+                          default: 'Discover Voyager Solutions'
+                      -
+                        handle: button_url
+                        field:
+                          type: text
+                          display: 'Button URL'
+                          validate:
+                            - required

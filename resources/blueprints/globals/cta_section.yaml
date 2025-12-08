@@ -1,0 +1,45 @@
+title: CTA Section
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      default: 'Want to become a wholesaler?'
+      instructions: 'Main heading for the CTA section'
+  -
+    handle: text
+    field:
+      type: textarea
+      display: Text
+      default: "Contact us with your details and we'll be in touch to chat further."
+      instructions: 'Description text below the title'
+  -
+    handle: email_button_text
+    field:
+      type: text
+      display: 'Email Button Text'
+      default: "Let's talk"
+      instructions: 'Text for the email/contact button'
+  -
+    handle: email_button_url
+    field:
+      type: text
+      display: 'Email Button URL'
+      default: '#contact'
+      instructions: 'URL for the email/contact button (e.g., #contact or /contact)'
+  -
+    handle: phone_button_text
+    field:
+      type: text
+      display: 'Phone Button Text'
+      default: '0800 4 PARTNER'
+      instructions: 'Text for the phone button'
+  -
+    handle: phone_button_url
+    field:
+      type: text
+      display: 'Phone Button URL'
+      default: 'tel:08004727863'
+      instructions: 'Phone number URL (e.g., tel:08004727863)'
+

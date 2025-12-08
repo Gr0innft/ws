@@ -212,6 +212,7 @@ fields:
               field:
                 type: replicator
                 display: Cards
+                collapsed: true
                 instructions: 'Add cards to display'
                 sets:
                   card:
@@ -341,6 +342,7 @@ fields:
               field:
                 type: replicator
                 display: Testimonials
+                collapsed: true
                 instructions: 'Add testimonials to the slider'
                 sets:
                   testimonial:
@@ -447,6 +449,7 @@ fields:
               field:
                 type: replicator
                 display: Services
+                collapsed: true
                 instructions: 'Add service items'
                 sets:
                   service:
@@ -494,6 +497,7 @@ fields:
               field:
                 type: replicator
                 display: Slides
+                collapsed: true
                 instructions: 'Add slides to the hero slider'
                 sets:
                   slide:

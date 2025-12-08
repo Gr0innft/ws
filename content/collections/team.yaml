@@ -1,8 +1,5 @@
 title: Team
 route: /team/{slug}
-template: team_member
-structure:
-  root: true
 taxonomies:
   - categories
 

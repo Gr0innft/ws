@@ -12,6 +12,17 @@ bio: |-
 
   She also leads CX Governance, ensuring that Voyager’s services and support align with, and help deliver on, the growth aspirations of your business.
 linkedin_url: 'https://www.linkedin.com/in/angela-hunter-newzealand/'
+page_builder:
+  -
+    id: miwi7rdq
+    background_image: images/banners/download.jpg
+    layout: centered
+    show_breadcrumb: true
+    heading: 'Team Details'
+    button_text: "Let's talk"
+    button_url: '#'
+    type: hero_banner
+    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765159134
+updated_at: 1765159299
 ---

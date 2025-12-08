@@ -1,10 +1,8 @@
-title: CTA Section
-blueprint: cta_section
+title: 'CTA Section'
 data:
   title: 'Want to become a wholesaler?'
   text: "Contact us with your details and we'll be in touch to chat further."
   email_button_text: "Let's talk"
   email_button_url: '#contact'
-  phone_button_text: '0800 4 PARTNER'
+  phone_button_text: '0800 472 7863'
   phone_button_url: 'tel:08004727863'
-

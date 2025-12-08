@@ -62,4 +62,25 @@ fields:
                 validate:
                   - required
                 instructions: 'Full address'
+  -
+    handle: team_contact_title
+    field:
+      type: text
+      display: 'Team Contact Section Title'
+      default: "Let's discuss further to get better results"
+      instructions: 'Title for the team member contact section'
+  -
+    handle: team_contact_description
+    field:
+      type: textarea
+      display: 'Team Contact Section Description'
+      default: "Our mission is to empower businesses of all sizes to thrive in an ever-changing marketplace. In today's dynamic business environment, the key to success lies in having the right partners and solutions."
+      instructions: 'Description text for the team member contact section'
+  -
+    handle: hours
+    field:
+      type: text
+      display: Hours
+      default: 'Mon - Friday : 8:00 - 18:00'
+      instructions: 'Business hours'
 

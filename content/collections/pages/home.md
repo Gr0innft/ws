@@ -386,7 +386,7 @@ page_builder:
     button_text: 'Learn More'
     button_url: '#'
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765153131
+updated_at: 1765153419
 ---
 ## Welcome to your brand new Statamic site!
 

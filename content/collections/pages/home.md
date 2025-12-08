@@ -50,16 +50,28 @@ content_blocks:
     type: paragraph
 page_builder:
   -
-    id: mixli49h
+    id: mixlssnh
     image: images/benefits/portals.jpg
+    image_position: left
     subtitle: 'TOOL THAT REMOVE FRICTION'
     heading: 'Do more, faster with smart self service portals'
     text: 'We put the control and visibility in your hands with Voyager’s partner portals. Easily order, manage, and support broadband, voice, hosting, iSMS, and security solutions - all backed by detailed billing files and reports that make on-billing your customers effortless.'
-    link_text: 'Learn More'
-    image_position: left
-    has_background: true
-    style: hero
-    type: image_content_block
+    button_text: 'Learn More'
+    button_url: 'Our Portals'
+    stats:
+      -
+        id: mixltxwo
+        percentage: 88
+        label: 'Some Statistic goes here'
+        type: stat
+        enabled: true
+      -
+        id: mixluekb
+        percentage: 75
+        label: 'Some Statistic goes here'
+        type: stat
+        enabled: true
+    type: dark_image_content_block
     enabled: true
   -
     id: miwfb5j9
@@ -485,7 +497,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765225647
+updated_at: 1765225796
 ---
 ## Welcome to your brand new Statamic site!
 

@@ -50,6 +50,20 @@ content_blocks:
     type: paragraph
 page_builder:
   -
+    id: mixmh1yv
+    subtitle: 'Meet our team'
+    heading: 'Expert team members'
+    description: 'As New Zealand’s leading Tier 2 telco, we own and operate our national network and deliver high-performance solutions across cloud, communication, connectivity and cybersecurity. We’re local, responsive and easy to work with — trusted by partners who want more than a provider; they want a team that helps them win.'
+    button_text: 'Our Experts'
+    button_url: /team
+    team_members:
+      - 086327cc-0617-4333-b51a-5668ccd3dbf9
+      - 8a477c74-174a-4224-b3d2-6540fc3932af
+      - 537a05a8-bde0-412d-b7cf-5cb04ed573e8
+      - 8db6f86b-3147-491e-bb75-37d0501c3de9
+    type: team_members_block
+    enabled: true
+  -
     id: mixlssnh
     image: images/benefits/portals.jpg
     image_position: right
@@ -496,7 +510,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765226080
+updated_at: 1765226896
 ---
 ## Welcome to your brand new Statamic site!
 

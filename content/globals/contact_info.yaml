@@ -9,10 +9,12 @@ data:
   locations:
     -
       id: location-1
+      type: location
       name: Auckland
       address: '11B Piermark Drive, Rosedale, Auckland 0632'
     -
       id: location-2
+      type: location
       name: Christchurch
       address: 'Unit 1, 2 Barry Hogan Place, Riccarton, Christchurch 8041'
 

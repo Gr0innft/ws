@@ -741,3 +741,49 @@ fields:
                 collections:
                   - team
                 instructions: 'Select team members to display. Changes to team members (image, name, etc.) will automatically update here.'
+        enquiry_cta_form:
+          display: 'Enquiry CTA Form'
+          collapsed: true
+          icon: form
+          fields:
+            -
+              handle: background_image
+              field:
+                type: assets
+                display: 'Background Image'
+                max_files: 1
+                container: assets
+                instructions: 'Background image for the enquiry form section (defaults to enquirybg.jpg if not set)'
+            -
+              handle: subtitle
+              field:
+                type: text
+                display: Subtitle
+                default: "Let's Grow Together"
+                instructions: 'Subtitle text (defaults to "Let''s Grow Together")'
+            -
+              handle: heading
+              field:
+                type: textarea
+                display: Heading
+                validate:
+                  - required
+                instructions: 'Main heading. Use HTML to make words blue: <span class="text-primary">your text</span>'
+            -
+              handle: description
+              field:
+                type: textarea
+                display: Description
+                instructions: 'Description text below the heading'
+            -
+              handle: button_text
+              field:
+                type: text
+                display: 'Button Text'
+                instructions: 'Button text (defaults to global phone number if not set)'
+            -
+              handle: button_url
+              field:
+                type: text
+                display: 'Button URL'
+                instructions: 'Button URL (defaults to global phone URL if not set)'

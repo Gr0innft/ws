@@ -3745,6 +3745,32 @@ body {
   z-index: 12;
 }
 
+.with-shape-light-grey {
+  position: relative;
+  z-index: 11;
+  padding-top: 40px;
+  margin-top: -40px;
+}
+
+.with-shape-light-grey::before {
+  position: absolute;
+  content: "";
+  top: 1px;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIzNyIgdmlld0JveD0iMCAwIDE5MjAgMzciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMzYuMTYwOUMzMTUuNTI2IDEyLjE5OTQgNjM0LjMzOCAwIDk1NiAwQzEyODAuMzggMCAxNjAxLjg2IDEyLjQwNjUgMTkyMCAzNi43NzFWMzdIMFYzNi4xNjA5WiIgZmlsbD0iIzA1MTIyOSIvPg0KPC9zdmc+DQo=");
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIzNyIgdmlld0JveD0iMCAwIDE5MjAgMzciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMzYuMTYwOUMzMTUuNTI2IDEyLjE5OTQgNjM0LjMzOCAwIDk1NiAwQzEyODAuMzggMCAxNjAxLjg2IDEyLjQwNjUgMTkyMCAzNi43NzFWMzdIMFYzNi4xNjA5WiIgZmlsbD0iIzA1MTIyOSIvPg0KPC9zdmc+DQo=");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center bottom;
+  mask-position: center bottom;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  z-index: 12;
+}
+
 /* About Section - Our Company Style */
 
 .tj-about-section {

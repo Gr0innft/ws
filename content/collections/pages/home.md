@@ -183,6 +183,7 @@ page_builder:
     style: hero
     type: image_content_block
     enabled: true
+    add_curve_to_top: false
   -
     id: mis297u2
     image: images/home/home1.png
@@ -196,6 +197,7 @@ page_builder:
     style: hero
     type: image_content_block
     enabled: true
+    add_curve_to_top: false
   -
     id: mis24mos
     image: images/solutions/communication-voice.jpg
@@ -209,6 +211,7 @@ page_builder:
     style: simple
     type: image_content_block
     enabled: true
+    add_curve_to_top: false
   -
     id: mis29kyo
     image: images/solutions/communication-voice.jpg
@@ -222,6 +225,7 @@ page_builder:
     style: simple
     type: image_content_block
     enabled: true
+    add_curve_to_top: false
   -
     id: mis29qkw
     image: images/solutions/communication-voice.jpg
@@ -235,6 +239,7 @@ page_builder:
     style: simple
     type: image_content_block
     enabled: true
+    add_curve_to_top: true
   -
     id: mis7euvl
     image: images/solutions/communication-voice.jpg
@@ -248,6 +253,7 @@ page_builder:
     style: simple
     type: image_content_block
     enabled: true
+    add_curve_to_top: true
   -
     id: mis6qgkh
     subtitle: '// WHAT WE DO'
@@ -510,7 +516,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765234537
+updated_at: 1765236993
 ---
 ## Welcome to your brand new Statamic site!
 

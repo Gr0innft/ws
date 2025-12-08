@@ -5,6 +5,7 @@ fields:
     field:
       type: replicator
       display: 'Page Builder'
+      collapsed: true
       sets:
         hero_banner:
           display: 'Hero Banner'
@@ -142,6 +143,13 @@ fields:
                 options:
                   simple: Simple (Grid Layout)
                   hero: Hero (Overlay Layout)
+            -
+              handle: add_curve_to_top
+              field:
+                type: toggle
+                display: 'Add curve to top'
+                default: false
+                instructions: 'Add decorative curve shape to the top of the section'
         card_block:
           display: 'Card Block'
           collapsed: true

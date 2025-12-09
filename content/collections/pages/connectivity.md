@@ -4,7 +4,7 @@ blueprint: page
 title: Connectivity
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765248596
+updated_at: 1765251977
 page_builder:
   -
     id: mixyfpls
@@ -14,8 +14,8 @@ page_builder:
     heading: 'Connectivity That Moves <span class="text-primary">Businesses Forward</span>'
     text: 'Voyager connects partners and customers through a high-capacity, carrier-grade network engineered for reliability, resilience, and the flexibility to scale as your business grows.'
     image: images/solutions/connectivity/hero.png
-    button_text: "Let's talk"
-    button_url: '#scroll-cta'
+    button_text: 'Learn More'
+    button_url: '#scroll-hero'
     type: hero_banner
     enabled: true
   -

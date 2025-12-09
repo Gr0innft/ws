@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765240680
+updated_at: 1765240736
 page_builder:
   -
     id: mixuk0yc
@@ -34,7 +34,14 @@ page_builder:
     image: images/home/partnership-benefits.png
     subtitle: 'Our Vision'
     heading: 'To be the partner of choice for New Zealand businesses.'
-    text: 'To provide innovative solutions that enable our customers to communicate and connect like never before, delivering exceptional value through unparalleled customer experience.'
+    text: |-
+      To provide innovative solutions that enable our customers to communicate and connect like never before, delivering exceptional value through unparalleled customer experience.
+
+      <ul>
+      <li><i class="tji-double-check"></i>Do the right thing</li>
+      <li><i class="tji-double-check"></i>Always do your best.</li>
+      <li><i class="tji-double-check"></i>Find ways to show people you care.</li>
+      </ul>
     link_url: /benefits
     link_text: 'Partnership Benefits'
     image_position: left

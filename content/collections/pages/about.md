@@ -13,7 +13,7 @@ page_builder:
     background_image: images/banners/download.webp
     layout: centered
     show_breadcrumb: true
-    heading: 'What makes us <span. class="text-primary">different?</span>'
+    heading: 'What makes us <span class="text-primary">different?</span>'
     button_text: "Let's talk"
     button_url: /contact
     type: hero_banner

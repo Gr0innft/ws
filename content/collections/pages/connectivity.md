@@ -4,7 +4,7 @@ blueprint: page
 title: Connectivity
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765248288
+updated_at: 1765248596
 page_builder:
   -
     id: mixyfpls
@@ -75,5 +75,86 @@ page_builder:
         type: service
         enabled: true
     type: service_block
+    enabled: true
+  -
+    id: mixz9ty1
+    image: images/solutions/connectivity/partner.png
+    subtitle: 'Interent & Broadband'
+    heading: 'Fast, Consistent, and Scalable Connectivity'
+    text: 'Voyager’s broadband network aggregates across Auckland, Wellington, and Christchurch for low-latency performance. With regional handovers via all major LFCs and flexible authentication options, partners can deliver faster speeds and seamless reliability to every customer.'
+    link_url: /benefits
+    link_text: 'Partnership Benefits'
+    image_position: left
+    has_background: false
+    style: hero
+    add_curve_to_top: false
+    type: image_content_block
+    enabled: true
+  -
+    id: mixzbokt
+    subtitle: '4G & WAN SOLUTIONS'
+    title: 'Resilient Connectivity Anywhere'
+    description: 'Voyager provides 4G, MPLS, and SD-WAN solutions to keep your business connected anywhere in New Zealand. Designed for performance and flexibility, these solutions enable private, secure, and cost-effective connectivity across your entire network.'
+    layout: vertical
+    show_rating: true
+    show_button: false
+    add_curve_to_top: false
+    button_text: 'Learn More'
+    services:
+      -
+        id: mixzc8km
+        icon: 'ph-fill ph-users-three'
+        title: 'Shared Data Pools'
+        text: 'Cost-efficient shared data for multi-site deployments.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixzcsds
+        icon: 'ph-fill ph-path'
+        title: 'Flexible Plans'
+        text: 'Per-SIM and unlimited options to match any business model.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixzd6u8
+        icon: 'ph-fill ph-security-camera'
+        title: 'Private Networking'
+        text: 'Layer 2 and 3 connectivity with VPN endpoints and IPsec stitching.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixzdkpk
+        icon: 'ph-fill ph-map-pin-area'
+        title: 'Seamless Backup'
+        text: '4G failover ensures uninterrupted connectivity during outages.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+    type: service_block
+    enabled: true
+  -
+    id: mixze6af
+    subtitle: "Let's Grow Together"
+    heading: 'Delivering Voice Solutions You Can Depend On.'
+    description: 'Join a wholesale partner that’s built for performance and powered by people. Voyager’s expert voice engineers, flexible platforms, and dedicated support make it easy to deliver scalable, reliable communication services to your customers.'
+    type: enquiry_cta_form
+    enabled: true
+  -
+    id: mixzes9d
+    testimonial_image: images/testimonials/seeby.jpg
+    rating_score: '4.7'
+    rating_text: 'Customers survey review score'
+    testimonial_text: 'Voyager’s Partner Program is about genuine collaboration. We give our partners direct access to our people, our tools and our expertise — everything they need to build and grow faster. This isn’t a one-size-fits-all model; it’s a partnership built on trust, responsiveness and shared success. We want to be the partner that helps partners win.'
+    author_image: images/seeby-profile.jpg
+    author_name: 'Seeby Woodhouse'
+    author_designation: 'CEO Voyager Internet'
+    type: testimonial_single
     enabled: true
 ---

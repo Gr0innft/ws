@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765245367
+updated_at: 1765251177
 page_builder:
   -
     id: mixuk0yc
@@ -136,6 +136,14 @@ page_builder:
     author_name: 'Angela Hunter'
     author_designation: 'Chief Revenue Officer, Voyager'
     type: testimonial_single
+    enabled: true
+  -
+    id: miy0xun2
+    background_image: images/bg/enquirybg.jpg
+    subtitle: "Let's Grow Together"
+    heading: 'Join a wholesale partner that is built for performance, powered by people & committed to your success.'
+    description: 'Talk to our team today about how Voyager can help you grow your business and deliver more for your customers.'
+    type: enquiry_cta_form
     enabled: true
 ---
 ## Welcome to your brand new Statamic site!

@@ -4,14 +4,14 @@ blueprint: page
 title: 'Why Partner'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765242106
+updated_at: 1765242211
 template: default
 page_builder:
   -
     id: mixvf9m1
     background_image: images/benefits/banner.jpg
     layout: product
-    show_breadcrumb: false
+    show_breadcrumb: true
     heading: 'Why <span class="text-primary">Partner</span> with Voyager?'
     text: 'Partnership that performs. Build your business on Voyager’s carrier-grade network, with the flexibility, tools, and support to grow faster.'
     image: images/benefits/voyager-wholesale-why-partner.png

@@ -4,7 +4,7 @@ blueprint: page
 title: 'Our Solutions'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765244231
+updated_at: 1765244537
 page_builder:
   -
     id: mixwfw6g
@@ -79,5 +79,69 @@ page_builder:
         type: card
         enabled: true
     type: card_block
+    enabled: true
+  -
+    id: mixwuya7
+    subtitle: 'Partner Advantages'
+    title: 'Why Partners Choose Voyager'
+    description: 'Voyager’s solutions are backed by the people, tools, and expertise that set our partnerships apart. Discover how collaboration with Voyager helps you deliver more for your customers.'
+    layout: grid
+    show_rating: false
+    show_button: false
+    add_curve_to_top: false
+    button_text: 'Partnership Benefits'
+    button_url: /benefits
+    services:
+      -
+        id: mixww34k
+        icon: 'ph ph-user-focus'
+        title: 'Expert Support'
+        text: 'Direct access to architects, engineers, and partner managers who help you design, deploy, and grow with confidence.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixwwiqc
+        icon: 'ph-fill ph-laptop'
+        title: 'Partner Tools'
+        text: 'Self-service portals for provisioning, reporting, and diagnostics give you control and efficiency at every step.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixwx9s8
+        icon: 'ph-fill ph-path'
+        title: 'Commercial Flexibility'
+        text: 'Month-to-month terms and simple pricing make scaling easy and sustainable for every partner.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixwxr0x
+        icon: 'ph-fill ph-crosshair'
+        title: 'Recognised Reliability'
+        text: 'Award-winning performance and service trusted by partners and customers across New Zealand.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+    type: service_block
+    enabled: true
+  -
+    id: mixwymj2
+    subtitle: "Let's Grow Together"
+    heading: 'Join a wholesale partner that is built for performance, powered by people & committed to your success.'
+    description: 'Talk to our team today about how Voyager can help you grow your business and deliver more for your customers.'
+    type: enquiry_cta_form
+    enabled: true
+  -
+    id: mixwz6yr
+    testimonial_image: images/testimonials/seeby.jpg
+    rating_score: '4.7'
+    rating_text: 'Customers survey review score'
+    testimonial_text: 'Voyager’s Partner Program is about genuine collaboration. We give our partners direct access to our people, our tools and our expertise — everything they need to build and grow faster. This isn’t a one-size-fits-all model; it’s a partnership built on trust, responsiveness and shared success. We want to be the partner that helps partners win.'
+    author_image: images/seeby-profile.jpg
+    author_name: 'Seeby Woodhouse'
+    author_designation: 'CEO Voyager Internet'
+    type: testimonial_single
     enabled: true
 ---

@@ -4,7 +4,7 @@ blueprint: page
 title: 'Why Partner'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765251726
+updated_at: 1765251766
 template: default
 page_builder:
   -
@@ -94,7 +94,7 @@ page_builder:
     subtitle: 'Partner Success'
     title: "Solutions and Support Built for \LReal-World Success"
     layout: vertical
-    show_rating: false
+    show_rating: true
     show_button: true
     add_curve_to_top: false
     button_text: 'Our Solutions'

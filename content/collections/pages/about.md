@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765252301
+updated_at: 1765252355
 page_builder:
   -
     id: mixuk0yc
@@ -22,7 +22,7 @@ page_builder:
     id: mixume6d
     subtitle: 'ABOUT VOYAGER WHOLESALE'
     title: 'At Voyager, we believe great partnerships start with genuine connection.'
-    text: 'As New Zealand’s leading Tier 2 telco, we own and operate our national network and deliver high-performance solutions across cloud, communication, connectivity and cybersecurity. We’re local, responsive and easy to work with — trusted by partners who want more than a provider; they want a team that helps them win.'
+    text: 'As New Zealand’s leading Tier 2 telco, we deliver high-performance cloud, communication, connectivity, and cybersecurity on a network we own and operate. We are local, responsive, and trusted by partners who want a team that helps them win.'
     button_text: 'Voyager Wholesale'
     button_url: /
     title_position: left

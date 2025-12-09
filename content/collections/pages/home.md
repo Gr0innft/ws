@@ -74,33 +74,32 @@ page_builder:
     services:
       -
         id: miwauq78
-        icon: 'ph ph-books'
-        title: 'Quick solutions'
-        text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
+        icon: 'ph ph-devices'
+        title: 'Partner Portals'
+        text: 'Provision and manage broadband, hosting, and voice services with full transparency and control.'
         type: service
         enabled: true
-        link_text: "Let's Talk"
       -
         id: miwavkvu
-        icon: 'ph ph-user-focus'
-        title: 'Expert advice'
-        text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
+        icon: 'ph ph-graduation-cap'
+        title: 'Wholesale Academy'
+        text: 'Centralised training, how-to guides, and white-label content to empower your team.'
         type: service
         enabled: true
         link_text: "Let's Talk"
       -
         id: miwaw72x
-        icon: 'ph ph-strategy'
-        title: 'Strategic planning'
-        text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
+        icon: 'ph ph-user-focus'
+        title: 'Account Management'
+        text: 'Dedicated partner managers and escalation points for strategy, support, and growth.'
         type: service
         enabled: true
         link_text: "Let's Talk"
       -
         id: miwaxmfh
-        icon: 'ph ph-clock-clockwise'
-        title: 'Efficient operations'
-        text: 'Our consultancy excels in providing quick solutions tailored to your business challenges.'
+        icon: 'ph ph-cards'
+        title: 'Marketing Support'
+        text: 'Co-branded one-pagers, sales collateral, and partner events that strengthen your brand presence.'
         type: service
         enabled: true
         link_text: "Let's Talk"
@@ -517,7 +516,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765238312
+updated_at: 1765238866
 ---
 ## Welcome to your brand new Statamic site!
 

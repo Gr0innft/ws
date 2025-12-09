@@ -146,7 +146,7 @@ page_builder:
         text: 'Reliable wholesale voice and collaboration services that help you connect customers anywhere, anytime.'
         button_text: 'Communication Solutions'
         link_url: /solutions/communication
-        image: images/home/communication-card.jpg
+        image: images/home/voyager-wholesale-communication.jpg
         type: card
         enabled: true
       -

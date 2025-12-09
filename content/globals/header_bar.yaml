@@ -2,4 +2,4 @@ title: 'Header Bar'
 data:
   top_bar_text: 'Trusted partner in business excellence'
   link_text: 'Join us now'
-  link_url: '#scroll-cta'
+  link_url: /contact

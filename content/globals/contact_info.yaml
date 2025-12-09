@@ -1,9 +1,8 @@
-title: Contact Information
-blueprint: contact_info
+title: 'Contact Information'
 data:
   subtitle: 'CONTACT US'
   heading: 'Our contact information'
-  email: 'partner@voyager.nz'
+  email: partner@voyager.nz
   phone: '0800 472 786'
   phone_url: 'tel:0800472786'
   locations:
@@ -12,12 +11,13 @@ data:
       type: location
       name: Auckland
       address: '11B Piermark Drive, Rosedale, Auckland 0632'
+      enabled: true
     -
       id: location-2
       type: location
       name: Christchurch
       address: 'Unit 1, 2 Barry Hogan Place, Riccarton, Christchurch 8041'
+      enabled: true
   team_contact_title: "Let's discuss further to get better results"
   team_contact_description: "Our mission is to empower businesses of all sizes to thrive in an ever-changing marketplace. In today's dynamic business environment, the key to success lies in having the right partners and solutions."
-  hours: 'Mon - Friday : 8:00 - 18:00'
-
+  hours: 'Hours: Mon - Friday : 8:00 - 18:00'

@@ -156,7 +156,7 @@ page_builder:
         text: 'Nationwide backbone and broadband network delivering unmatched speed, diversity, and uptime.'
         button_text: 'Connectivity Solutions'
         link_url: /solutions/connectivity
-        image: images/solutions/connectivity-card.jpg
+        image: images/home/connectivity-card.jpg
         type: card
         enabled: true
       -

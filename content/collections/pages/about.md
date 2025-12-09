@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765240790
+updated_at: 1765241329
 page_builder:
   -
     id: mixuk0yc
@@ -51,6 +51,53 @@ page_builder:
     style: hero
     add_curve_to_top: false
     type: image_content_block
+    enabled: true
+  -
+    id: mixut4l6
+    subtitle: 'Voyager Story'
+    title: 'Built on partnership and progress'
+    show_rating: true
+    cards:
+      -
+        id: mixuud7t
+        icon: 'ph ph-sparkle'
+        label: 'Where It All Began'
+        text: 'Voyager was founded in 2010 by Seeby Woodhouse, a pioneer in New Zealand’s internet industry and the original founder of Orcon. A desire to return to the dynamic world of telecommunications — an industry he remains deeply passionate about — inspired the creation of Voyager.'
+        link_url: '#'
+        image: images/about/voyager-wholesale-beginning.jpg
+        type: card
+        enabled: true
+      -
+        id: mixuvzyn
+        icon: 'ph ph-resize'
+        label: 'Growth & Expansion'
+        text: 'Through a series of strategic acquisitions, including Affordable Domains, Net24 Group, Register Direct, 1st Domains, IVP Ltd, Digital Genus VoIP, Expired Domains, Conversant, Actrix Networks and IronStor, Voyager has significantly expanded its portfolio and deepened its technical expertise, enabling us to better serve partners across a wide range of needs.'
+        button_text: 'Learn More'
+        link_url: '#'
+        image: images/about/voyager-wholesale-growth.jpg
+        type: card
+        enabled: true
+      -
+        id: mixuwvnu
+        icon: 'ph ph-handshake'
+        label: 'Trusted by Partners'
+        text: 'What began as a small team with a big idea has grown into a nationally recognised telecommunications and internet provider, trusted by partners across New Zealand and Australia. Today, Voyager is proud to deliver high-quality services across Cloud, Communication, Connectivity and Cybersecurity.'
+        button_text: 'Learn More'
+        link_url: '#'
+        image: images/about/voyager-wholesale-trusted.jpg
+        type: card
+        enabled: true
+      -
+        id: mixuxn3j
+        icon: 'ph ph-ranking'
+        label: 'Leadership & Collaboration'
+        text: 'Under Seeby’s leadership, Voyager continues to build on what already sets it apart — strengthening what matters most to our partners: direct access to subject matter experts, a responsive executive team and a culture of genuine collaboration.'
+        button_text: 'Learn More'
+        link_url: '#'
+        image: images/about/voyager-wholesale-leadership.jpg
+        type: card
+        enabled: true
+    type: card_block
     enabled: true
 ---
 ## Welcome to your brand new Statamic site!

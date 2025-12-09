@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765251177
+updated_at: 1765251335
 page_builder:
   -
     id: mixuk0yc
@@ -15,7 +15,7 @@ page_builder:
     show_breadcrumb: true
     heading: 'What makes us <span class="text-primary">different?</span>'
     button_text: "Let's talk"
-    button_url: /contact
+    button_url: '#scroll-cta'
     type: hero_banner
     enabled: true
   -

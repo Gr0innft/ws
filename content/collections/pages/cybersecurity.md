@@ -4,7 +4,7 @@ blueprint: page
 title: Cybersecurity
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765249805
+updated_at: 1765250177
 page_builder:
   -
     id: mixzy2rq
@@ -77,14 +77,102 @@ page_builder:
     type: service_block
     enabled: true
   -
-    id: miy03l90
-    background_image: images/solutions/security/partner.png
-    layout: product
-    show_breadcrumb: false
+    id: miy06p9l
+    image: images/solutions/security/partner.png
+    subtitle: 'WHY PARTNER WITH VOYAGER'
     heading: 'Confidence Through Proven Security and Trusted Partnerships'
     text: 'Voyager’s security solutions are built on global partnerships and proven technology. With multi-layer protection, real-time monitoring, and a proactive approach to compliance, we give partners the confidence to grow securely.'
-    button_text: 'Partnership Benefits'
-    button_url: /benefits
-    type: hero_banner
+    link_url: /benefits
+    link_text: 'Partnership Benefits'
+    image_position: left
+    has_background: false
+    style: hero
+    add_curve_to_top: false
+    type: image_content_block
+    enabled: true
+  -
+    id: miy081u0
+    subtitle: 'COMMUNICATION CAPABILITIES'
+    title: 'Built for Visibility, Resilience, and Rapid Response'
+    layout: vertical
+    show_rating: true
+    show_button: false
+    add_curve_to_top: false
+    button_text: 'Learn More'
+    services:
+      -
+        id: miy08hbj
+        icon: 'ph-fill ph-users-three'
+        title: 'Managed Detection & Response (MDR)'
+        text: '24/7 threat monitoring and rapid response backed by global intelligence feeds.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: miy09985
+        icon: 'ph-fill ph-path'
+        title: "Security \LAwareness Training"
+        text: 'Interactive learning programs that empower teams to identify and avoid cyber threats.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: miy09obo
+        icon: 'ph-fill ph-security-camera'
+        title: "Automated\LRecovery"
+        text: 'Instant failover and recovery tools that reduce downtime and protect continuity.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: miy0a6nw
+        icon: 'ph-fill ph-map-pin-area'
+        title: "Performance \LMonitoring"
+        text: 'Real-time insights across firewalls, endpoints, and networks for proactive security management.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: miy0alh1
+        icon: 'ph-fill ph-phone-incoming'
+        title: "Compliance\LReady"
+        text: 'Solutions aligned with modern standards to support regulatory and client requirements.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: miy0b2i4
+        icon: 'ph-fill ph-invoice'
+        title: "Global-Local \LExpertise"
+        text: 'Backed by Fortinet, Acronis, and Cloudflare partnerships, supported by Voyager’s local security engineers.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+    type: service_block
+    enabled: true
+  -
+    id: miy0bmy8
+    background_image: images/bg/enquirybg.jpg
+    subtitle: "Let's Grow Together"
+    heading: 'Partner with Voyager for Security That Scales With You'
+    description: 'Join a partner committed to protecting your business and your customers. Voyager’s security experts and managed solutions give you the resilience and visibility to stay ahead of every threat.'
+    type: enquiry_cta_form
+    enabled: true
+  -
+    id: miy0cf7b
+    testimonial_image: images/testimonials/ange.jpg
+    rating_score: '4.7'
+    rating_text: 'Customers survey review score'
+    testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
+    author_image: images/angela-profile.jpg
+    author_name: 'Angela Hunter'
+    author_designation: 'Chief Revenue Officer, Voyager'
+    type: testimonial_single
     enabled: true
 ---

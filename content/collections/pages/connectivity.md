@@ -4,7 +4,7 @@ blueprint: page
 title: Connectivity
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765251977
+updated_at: 1765253553
 page_builder:
   -
     id: mixyfpls
@@ -142,7 +142,7 @@ page_builder:
   -
     id: mixze6af
     subtitle: "Let's Grow Together"
-    heading: 'Delivering Voice Solutions You Can Depend On.'
+    heading: 'Partner with Voyager for Network Performance That Delivers'
     description: 'Join a wholesale partner that’s built for performance and powered by people. Voyager’s expert voice engineers, flexible platforms, and dedicated support make it easy to deliver scalable, reliable communication services to your customers.'
     type: enquiry_cta_form
     enabled: true

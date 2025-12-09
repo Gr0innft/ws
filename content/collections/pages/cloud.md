@@ -4,7 +4,7 @@ blueprint: page
 title: Cloud
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765251962
+updated_at: 1765253464
 page_builder:
   -
     id: mixxoyce
@@ -184,7 +184,7 @@ page_builder:
     id: mixyd8rs
     background_image: images/bg/enquirybg.jpg
     subtitle: "Let's Grow Together"
-    heading: 'Partner with Voyager, build on a Cloud You Can Trust.'
+    heading: 'Partner with Voyager, Build on a Cloud You Can Trust.'
     description: 'Join a wholesale partner built for performance and reliability. Voyager’s high-availability cloud platform, expert engineers, and flexible infrastructure make it easy to deploy scalable, secure hosting solutions your customers can trust.'
     type: enquiry_cta_form
     enabled: true

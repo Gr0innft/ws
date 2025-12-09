@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765253128
+updated_at: 1765253183
 page_builder:
   -
     id: mixuk0yc
@@ -104,8 +104,8 @@ page_builder:
     id: mixv6vg1
     subtitle: 'Meet our team'
     heading: 'Our team of experts'
-    description: 'At Voyager, we know that strong relationships and tailored support is the foundation of great partnerships. We have a team of dedicated people working hard to make it all happen, and that are committed to knowing you and what you need to succeed.'
-    button_text: More
+    description: "Behind our wholesalers, there’s a team of dedicated experts working hard to make it all happen. With a collective experience of well over 50 years in telco & IT, they're committed to knowing you and what you need to succeed and scale"
+    button_text: 'Learn More'
     button_url: /team
     team_members:
       - 8a477c74-174a-4224-b3d2-6540fc3932af

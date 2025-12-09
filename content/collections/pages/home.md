@@ -166,7 +166,7 @@ page_builder:
         text: 'Managed protection powered by Fortinet, Acronis, and Cloudflare — safeguarding networks and data.'
         button_text: 'Cybersecurity Solutions'
         link_url: /solutions/cybersecurity
-        image: images/home/cybersecurity-card.jpg
+        image: images/home/voyager-wholesale-cybersecurity.jpg
         type: card
         enabled: true
     type: card_block

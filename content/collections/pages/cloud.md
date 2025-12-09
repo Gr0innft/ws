@@ -4,7 +4,7 @@ blueprint: page
 title: Cloud
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765245819
+updated_at: 1765246535
 page_builder:
   -
     id: mixxoyce
@@ -17,5 +17,87 @@ page_builder:
     button_text: "Let's talk"
     button_url: '#scroll-cta'
     type: hero_banner
+    enabled: true
+  -
+    id: mixxsjz8
+    image: images/solutions/cloud/scale.jpg
+    subtitle: 'Virtual Data Centre'
+    heading: 'Flexible, High-Performance Cloud Built for Scale'
+    text: 'Voyager’s Cloud Solutions give partners the agility of cloud with the performance and reliability of dedicated infrastructure. Built on Virtuozzo Hybrid Infrastructure (OpenStack-based), our platform delivers enterprise-grade capability for service providers and SMEs.'
+    link_url: '#scroll-cta'
+    link_text: 'Learn More'
+    image_position: left
+    has_background: true
+    style: simple
+    add_curve_to_top: true
+    type: image_content_block
+    enabled: true
+  -
+    id: mixxttyp
+    subtitle: 'Transformative solution'
+    title: 'Get our comprehensive cloud service offerings'
+    layout: slider
+    show_rating: false
+    show_button: false
+    add_curve_to_top: false
+    button_text: 'Learn More'
+    services:
+      -
+        id: mixxufp2
+        icon: 'ph-fill ph-cloud-check'
+        title: 'High Availability'
+        text: 'Hyperconverged clusters ensure seamless failover and uptime, with workloads automatically balanced across hosts.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixxv9a0
+        icon: 'ph-fill ph-hard-drives'
+        title: 'Flexible Storage Options'
+        text: 'Choose from SSD, NVMe, or cold storage, scaling easily as your needs grow.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixxvsul
+        icon: 'ph-fill ph-share-network'
+        title: 'Software Defined Networking'
+        text: 'Create and manage VLANs, routers, VPNs, and load balancers with full self-service control.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixxwb0k
+        icon: 'ph-fill ph-gear-fine'
+        title: 'Automation Ready'
+        text: 'Full OpenStack API compatibility for Terraform, Ansible, and other orchestration tools.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixxwztn
+        icon: 'ph-fill ph-chart-donut'
+        title: 'Monitoring and Insight'
+        text: 'Real-time metrics and history simplify troubleshooting and performance tuning.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixxxow1
+        icon: 'ph-fill ph-database'
+        title: 'Backup and Recovery'
+        text: 'Daily automated backups with geographic redundancy and fast restoration.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixy5jb9
+        icon: 'ph-fill ph-microsoft-teams-logo'
+        title: 'Simplified Licensing'
+        text: 'As a Microsoft SPLA partner, Voyager offers predictable, per-server licensing for Windows environments.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+    type: service_block
     enabled: true
 ---

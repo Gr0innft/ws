@@ -6,22 +6,8 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765241517
+updated_at: 1765241767
 page_builder:
-  -
-    id: mixv6vg1
-    subtitle: 'Meet our team'
-    heading: 'Expert team members'
-    description: 'At Voyager, we know that strong relationships and tailored support is the foundation of great partnerships. We have a team of dedicated people working hard to make it all happen, and that are committed to knowing you and what you need to succeed.'
-    button_text: 'More members'
-    button_url: /team
-    team_members:
-      - 8a477c74-174a-4224-b3d2-6540fc3932af
-      - b9b0ce8e-f3bf-4cfc-87b5-d2d106284a70
-      - 537a05a8-bde0-412d-b7cf-5cb04ed573e8
-      - 8db6f86b-3147-491e-bb75-37d0501c3de9
-    type: team_members_block
-    enabled: true
   -
     id: mixuk0yc
     background_image: images/banners/download.webp
@@ -113,6 +99,43 @@ page_builder:
         type: card
         enabled: true
     type: card_block
+    enabled: true
+  -
+    id: mixv6vg1
+    subtitle: 'Meet our team'
+    heading: 'Expert team members'
+    description: 'At Voyager, we know that strong relationships and tailored support is the foundation of great partnerships. We have a team of dedicated people working hard to make it all happen, and that are committed to knowing you and what you need to succeed.'
+    button_text: 'More members'
+    button_url: /team
+    team_members:
+      - 8a477c74-174a-4224-b3d2-6540fc3932af
+      - b9b0ce8e-f3bf-4cfc-87b5-d2d106284a70
+      - 537a05a8-bde0-412d-b7cf-5cb04ed573e8
+      - 8db6f86b-3147-491e-bb75-37d0501c3de9
+    type: team_members_block
+    enabled: true
+  -
+    id: mixv8us5
+    subtitle: 'PARTNER SUCCESS'
+    title: 'When Our Partners Win, We Win'
+    testimonial_image: images/testimonials/ange.jpg
+    rating_score: '4.7'
+    rating_text: 'Customers survey review score'
+    testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
+    author_image: images/angela-profile.jpg
+    author_name: 'Angela Hunter'
+    author_designation: 'Chief Revenue Officer, Voyager'
+    type: testimonial_single
+    enabled: true
+  -
+    id: mixvbxtx
+    image: images/benefits/portals.jpg
+    image_position: left
+    subtitle: 'RECOGNITION & TRUST'
+    heading: 'Proudly recognised by our partners and industry'
+    text: 'We’re proud to have been recognised with four consecutive NZ Compare People’s Choice Awards, a reflection of our investment in infrastructure, service and support. Our latest partner survey returned a great satisfaction score, demonstrating the trust and loyalty of our partner community.'
+    button_text: 'Learn More'
+    type: dark_image_content_block
     enabled: true
 ---
 ## Welcome to your brand new Statamic site!

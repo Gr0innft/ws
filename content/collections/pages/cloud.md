@@ -4,7 +4,7 @@ blueprint: page
 title: Cloud
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765246535
+updated_at: 1765246883
 page_builder:
   -
     id: mixxoyce
@@ -99,5 +99,104 @@ page_builder:
         type: service
         enabled: true
     type: service_block
+    enabled: true
+  -
+    id: mixy87nb
+    image: images/solutions/cloud/cloud.png
+    subtitle: 'Colocation Services'
+    heading: 'Secure, Connected, and Scalable Hosting'
+    text: 'Voyager’s Colocation Services provide a secure, high-performance environment for mission-critical infrastructure. From single devices to full racks, our purpose-built Albany Data Centre and nationwide partner facilities offer enterprise-grade uptime, flexibility, and expert local support.'
+    link_url: /benefits
+    link_text: 'Partnership Benefits'
+    image_position: left
+    has_background: false
+    style: hero
+    add_curve_to_top: false
+    type: image_content_block
+    enabled: true
+  -
+    id: mixy9g2q
+    subtitle: 'Colocation Capabilities'
+    title: 'Purpose-Built Infrastructure with Nationwide Reach'
+    layout: vertical
+    show_rating: true
+    show_button: false
+    add_curve_to_top: false
+    button_text: 'Learn More'
+    services:
+      -
+        id: mixya3cg
+        icon: 'ph-fill ph-fingerprint'
+        title: '24/7 Security'
+        text: "In today's dynamic business environment, the key to success lies strategics our planning and operational business.Enterprise-grade uptime with dual mains feeds, UPS backup, and on-site generators."
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixyao11
+        icon: 'ph-fill ph-tree-structure'
+        title: 'Carrier-Neutral Design'
+        text: 'N+1 cooling, environmental monitoring, and 24/7 CCTV and access control.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixyb2cd
+        icon: 'ph-fill ph-map-pin-area'
+        title: 'Local Expertise'
+        text: "Carrier-neutral with direct integration to Voyager's national IP backbone."
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixybmrn
+        icon: 'ph-fill ph-upload'
+        title: 'Enterprise Uptime'
+        text: 'On-site engineers and smart hands services for fast, local support.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixyc5f2
+        icon: 'ph-fill ph-map-trifold'
+        title: 'Geographic Redundancy'
+        text: 'Geographic redundancy through partner sites in Auckland, Wellington, and Christchurch.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixycsdj
+        icon: 'ph-fill ph-invoice'
+        title: 'Simplified Billing & Reporting'
+        text: 'Detailed billing files and summary reports simplify customer on-billing.'
+        link_url: '#scroll-cta'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+    type: service_block
+    enabled: true
+  -
+    id: mixyd8rs
+    background_image: images/bg/enquirybg.jpg
+    subtitle: "Let's Grow Together"
+    heading: 'Partner with Voyager, build on a Cloud You Can Trust.'
+    description: 'Join a wholesale partner built for performance and reliability. Voyager’s high-availability cloud platform, expert engineers, and flexible infrastructure make it easy to deploy scalable, secure hosting solutions your customers can trust.'
+    type: enquiry_cta_form
+    enabled: true
+  -
+    id: mixye6nt
+    testimonial_image: images/testimonials/seeby.jpg
+    rating_score: '4.7'
+    rating_text: 'Customers survey review score'
+    testimonial_text: 'Voyager’s Partner Program is about genuine collaboration. We give our partners direct access to our people, our tools and our expertise — everything they need to build and grow faster. This isn’t a one-size-fits-all model; it’s a partnership built on trust, responsiveness and shared success. We want to be the partner that helps partners win.'
+    author_image: images/seeby-profile.jpg
+    author_name: 'Seeby Woodhouse'
+    author_designation: 'CEO Voyager Internet'
+    type: testimonial_single
     enabled: true
 ---

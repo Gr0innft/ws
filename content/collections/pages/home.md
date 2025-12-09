@@ -136,7 +136,7 @@ page_builder:
         text: 'High-performance virtual infrastructure and colocation options designed for reliability, flexibility, and scale.'
         button_text: 'Cloud Solutions'
         link_url: /solutions/cloud
-        image: images/home/cloud-card.jpg
+        image: images/home/voyager-wholesale-cloud.jpg
         type: card
         enabled: true
       -

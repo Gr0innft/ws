@@ -4,7 +4,7 @@ blueprint: page
 title: 'Why Partner'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765242749
+updated_at: 1765242872
 template: default
 page_builder:
   -
@@ -45,4 +45,37 @@ page_builder:
     button_text: 'Learn More'
     type: service_block
     enabled: true
+    services:
+      -
+        id: mixvyog1
+        icon: 'ph ph-cell-tower'
+        title: 'Reliable Network'
+        text: 'Carrier-grade network across 17+ data centres and dual NZ routes for performance and uptime.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixvzmhe
+        icon: 'ph ph-fingerprint'
+        title: 'Security & Resilience'
+        text: 'Multi-100 Gbps capacity, fraud detection, and geo-redundant voice systems keep every connection protected.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixw00sd
+        icon: 'ph ph-graduation-cap'
+        title: 'Expert Access'
+        text: 'Direct access to architects, engineers, and partner managers when you need real help.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixw0ghc
+        icon: 'ph ph-video-conference'
+        title: 'Partner Management'
+        text: 'Dedicated managers and executive visibility ensure collaboration, growth, & continuous service improvement.'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
 ---

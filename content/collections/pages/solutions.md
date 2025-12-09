@@ -4,7 +4,7 @@ blueprint: page
 title: 'Our Solutions'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765244734
+updated_at: 1765251881
 page_builder:
   -
     id: mixwfw6g
@@ -87,7 +87,7 @@ page_builder:
     description: 'Voyager’s solutions are backed by the people, tools, and expertise that set our partnerships apart. Discover how collaboration with Voyager helps you deliver more for your customers.'
     layout: grid
     show_rating: false
-    show_button: false
+    show_button: true
     add_curve_to_top: false
     button_text: 'Partnership Benefits'
     button_url: /benefits

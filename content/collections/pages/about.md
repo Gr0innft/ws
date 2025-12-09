@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765240480
+updated_at: 1765240538
 page_builder:
   -
     id: mixuk0yc
@@ -17,6 +17,17 @@ page_builder:
     button_text: "Let's talk"
     button_url: /contact
     type: hero_banner
+    enabled: true
+  -
+    id: mixume6d
+    subtitle: 'ABOUT VOYAGER WHOLESALE'
+    title: 'At Voyager, we believe great partnerships start with genuine connection.'
+    text: 'As New Zealand’s leading Tier 2 telco, we own and operate our national network and deliver high-performance solutions across cloud, communication, connectivity and cybersecurity. We’re local, responsive and easy to work with — trusted by partners who want more than a provider; they want a team that helps them win.'
+    button_text: 'Partnership Benefits'
+    button_url: /benefits
+    title_position: left
+    has_background: false
+    type: text_content_block
     enabled: true
 ---
 ## Welcome to your brand new Statamic site!

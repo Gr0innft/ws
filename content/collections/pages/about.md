@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765252862
+updated_at: 1765253128
 page_builder:
   -
     id: mixuk0yc
@@ -103,7 +103,7 @@ page_builder:
   -
     id: mixv6vg1
     subtitle: 'Meet our team'
-    heading: 'Expert team members'
+    heading: 'Our team of experts'
     description: 'At Voyager, we know that strong relationships and tailored support is the foundation of great partnerships. We have a team of dedicated people working hard to make it all happen, and that are committed to knowing you and what you need to succeed.'
     button_text: More
     button_url: /team

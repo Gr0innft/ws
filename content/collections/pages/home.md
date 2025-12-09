@@ -110,6 +110,20 @@ page_builder:
     button_url: /solutions
     add_curve_to_top: true
   -
+    id: mis1zpeq
+    image: images/home/home1.png
+    subtitle: '// Why Partner with Voyager'
+    heading: 'Your Partner in Performance and Growth'
+    text: 'Voyager partners with service providers, MSPs, and technology resellers to help them scale faster and serve customers better. With direct access to our engineers, product owners, and partner managers, you get the tools, flexibility, and support to grow with confidence.'
+    link_url: /benefits
+    link_text: 'Partnership Benefits'
+    image_position: left
+    has_background: true
+    style: hero
+    type: image_content_block
+    enabled: true
+    add_curve_to_top: true
+  -
     id: mis6qgkh
     subtitle: '// WHAT WE DO'
     title: 'Smart Solutions That Power Connection'
@@ -264,20 +278,6 @@ page_builder:
     button_text: "Let's talk"
     button_url: '#'
     show_scroll: false
-  -
-    id: mis1zpeq
-    image: images/home/home1.png
-    subtitle: '// Why Partner with Voyager'
-    heading: 'Your Partner in Performance and Growth'
-    text: 'Voyager partners with service providers, MSPs, and technology resellers to help them scale faster and serve customers better. With direct access to our engineers, product owners, and partner managers, you get the tools, flexibility, and support to grow with confidence.'
-    link_url: /benefits
-    link_text: 'Partnership Benefits'
-    image_position: left
-    has_background: true
-    style: hero
-    type: image_content_block
-    enabled: true
-    add_curve_to_top: true
   -
     id: mis297u2
     image: images/home/home1.png
@@ -517,7 +517,7 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765238919
+updated_at: 1765239011
 ---
 ## Welcome to your brand new Statamic site!
 

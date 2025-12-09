@@ -146,7 +146,7 @@ page_builder:
         text: 'Reliable wholesale voice and collaboration services that help you connect customers anywhere, anytime.'
         button_text: 'Communication Solutions'
         link_url: /solutions/communication
-        image: images/solutions/communication-card.jpg
+        image: images/home/communication-card.jpg
         type: card
         enabled: true
       -

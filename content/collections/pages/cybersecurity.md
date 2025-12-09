@@ -4,7 +4,7 @@ blueprint: page
 title: Cybersecurity
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765251104
+updated_at: 1765252019
 page_builder:
   -
     id: mixzy2rq
@@ -14,8 +14,8 @@ page_builder:
     heading: 'Security That Performs at <span class="text-primary">Every Layer</span>'
     text: 'Voyager delivers enterprise-grade protection that scales — combining global technology, local expertise, and real-time threat intelligence.'
     image: images/solutions/security/hero.png
-    button_text: "Let's talk"
-    button_url: '#scroll-cta'
+    button_text: 'Learn More'
+    button_url: '#scroll-hero'
     type: hero_banner
     enabled: true
   -

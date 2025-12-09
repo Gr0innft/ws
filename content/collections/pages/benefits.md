@@ -4,7 +4,7 @@ blueprint: page
 title: 'Why Partner'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765242872
+updated_at: 1765243359
 template: default
 page_builder:
   -
@@ -78,4 +78,123 @@ page_builder:
         link_text: "Let's Talk"
         type: service
         enabled: true
+  -
+    id: mixw1j0z
+    image: images/benefits/portals.jpg
+    image_position: left
+    subtitle: 'Tools that remove friction'
+    heading: 'Do more, faster with smart self service portals'
+    text: 'We put the control and visibility in your hands with Voyager’s partner portals. Easily order, manage, and support broadband, voice, hosting, iSMS, and security solutions - all backed by detailed billing files and reports that make on-billing your customers effortless.'
+    button_text: 'Our portals'
+    button_url: '#'
+    type: dark_image_content_block
+    enabled: true
+  -
+    id: mixw4u6a
+    subtitle: 'Partner Success'
+    title: "Solutions and Support Built for \LReal-World Success"
+    layout: vertical
+    show_rating: true
+    show_button: false
+    add_curve_to_top: false
+    button_text: 'Learn More'
+    services:
+      -
+        id: mixw5it6
+        icon: 'ph-fill ph-line-segments'
+        title: 'Commercial Flexibility'
+        text: 'Our month-to-month model is designed for real-world scalability. Account-level IP allocations and clear pricing make it simple to expand, adapt, and deliver services cost-effectively without the risk of lock-ins or unnecessary contractual complexity.'
+        link_url: '#'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixw6b6o
+        icon: 'ph-fill ph-handshake'
+        title: 'Partner Enablement'
+        text: 'The Voyager Wholesale Academy provides training, how-to guides, and white-label one pagers that help your team sell, deploy, and support effectively. Build confidence across your business with easy-to-access resources that drive results and ongoing performance.'
+        link_url: '#'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixw6r3m
+        icon: 'ph-fill ph-certificate'
+        title: 'Recognised Reliability'
+        text: 'Voyager has earned four consecutive NZ Compare People’s Choice Awards and recognition from Fortinet and Acronis — proving our long-term commitment to infrastructure, reliability, and service excellence that partners and customers can count on every day.'
+        link_url: '#'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixw7eyk
+        icon: 'ph-fill ph-buildings'
+        title: 'Enterprise Uptime'
+        text: 'On-site engineers and smart hands services for fast, local support.'
+        link_url: '#'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixw7vb3
+        icon: 'ph-fill ph-coins'
+        title: 'Partner Rewards'
+        text: 'We celebrate partner success through incentive programs, events, and recognition that strengthen our wholesale community. High-performing partners are rewarded for growth, innovation, and collaboration that deliver meaningful results across the Voyager network.'
+        link_url: '#'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+      -
+        id: mixw8ect
+        icon: 'ph-fill ph-house-line'
+        title: 'Kiwi Owned'
+        text: 'Voyager is 100 percent New Zealand-owned, investing locally in infrastructure, talent, and innovation. We believe in empowering Kiwi businesses to thrive, keeping expertise and accountability close to home while building technology that drives national growth.'
+        link_url: '#'
+        link_text: "Let's Talk"
+        type: service
+        enabled: true
+    type: service_block
+    enabled: true
+  -
+    id: mixw8zn4
+    background_image: images/bg/enquirybg.jpg
+    subtitle: "Let's Grow Together"
+    heading: 'Join a wholesale partner that is built for performance, powered by people & committed to your success.'
+    description: 'Talk to our team today about how Voyager can help you grow your business and deliver more for your customers.'
+    type: enquiry_cta_form
+    enabled: true
+  -
+    id: mixw9ycs
+    subtitle: Testimonials
+    title: 'Listening to our clients'
+    testimonials:
+      -
+        id: mixwa81q
+        testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
+        author_image: images/seeby-profile.jpg
+        author_name: 'John Doe'
+        author_designation: 'Business Owner'
+        rating: '5'
+        type: testimonial
+        enabled: true
+      -
+        id: mixwbbk2
+        testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
+        author_image: images/seeby-profile.jpg
+        author_name: 'John Doe'
+        author_designation: 'Business Owner'
+        rating: '5'
+        type: testimonial
+        enabled: true
+      -
+        id: mixwb7v5
+        testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
+        author_image: images/seeby-profile.jpg
+        author_name: 'John Doe'
+        author_designation: 'Business Owner'
+        rating: '5'
+        type: testimonial
+        enabled: true
+    type: testimonial_slider
+    enabled: true
 ---

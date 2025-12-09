@@ -4,7 +4,7 @@ blueprint: page
 title: Communication
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765249430
+updated_at: 1765251992
 page_builder:
   -
     id: mixzg7va
@@ -14,8 +14,8 @@ page_builder:
     heading: 'Voice Infrastructure <span class="text-primary">Built for Reliability</span> and Scale'
     text: "Empower your customers with reliable, scalable voice solutions and nationwide connectivity — backed by Voyager's carrier-grade infrastructure and expert support."
     image: images/solutions/communication/hero.png
-    button_text: "Let's talk"
-    button_url: '#scroll-cta'
+    button_text: 'Learn More'
+    button_url: '#scroll-hero'
     type: hero_banner
     enabled: true
   -

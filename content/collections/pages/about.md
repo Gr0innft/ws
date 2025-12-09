@@ -6,8 +6,22 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765241440
+updated_at: 1765241517
 page_builder:
+  -
+    id: mixv6vg1
+    subtitle: 'Meet our team'
+    heading: 'Expert team members'
+    description: 'At Voyager, we know that strong relationships and tailored support is the foundation of great partnerships. We have a team of dedicated people working hard to make it all happen, and that are committed to knowing you and what you need to succeed.'
+    button_text: 'More members'
+    button_url: /team
+    team_members:
+      - 8a477c74-174a-4224-b3d2-6540fc3932af
+      - b9b0ce8e-f3bf-4cfc-87b5-d2d106284a70
+      - 537a05a8-bde0-412d-b7cf-5cb04ed573e8
+      - 8db6f86b-3147-491e-bb75-37d0501c3de9
+    type: team_members_block
+    enabled: true
   -
     id: mixuk0yc
     background_image: images/banners/download.webp
@@ -87,6 +101,7 @@ page_builder:
         image: images/about/voyager-wholesale-trusted.jpg
         type: card
         enabled: true
+        button_text: 'Learn More'
       -
         id: mixuxn3j
         icon: 'ph ph-ranking'

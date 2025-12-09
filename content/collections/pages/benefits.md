@@ -4,7 +4,7 @@ blueprint: page
 title: 'Why Partner'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765243359
+updated_at: 1765243455
 template: default
 page_builder:
   -

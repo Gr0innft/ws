@@ -4,7 +4,7 @@ blueprint: page
 title: 'Our Solutions'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765244537
+updated_at: 1765244698
 page_builder:
   -
     id: mixwfw6g
@@ -14,7 +14,7 @@ page_builder:
     heading: 'Solutions Built to <span class="text-primary">Power Partner</span> Success'
     text: 'Voyager’s cloud, communication, connectivity, and cybersecurity platforms work together to deliver the speed, control, and reliability partners need to grow.'
     button_text: 'Learn More'
-    button_url: '#scroll-hero'
+    button_url: '#scroll-down'
     type: hero_banner
     enabled: true
     image: images/solutions/voyager-wholesale-solutions-overview.png

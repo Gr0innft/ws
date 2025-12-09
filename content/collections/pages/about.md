@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765240538
+updated_at: 1765240680
 page_builder:
   -
     id: mixuk0yc
@@ -28,6 +28,20 @@ page_builder:
     title_position: left
     has_background: false
     type: text_content_block
+    enabled: true
+  -
+    id: mixunry5
+    image: images/home/partnership-benefits.png
+    subtitle: 'Our Vision'
+    heading: 'To be the partner of choice for New Zealand businesses.'
+    text: 'To provide innovative solutions that enable our customers to communicate and connect like never before, delivering exceptional value through unparalleled customer experience.'
+    link_url: /benefits
+    link_text: 'Partnership Benefits'
+    image_position: left
+    has_background: true
+    style: hero
+    add_curve_to_top: false
+    type: image_content_block
     enabled: true
 ---
 ## Welcome to your brand new Statamic site!

@@ -4,7 +4,7 @@ blueprint: page
 title: Connectivity
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765253553
+updated_at: 1765253593
 page_builder:
   -
     id: mixyfpls

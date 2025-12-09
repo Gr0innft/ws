@@ -4,7 +4,7 @@ blueprint: page
 title: 'Why Partner'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765245465
+updated_at: 1765251726
 template: default
 page_builder:
   -
@@ -94,10 +94,10 @@ page_builder:
     subtitle: 'Partner Success'
     title: "Solutions and Support Built for \LReal-World Success"
     layout: vertical
-    show_rating: true
-    show_button: false
+    show_rating: false
+    show_button: true
     add_curve_to_top: false
-    button_text: 'Learn More'
+    button_text: 'Our Solutions'
     services:
       -
         id: mixw5it6
@@ -155,6 +155,7 @@ page_builder:
         enabled: true
     type: service_block
     enabled: true
+    button_url: /solutions
   -
     id: mixw8zn4
     background_image: images/bg/enquirybg.jpg

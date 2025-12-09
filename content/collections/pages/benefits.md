@@ -4,7 +4,7 @@ blueprint: page
 title: 'Why Partner'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765243455
+updated_at: 1765243513
 template: default
 page_builder:
   -
@@ -25,8 +25,8 @@ page_builder:
     subtitle: 'Build your own brand'
     heading: 'Create Your Own Custom Offerings'
     text: 'Use Voyager’s reliable and high-quality network as your foundation, then add your own value, branding, and support. You stay in control of your customer relationships while we deliver the performance, scale, and resilience behind them.'
-    link_url: /solutions
-    link_text: 'Our Solutions'
+    link_url: /about
+    link_text: 'About us'
     image_position: left
     has_background: true
     style: simple

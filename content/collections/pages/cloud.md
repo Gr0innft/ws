@@ -4,7 +4,7 @@ blueprint: page
 title: Cloud
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765253464
+updated_at: 1765253618
 page_builder:
   -
     id: mixxoyce
@@ -35,7 +35,7 @@ page_builder:
   -
     id: mixxttyp
     subtitle: 'Transformative solution'
-    title: 'Get our comprehensive cloud service offerings'
+    title: 'Our Comprehensive Cloud Offering'
     layout: slider
     show_rating: false
     show_button: false

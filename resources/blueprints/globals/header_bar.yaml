@@ -25,3 +25,20 @@ tabs:
               display: 'Link URL'
               input_type: url
               default: '#'
+      -
+        display: 'CTA Button'
+        fields:
+          -
+            handle: cta_button_text
+            field:
+              type: text
+              display: 'Button Text'
+              default: "Let's Talk"
+              instructions: 'Text for the CTA button in the main navigation'
+          -
+            handle: cta_button_url
+            field:
+              type: text
+              display: 'Button URL'
+              default: '/contact'
+              instructions: 'URL for the CTA button in the main navigation'

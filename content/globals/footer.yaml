@@ -1,7 +1,6 @@
 title: Footer
-blueprint: footer
 data:
-  description: 'At Voyager, we are broadband and communication specialists. Proudly New Zealand owned, we keep Kiwis online at home and at work with our supersonic broadband speeds.'
+  description: 'Voyager is a partner-focused New Zealand telco delivering carrier-grade cloud, communication, connectivity, and cybersecurity services. We help wholesalers grow their business with flexible solutions, expert support, and a network built for performance.'
   solutions_menu: solutions
   about_menu: about
   copyright_text: 'Voyager Wholesale'

@@ -6,14 +6,14 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765240477
+updated_at: 1765240480
 page_builder:
   -
     id: mixuk0yc
     background_image: images/banners/download.webp
     layout: centered
     show_breadcrumb: true
-    heading: 'What makes us <span. class="-text-primary">different?</span>'
+    heading: 'What makes us <span. class="text-primary">different?</span>'
     button_text: "Let's talk"
     button_url: /contact
     type: hero_banner

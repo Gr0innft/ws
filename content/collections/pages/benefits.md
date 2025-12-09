@@ -4,7 +4,7 @@ blueprint: page
 title: 'Why Partner'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765243513
+updated_at: 1765245465
 template: default
 page_builder:
   -
@@ -104,7 +104,7 @@ page_builder:
         icon: 'ph-fill ph-line-segments'
         title: 'Commercial Flexibility'
         text: 'Our month-to-month model is designed for real-world scalability. Account-level IP allocations and clear pricing make it simple to expand, adapt, and deliver services cost-effectively without the risk of lock-ins or unnecessary contractual complexity.'
-        link_url: '#'
+        link_url: '#scroll-cta'
         link_text: "Let's Talk"
         type: service
         enabled: true
@@ -113,7 +113,7 @@ page_builder:
         icon: 'ph-fill ph-handshake'
         title: 'Partner Enablement'
         text: 'The Voyager Wholesale Academy provides training, how-to guides, and white-label one pagers that help your team sell, deploy, and support effectively. Build confidence across your business with easy-to-access resources that drive results and ongoing performance.'
-        link_url: '#'
+        link_url: '#scroll-cta'
         link_text: "Let's Talk"
         type: service
         enabled: true
@@ -122,7 +122,7 @@ page_builder:
         icon: 'ph-fill ph-certificate'
         title: 'Recognised Reliability'
         text: 'Voyager has earned four consecutive NZ Compare People’s Choice Awards and recognition from Fortinet and Acronis — proving our long-term commitment to infrastructure, reliability, and service excellence that partners and customers can count on every day.'
-        link_url: '#'
+        link_url: '#scroll-cta'
         link_text: "Let's Talk"
         type: service
         enabled: true
@@ -131,7 +131,7 @@ page_builder:
         icon: 'ph-fill ph-buildings'
         title: 'Enterprise Uptime'
         text: 'On-site engineers and smart hands services for fast, local support.'
-        link_url: '#'
+        link_url: '#scroll-cta'
         link_text: "Let's Talk"
         type: service
         enabled: true
@@ -140,7 +140,7 @@ page_builder:
         icon: 'ph-fill ph-coins'
         title: 'Partner Rewards'
         text: 'We celebrate partner success through incentive programs, events, and recognition that strengthen our wholesale community. High-performing partners are rewarded for growth, innovation, and collaboration that deliver meaningful results across the Voyager network.'
-        link_url: '#'
+        link_url: '#scroll-cta'
         link_text: "Let's Talk"
         type: service
         enabled: true
@@ -149,7 +149,7 @@ page_builder:
         icon: 'ph-fill ph-house-line'
         title: 'Kiwi Owned'
         text: 'Voyager is 100 percent New Zealand-owned, investing locally in infrastructure, talent, and innovation. We believe in empowering Kiwi businesses to thrive, keeping expertise and accountability close to home while building technology that drives national growth.'
-        link_url: '#'
+        link_url: '#scroll-cta'
         link_text: "Let's Talk"
         type: service
         enabled: true

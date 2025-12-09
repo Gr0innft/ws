@@ -4,7 +4,7 @@ blueprint: page
 title: 'Our Solutions'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765243705
+updated_at: 1765243763
 page_builder:
   -
     id: mixwfw6g
@@ -17,5 +17,5 @@ page_builder:
     button_url: '#scroll-hero'
     type: hero_banner
     enabled: true
-    image: images/solutions/voyager-wholesale-solutions-overview.jpg
+    image: images/solutions/voyager-wholesale-solutions-overview.png
 ---

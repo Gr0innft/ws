@@ -801,3 +801,79 @@ fields:
                 type: text
                 display: 'Button URL'
                 instructions: 'Button URL (defaults to global phone URL if not set)'
+        service_grid_block:
+          display: 'Service Grid Block (3 Columns)'
+          collapsed: true
+          icon: layout-grid
+          fields:
+            -
+              handle: subtitle
+              field:
+                type: text
+                display: Subtitle
+            -
+              handle: title
+              field:
+                type: text
+                display: Title
+            -
+              handle: description
+              field:
+                type: textarea
+                display: Description
+            -
+              handle: show_rating
+              field:
+                type: toggle
+                display: 'Show Rating'
+                default: false
+                instructions: 'Show customer rating in the section header'
+            -
+              handle: button_text
+              field:
+                type: text
+                display: 'Button Text'
+                default: 'Learn More'
+            -
+              handle: button_url
+              field:
+                type: text
+                display: 'Button URL'
+            -
+              handle: services
+              field:
+                type: replicator
+                display: Services
+                collapsed: true
+                instructions: 'Add service items (displays 3 across on large screens)'
+                sets:
+                  service:
+                    display: Service
+                    collapsed: true
+                    fields:
+                      -
+                        handle: icon
+                        field:
+                          type: text
+                          display: 'Icon Class'
+                          instructions: 'Phosphor icon class (e.g., ph ph-cloud-check or ph-fill ph-cloud-check)'
+                          validate:
+                            - required
+                      -
+                        handle: title
+                        field:
+                          type: text
+                          display: Title
+                          validate:
+                            - required
+                      -
+                        handle: text
+                        field:
+                          type: textarea
+                          display: Description
+                      -
+                        handle: link_url
+                        field:
+                          type: text
+                          display: 'Link URL'
+                          instructions: 'Optional link for the service item'

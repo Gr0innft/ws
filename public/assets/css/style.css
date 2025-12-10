@@ -3774,8 +3774,6 @@ body {
 /* About Section - Our Company Style */
 
 .tj-about-section {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   padding-top: 140px;
   padding-bottom: 140px;
   position: relative;

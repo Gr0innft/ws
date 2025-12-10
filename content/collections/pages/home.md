@@ -65,6 +65,63 @@ page_builder:
     type: hero_slider
     enabled: true
   -
+    id: miz8t2h2
+    subtitle: 'Our POrtals'
+    title: 'something about portals here'
+    show_rating: false
+    button_text: 'Learn More'
+    services:
+      -
+        id: miz8tjm0
+        icon: 'ph ph-devices'
+        title: 'Customer Provisioning Portal - Data (CPP)'
+        text: 'Order, track, and provision your own data connections, and access our knowledgebase from your portal.'
+        link_url: '#'
+        type: service
+        enabled: true
+      -
+        id: miz8v5co
+        icon: 'ph ph-devices'
+        title: 'Customer Provisioning Portal - Data (CPP)'
+        text: 'Order, track, and provision your own data connections, and access our knowledgebase from your portal.'
+        link_url: '#'
+        type: service
+        enabled: true
+      -
+        id: miz8v4gs
+        icon: 'ph ph-devices'
+        title: 'Customer Provisioning Portal - Data (CPP)'
+        text: 'Order, track, and provision your own data connections, and access our knowledgebase from your portal.'
+        link_url: '#'
+        type: service
+        enabled: true
+      -
+        id: miz8v3lv
+        icon: 'ph ph-devices'
+        title: 'Customer Provisioning Portal - Data (CPP)'
+        text: 'Order, track, and provision your own data connections, and access our knowledgebase from your portal.'
+        link_url: '#'
+        type: service
+        enabled: true
+      -
+        id: miz8v2jh
+        icon: 'ph ph-devices'
+        title: 'Customer Provisioning Portal - Data (CPP)'
+        text: 'Order, track, and provision your own data connections, and access our knowledgebase from your portal.'
+        link_url: '#'
+        type: service
+        enabled: true
+      -
+        id: miz8v1ei
+        icon: 'ph ph-devices'
+        title: 'Customer Provisioning Portal - Data (CPP)'
+        text: 'Order, track, and provision your own data connections, and access our knowledgebase from your portal.'
+        link_url: '#'
+        type: service
+        enabled: true
+    type: service_grid_block
+    enabled: true
+  -
     id: miwasyow
     subtitle: 'How we help'
     title: 'Tools, Training, & Support to Help You Succeed'
@@ -220,7 +277,7 @@ page_builder:
     type: testimonial_single
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765252279
+updated_at: 1765324904
 ---
 ## Welcome to your brand new Statamic site!
 

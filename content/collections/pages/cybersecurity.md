@@ -4,11 +4,11 @@ blueprint: page
 title: Cybersecurity
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765252019
+updated_at: 1765335979
 page_builder:
   -
     id: mixzy2rq
-    background_image: images/banners/tools.jpg
+    background_image: images/bg/download.webp
     layout: product
     show_breadcrumb: false
     heading: 'Security That Performs at <span class="text-primary">Every Layer</span>'

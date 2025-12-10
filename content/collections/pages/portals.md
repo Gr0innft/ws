@@ -40,7 +40,7 @@ page_builder:
     text: 'From day one, our Senior Customer Success Managers will guide you through a full onboarding workshop so your team can hit the ground running. And it doesn’t stop there — you’ll have access to a knowledgeable, approachable support team ready to help with everything from broadband faults to complex voice and network queries whenever you need us.'
     link_url: /benefits
     link_text: 'Our Benefits'
-    image_position: left
+    image_position: right
     has_background: true
     style: hero
     add_curve_to_top: false
@@ -132,5 +132,5 @@ page_builder:
     type: testimonial_slider
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765327106
+updated_at: 1765327144
 ---

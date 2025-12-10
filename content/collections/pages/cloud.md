@@ -4,11 +4,11 @@ blueprint: page
 title: Cloud
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765253618
+updated_at: 1765335913
 page_builder:
   -
     id: mixxoyce
-    background_image: images/banners/tools.jpg
+    background_image: images/bg/download.webp
     layout: product
     show_breadcrumb: false
     heading: 'Cloud Infrastructure <span class="text-primary">Built for Performance</span> and Control'

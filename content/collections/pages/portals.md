@@ -13,8 +13,8 @@ page_builder:
         subtitle: 'Management Platforms'
         title: 'Portals Built for Partners'
         text: 'From cloud hosting to broadband and billing, our portals put powerful tools and real-time insights at your fingertips.'
-        button_text: 'Voyager Platforms'
-        button_url: '#scroll-hero'
+        button_text: "Let's Talk"
+        button_url: '#scroll-cta'
         type: slide
         enabled: true
     type: hero_slider
@@ -131,5 +131,5 @@ page_builder:
     type: testimonial_slider
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765326854
+updated_at: 1765327063
 ---

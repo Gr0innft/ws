@@ -23,7 +23,7 @@ page_builder:
     id: miz9kfle
     image: images/benefits/portals.jpg
     heading: 'Ease of Portal Access'
-    text: 'We provide our Wholesale Partners with access to a suite of management portals designed to put control and visibility and efficiency at your fingertips'
+    text: 'We provide Wholesale Partners with a suite of intuitive management portals that put control, visibility, and efficiency at your fingertips. With a single set of logins, your team can easily move between ordering broadband, managing cloud services, provisioning voice, and accessing billing and reporting – all in one place. Clear navigation, role-based access, and real-time insights help your sales, provisioning, and support teams work faster, reduce errors, and deliver a smoother experience for your customers.'
     link_text: 'Learn More'
     image_position: left
     has_background: false
@@ -131,5 +131,5 @@ page_builder:
     type: testimonial_slider
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765326682
+updated_at: 1765326854
 ---

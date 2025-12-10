@@ -31,7 +31,7 @@ page_builder:
     enabled: true
   -
     id: mixunry5
-    image: images/home/partnership-benefits.png
+    image: images/home/partnership-benefits-tools.png
     subtitle: 'Our Vision'
     heading: 'To be the partner of choice for New Zealand businesses.'
     text: |-

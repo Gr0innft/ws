@@ -34,7 +34,7 @@ page_builder:
     link_url: '#scroll-cta'
   -
     id: miz9nbru
-    image: images/home/partnership-benefits.png
+    image: images/home/partnership-benefits-tools.png
     subtitle: 'Wholesale Support'
     heading: 'Training & Ongoing Support'
     text: 'From day one, our Senior Customer Success Managers will guide you through a full onboarding workshop so your team can hit the ground running. And it doesn’t stop there — you’ll have access to a knowledgeable, approachable support team ready to help with everything from broadband faults to complex voice and network queries whenever you need us.'

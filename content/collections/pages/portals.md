@@ -26,9 +26,23 @@ page_builder:
     text: 'We provide our Wholesale Partners with access to a suite of management portals designed to put control and visibility and efficiency at your fingertips'
     link_text: 'Learn More'
     image_position: left
-    has_background: true
+    has_background: false
     style: simple
     add_curve_to_top: true
+    type: image_content_block
+    enabled: true
+  -
+    id: miz9nbru
+    image: images/home/partnership-benefits.png
+    subtitle: 'Wholesale Support'
+    heading: 'Training & Ongoing Support'
+    text: 'From day one, our Senior Customer Success Managers will guide you through a full onboarding workshop so your team can hit the ground running. And it doesn’t stop there — you’ll have access to a knowledgeable, approachable support team ready to help with everything from broadband faults to complex voice and network queries whenever you need us.'
+    link_url: /benefits
+    link_text: 'Our Benefits'
+    image_position: left
+    has_background: true
+    style: hero
+    add_curve_to_top: false
     type: image_content_block
     enabled: true
   -
@@ -83,20 +97,6 @@ page_builder:
         enabled: true
     type: service_grid_block
     enabled: true
-  -
-    id: miz9nbru
-    image: images/home/partnership-benefits.png
-    subtitle: 'Wholesale Support'
-    heading: 'Training & Ongoing Support'
-    text: 'From day one, our Senior Customer Success Managers will guide you through a full onboarding workshop so your team can hit the ground running. And it doesn’t stop there — you’ll have access to a knowledgeable, approachable support team ready to help with everything from broadband faults to complex voice and network queries whenever you need us.'
-    link_url: /benefits
-    link_text: 'Our Benefits'
-    image_position: left
-    has_background: true
-    style: hero
-    add_curve_to_top: false
-    type: image_content_block
-    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765326399
+updated_at: 1765326439
 ---

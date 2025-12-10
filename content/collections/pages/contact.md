@@ -6,7 +6,7 @@ author: 356414f5-9cc4-49da-9bea-35e11000edbb
 page_builder:
   -
     id: mixmow69
-    background_image: images/banners/tools.jpg
+    background_image: images/bg/download.webp
     layout: split_text
     show_breadcrumb: true
     heading: '<span class="text-primary">Contact us</span> today to get started'
@@ -17,5 +17,5 @@ page_builder:
     enabled: true
 template: contact
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765245540
+updated_at: 1765335827
 ---

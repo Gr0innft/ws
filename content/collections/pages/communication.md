@@ -4,11 +4,11 @@ blueprint: page
 title: Communication
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765251992
+updated_at: 1765335952
 page_builder:
   -
     id: mixzg7va
-    background_image: images/banners/tools.jpg
+    background_image: images/bg/download.webp
     layout: product
     show_breadcrumb: false
     heading: 'Voice Infrastructure <span class="text-primary">Built for Reliability</span> and Scale'

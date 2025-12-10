@@ -4,11 +4,11 @@ blueprint: page
 title: 'Our Solutions'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765251881
+updated_at: 1765335891
 page_builder:
   -
     id: mixwfw6g
-    background_image: images/banners/tools.jpg
+    background_image: images/bg/download.webp
     layout: product
     show_breadcrumb: false
     heading: 'Solutions Built to <span class="text-primary">Power Partner</span> Success'

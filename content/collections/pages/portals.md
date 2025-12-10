@@ -25,7 +25,7 @@ page_builder:
     heading: 'Ease of Portal Access'
     text: 'We provide Wholesale Partners with a suite of intuitive management portals that put control, visibility, and efficiency at your fingertips. With a single set of logins, your team can easily move between ordering broadband, managing cloud services, provisioning voice, and accessing billing and reporting – all in one place. Clear navigation, role-based access, and real-time insights help your sales, provisioning, and support teams work faster, reduce errors, and deliver a smoother experience for your customers.'
     link_text: "Let's Talk"
-    image_position: left
+    image_position: right
     has_background: false
     style: simple
     add_curve_to_top: true
@@ -40,7 +40,7 @@ page_builder:
     text: 'From day one, our Senior Customer Success Managers will guide you through a full onboarding workshop so your team can hit the ground running. And it doesn’t stop there — you’ll have access to a knowledgeable, approachable support team ready to help with everything from broadband faults to complex voice and network queries whenever you need us.'
     link_url: /benefits
     link_text: 'Our Benefits'
-    image_position: right
+    image_position: left
     has_background: true
     style: hero
     add_curve_to_top: false
@@ -132,5 +132,5 @@ page_builder:
     type: testimonial_slider
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765329116
+updated_at: 1765329157
 ---

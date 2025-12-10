@@ -8,7 +8,7 @@ updated_at: 1765252019
 page_builder:
   -
     id: mixzy2rq
-    background_image: images/banners/download.webp
+    background_image: images/banners/tools.jpg
     layout: product
     show_breadcrumb: false
     heading: 'Security That Performs at <span class="text-primary">Every Layer</span>'

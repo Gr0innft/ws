@@ -9,7 +9,7 @@ page_builder:
     slides:
       -
         id: miz93b4f
-        background_image: images/banners/download.webp
+        background_image: images/banners/tools.jpg
         subtitle: 'Management Platforms'
         title: 'Portals Built for Partners'
         text: 'From cloud hosting to broadband and billing, our portals put powerful tools and real-time insights at your fingertips.'

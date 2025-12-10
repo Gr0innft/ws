@@ -8,7 +8,7 @@ updated_at: 1765253618
 page_builder:
   -
     id: mixxoyce
-    background_image: images/banners/download.webp
+    background_image: images/banners/tools.jpg
     layout: product
     show_breadcrumb: false
     heading: 'Cloud Infrastructure <span class="text-primary">Built for Performance</span> and Control'

@@ -8,7 +8,7 @@ updated_at: 1765251881
 page_builder:
   -
     id: mixwfw6g
-    background_image: images/banners/download.webp
+    background_image: images/banners/tools.jpg
     layout: product
     show_breadcrumb: false
     heading: 'Solutions Built to <span class="text-primary">Power Partner</span> Success'

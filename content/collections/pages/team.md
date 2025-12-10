@@ -7,7 +7,7 @@ template: team
 page_builder:
   -
     id: miwiuqoa
-    background_image: images/banners/download.webp
+    background_image: images/banners/tools.jpg
     layout: split_text
     show_breadcrumb: true
     heading: 'Voyager <span class="text-primary">Wholesale</span> Partner Team'

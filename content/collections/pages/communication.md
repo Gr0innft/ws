@@ -8,7 +8,7 @@ updated_at: 1765251992
 page_builder:
   -
     id: mixzg7va
-    background_image: images/banners/download.webp
+    background_image: images/banners/tools.jpg
     layout: product
     show_breadcrumb: false
     heading: 'Voice Infrastructure <span class="text-primary">Built for Reliability</span> and Scale'

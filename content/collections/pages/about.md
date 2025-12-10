@@ -10,7 +10,7 @@ updated_at: 1765253183
 page_builder:
   -
     id: mixuk0yc
-    background_image: images/banners/download.webp
+    background_image: images/banners/tools.jpg
     layout: centered
     show_breadcrumb: true
     heading: 'What makes us <span class="text-primary">different?</span>'

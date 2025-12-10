@@ -92,11 +92,11 @@ page_builder:
     link_url: /benefits
     link_text: 'Our Benefits'
     image_position: left
-    has_background: false
+    has_background: true
     style: hero
     add_curve_to_top: false
     type: image_content_block
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765326347
+updated_at: 1765326399
 ---

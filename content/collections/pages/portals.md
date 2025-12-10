@@ -97,6 +97,39 @@ page_builder:
         enabled: true
     type: service_grid_block
     enabled: true
+  -
+    id: miz9spwb
+    background_image: images/bg/enquirybg.jpg
+    subtitle: "Let's Grow Together"
+    heading: 'Partner with Voyager, Power Up with Smart Portals'
+    description: 'oin a wholesale partner that gives you more than just network and services. Voyager’s suite of intuitive portals and automation tools puts ordering, provisioning, management, and reporting in one place – giving you the control, visibility, and efficiency you need to deliver a better experience for your customers.'
+    type: enquiry_cta_form
+    enabled: true
+  -
+    id: miz9v15j
+    subtitle: Testimonials
+    title: 'Listening to our clients'
+    testimonials:
+      -
+        id: miz9w6vh
+        testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
+        author_image: images/seeby-profile.jpg
+        author_name: 'John Doe'
+        author_designation: 'Business Owner'
+        rating: '5'
+        type: testimonial
+        enabled: true
+      -
+        id: miz9wxmy
+        testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
+        author_image: images/angela-profile.jpg
+        author_name: 'Jane Doe'
+        author_designation: 'Business Owner'
+        rating: '5'
+        type: testimonial
+        enabled: true
+    type: testimonial_slider
+    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765326439
+updated_at: 1765326682
 ---

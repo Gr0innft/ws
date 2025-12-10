@@ -20,6 +20,18 @@ page_builder:
     type: hero_slider
     enabled: true
   -
+    id: miz9kfle
+    image: images/benefits/portals.jpg
+    heading: 'Ease of Portal Access'
+    text: 'We provide our Wholesale Partners with access to a suite of management portals designed to put control and visibility and efficiency at your fingertips'
+    link_text: 'Learn More'
+    image_position: left
+    has_background: false
+    style: simple
+    add_curve_to_top: true
+    type: image_content_block
+    enabled: true
+  -
     id: miz990je
     subtitle: 'Our Tools'
     title: 'Voyager Wholesale Portals'
@@ -72,5 +84,5 @@ page_builder:
     type: service_grid_block
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765326005
+updated_at: 1765326146
 ---

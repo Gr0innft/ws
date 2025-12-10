@@ -72,19 +72,6 @@ page_builder:
     type: service_grid_block
     enabled: true
   -
-    id: miz9kfle
-    image: images/benefits/portals.jpg
-    heading: 'Ease of Portal Access'
-    text: 'We provide Wholesale Partners with a suite of intuitive management portals that put control, visibility, and efficiency at your fingertips. With a single set of logins, your team can easily move between ordering broadband, managing cloud services, provisioning voice, and accessing billing and reporting – all in one place. Clear navigation, role-based access, and real-time insights help your sales, provisioning, and support teams work faster, reduce errors, and deliver a smoother experience for your customers.'
-    link_text: "Let's Talk"
-    image_position: right
-    has_background: false
-    style: simple
-    add_curve_to_top: false
-    type: image_content_block
-    enabled: true
-    link_url: '#scroll-cta'
-  -
     id: miz9nbru
     image: images/home/partnership-benefits.png
     subtitle: 'Wholesale Support'
@@ -98,6 +85,19 @@ page_builder:
     add_curve_to_top: false
     type: image_content_block
     enabled: true
+  -
+    id: miz9kfle
+    image: images/benefits/portals.jpg
+    heading: 'Ease of Portal Access'
+    text: 'We provide Wholesale Partners with a suite of intuitive management portals that put control, visibility, and efficiency at your fingertips. With a single set of logins, your team can easily move between ordering broadband, managing cloud services, provisioning voice, and accessing billing and reporting – all in one place. Clear navigation, role-based access, and real-time insights help your sales, provisioning, and support teams work faster, reduce errors, and deliver a smoother experience for your customers.'
+    link_text: "Let's Talk"
+    image_position: right
+    has_background: false
+    style: simple
+    add_curve_to_top: false
+    type: image_content_block
+    enabled: true
+    link_url: '#scroll-cta'
   -
     id: miz9spwb
     background_image: images/bg/enquirybg.jpg
@@ -132,5 +132,5 @@ page_builder:
     type: testimonial_slider
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765334827
+updated_at: 1765334873
 ---

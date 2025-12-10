@@ -6,11 +6,11 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765253183
+updated_at: 1765336044
 page_builder:
   -
     id: mixuk0yc
-    background_image: images/banners/tools.jpg
+    background_image: images/bg/download.webp
     layout: centered
     show_breadcrumb: true
     heading: 'What makes us <span class="text-primary">different?</span>'

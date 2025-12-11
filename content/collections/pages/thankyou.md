@@ -1,7 +1,7 @@
 ---
 id: 2e7cac30-fa1b-4a00-873a-f6a17e7c8273
 blueprint: page
-title: Thankyou
+title: 'Thank You'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 page_builder:
   -
@@ -16,5 +16,5 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765425322
+updated_at: 1765425349
 ---

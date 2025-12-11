@@ -11,7 +11,7 @@ page_builder:
     show_breadcrumb: true
     heading: 'Thank you – we’ve got your enquiry'
     text: 'Thanks for getting in touch with Voyager Wholesale. A member of our team will review your details and get back to you shortly to talk through next steps and how we can help. In the meantime, feel free to explore our products and portals, or jot down any questions you’d like to cover when we connect.'
-    button_text: "Let's talk"
+    button_text: 'Our Team'
     button_url: '#scroll-hero'
     type: hero_banner
     enabled: true
@@ -30,5 +30,5 @@ page_builder:
     type: team_members_block
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765425478
+updated_at: 1765425535
 ---

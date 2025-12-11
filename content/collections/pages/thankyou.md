@@ -15,6 +15,20 @@ page_builder:
     button_url: '#scroll-hero'
     type: hero_banner
     enabled: true
+  -
+    id: mj0wpf2l
+    subtitle: 'Our People'
+    heading: 'Our team of experts'
+    description: "Behind our wholesalers, there’s a team of dedicated experts working hard to make it all happen. With a collective experience of well over 50 years in telco & IT, they're committed to knowing you and what you need to succeed and scale"
+    button_text: 'More members'
+    button_url: /team
+    team_members:
+      - 8a477c74-174a-4224-b3d2-6540fc3932af
+      - 537a05a8-bde0-412d-b7cf-5cb04ed573e8
+      - 8db6f86b-3147-491e-bb75-37d0501c3de9
+      - b9b0ce8e-f3bf-4cfc-87b5-d2d106284a70
+    type: team_members_block
+    enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765425349
+updated_at: 1765425478
 ---

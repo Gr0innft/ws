@@ -255,55 +255,16 @@ fields:
                 type: text
                 display: Title
             -
-              handle: testimonial_image
+              handle: testimonial
               field:
-                type: assets
-                display: 'Testimonial Image'
-                max_files: 1
-                container: assets
+                type: entries
+                display: 'Testimonial'
+                collections:
+                  - testimonials
+                max_items: 1
                 validate:
                   - required
-            -
-              handle: rating_score
-              field:
-                type: text
-                display: 'Rating Score'
-                default: '4.7'
-                instructions: 'Rating score (e.g., 4.7)'
-            -
-              handle: rating_text
-              field:
-                type: text
-                display: 'Rating Text'
-                default: 'Customers survey review score'
-            -
-              handle: testimonial_text
-              field:
-                type: textarea
-                display: 'Testimonial Text'
-                validate:
-                  - required
-            -
-              handle: author_image
-              field:
-                type: assets
-                display: 'Author Image'
-                max_files: 1
-                container: assets
-                validate:
-                  - required
-            -
-              handle: author_name
-              field:
-                type: text
-                display: 'Author Name'
-                validate:
-                  - required
-            -
-              handle: author_designation
-              field:
-                type: text
-                display: 'Author Designation'
+                instructions: 'Select a testimonial to display. Changes to the testimonial (text, author, image, etc.) will automatically update here.'
         testimonial_slider:
           display: 'Testimonial Slider'
           collapsed: true
@@ -322,56 +283,11 @@ fields:
             -
               handle: testimonials
               field:
-                type: replicator
-                display: Testimonials
-                collapsed: true
-                instructions: 'Add testimonials to the slider'
-                sets:
-                  testimonial:
-                    display: Testimonial
-                    collapsed: true
-                    fields:
-                      -
-                        handle: testimonial_text
-                        field:
-                          type: textarea
-                          display: 'Testimonial Text'
-                          validate:
-                            - required
-                      -
-                        handle: author_image
-                        field:
-                          type: assets
-                          display: 'Author Image'
-                          max_files: 1
-                          container: assets
-                          validate:
-                            - required
-                      -
-                        handle: author_name
-                        field:
-                          type: text
-                          display: 'Author Name'
-                          validate:
-                            - required
-                      -
-                        handle: author_designation
-                        field:
-                          type: text
-                          display: 'Author Designation'
-                      -
-                        handle: rating
-                        field:
-                          type: select
-                          display: Rating
-                          default: '5'
-                          instructions: 'Rating out of 5 stars'
-                          options:
-                            '1': '1 Star'
-                            '2': '2 Stars'
-                            '3': '3 Stars'
-                            '4': '4 Stars'
-                            '5': '5 Stars'
+                type: entries
+                display: 'Testimonials'
+                collections:
+                  - testimonials
+                instructions: 'Select testimonials to display in the slider. Changes to testimonials (text, author, image, etc.) will automatically update here.'
         service_block:
           display: 'Service Block'
           collapsed: true

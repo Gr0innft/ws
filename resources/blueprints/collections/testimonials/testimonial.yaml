@@ -1,0 +1,104 @@
+title: Testimonial
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: 'Author Name'
+              required: true
+              validate:
+                - required
+              instructions: 'Name of the person giving the testimonial'
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              default: testimonial
+              localizable: true
+      -
+        display: Testimonial Details
+        fields:
+          -
+            handle: testimonial_text
+            field:
+              type: textarea
+              display: 'Testimonial Text'
+              validate:
+                - required
+              instructions: 'The testimonial quote or text'
+          -
+            handle: author_image
+            field:
+              type: assets
+              display: 'Author Image'
+              max_files: 1
+              container: assets
+              validate:
+                - required
+              instructions: 'Photo of the testimonial author'
+          -
+            handle: author_designation
+            field:
+              type: text
+              display: 'Author Designation'
+              instructions: 'Job title or role (e.g., CEO, Marketing Director)'
+          -
+            handle: rating
+            field:
+              type: select
+              display: Rating
+              default: '5'
+              instructions: 'Rating out of 5 stars'
+              options:
+                '1': '1 Star'
+                '2': '2 Stars'
+                '3': '3 Stars'
+                '4': '4 Stars'
+                '5': '5 Stars'
+      -
+        display: Single Layout Fields
+        fields:
+          -
+            handle: testimonial_image
+            field:
+              type: assets
+              display: 'Testimonial Image'
+              max_files: 1
+              container: assets
+              instructions: 'Large image for single testimonial layout (optional)'
+          -
+            handle: rating_score
+            field:
+              type: text
+              display: 'Rating Score'
+              default: '4.7'
+              instructions: 'Rating score (e.g., 4.7) for single layout'
+          -
+            handle: rating_text
+            field:
+              type: text
+              display: 'Rating Text'
+              default: 'Customers survey review score'
+              instructions: 'Text to display with rating score'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+      -
+        display: Meta
+        fields:
+          -
+            import: seo

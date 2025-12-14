@@ -37,10 +37,10 @@ page_builder:
     heading: test
     text: test
     image: images/solutions/communication-hero.jpg
-    button_text: "Let's talk"
+    button_text: test
     button_url: '#'
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765752260
+updated_at: 1765752468
 ---

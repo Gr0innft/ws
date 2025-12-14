@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765336044
+updated_at: 1765754121
 page_builder:
   -
     id: mixuk0yc
@@ -18,6 +18,7 @@ page_builder:
     button_url: '#scroll-cta'
     type: hero_banner
     enabled: true
+    show_button: false
   -
     id: mixume6d
     subtitle: 'ABOUT VOYAGER WHOLESALE'
@@ -137,6 +138,7 @@ page_builder:
     author_designation: 'Chief Revenue Officer, Voyager'
     type: testimonial_single
     enabled: true
+    testimonial: a31a7528-9574-4074-bb74-b78cb359eec9
   -
     id: miy0xun2
     background_image: images/bg/enquirybg.jpg

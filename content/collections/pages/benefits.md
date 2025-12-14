@@ -4,7 +4,7 @@ blueprint: page
 title: 'Why Partner'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765252667
+updated_at: 1765753547
 template: default
 page_builder:
   -
@@ -19,6 +19,7 @@ page_builder:
     button_url: /solutions
     type: hero_banner
     enabled: true
+    show_button: true
   -
     id: mixvi5w6
     image: images/solutions/communication-voice.jpg
@@ -169,33 +170,8 @@ page_builder:
     subtitle: Testimonials
     title: 'Listening to our clients'
     testimonials:
-      -
-        id: mixwa81q
-        testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
-        author_image: images/seeby-profile.jpg
-        author_name: 'John Doe'
-        author_designation: 'Business Owner'
-        rating: '5'
-        type: testimonial
-        enabled: true
-      -
-        id: mixwbbk2
-        testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
-        author_image: images/seeby-profile.jpg
-        author_name: 'John Doe'
-        author_designation: 'Business Owner'
-        rating: '5'
-        type: testimonial
-        enabled: true
-      -
-        id: mixwb7v5
-        testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
-        author_image: images/seeby-profile.jpg
-        author_name: 'John Doe'
-        author_designation: 'Business Owner'
-        rating: '5'
-        type: testimonial
-        enabled: true
+      - c5f97c48-4a19-4c0e-b625-8e646b026c25
+      - b20dc857-5925-4f74-85ee-3a72d0c7baaf
     type: testimonial_slider
     enabled: true
 ---

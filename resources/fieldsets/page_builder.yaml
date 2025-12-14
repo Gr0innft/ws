@@ -287,7 +287,7 @@ fields:
                 display: 'Testimonials'
                 collections:
                   - testimonials
-                instructions: 'Select testimonials to display in the slider. Changes to testimonials (text, author, image, etc.) will automatically update here.'
+                instructions: 'Select testimonials to display in the slider. Changes to testimonials (text, author, image, etc.) will automatically update here. Note: If you have old testimonial data, you may need to recreate them as entries in the Testimonials collection first.'
         service_block:
           display: 'Service Block'
           collapsed: true

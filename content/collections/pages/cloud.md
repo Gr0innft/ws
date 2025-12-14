@@ -4,7 +4,7 @@ blueprint: page
 title: Cloud
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765335913
+updated_at: 1765753929
 page_builder:
   -
     id: mixxoyce
@@ -18,6 +18,7 @@ page_builder:
     button_url: '#scroll-hero'
     type: hero_banner
     enabled: true
+    show_button: true
   -
     id: mixxsjz8
     image: images/solutions/cloud/scale.jpg
@@ -199,4 +200,5 @@ page_builder:
     author_designation: 'CEO Voyager Internet'
     type: testimonial_single
     enabled: true
+    testimonial: a31a7528-9574-4074-bb74-b78cb359eec9
 ---

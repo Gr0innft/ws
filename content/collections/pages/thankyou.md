@@ -33,7 +33,7 @@ page_builder:
     id: mj6baag7
     background_image: images/bg/enquirybg.jpg
     layout: product
-    show_breadcrumb: true
+    show_breadcrumb: false
     heading: test
     text: test
     image: images/solutions/communication-hero.jpg
@@ -42,5 +42,5 @@ page_builder:
     type: hero_banner
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765752468
+updated_at: 1765752563
 ---

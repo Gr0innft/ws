@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765754121
+updated_at: 1765754129
 page_builder:
   -
     id: mixuk0yc
@@ -18,7 +18,7 @@ page_builder:
     button_url: '#scroll-cta'
     type: hero_banner
     enabled: true
-    show_button: false
+    show_button: true
   -
     id: mixume6d
     subtitle: 'ABOUT VOYAGER WHOLESALE'

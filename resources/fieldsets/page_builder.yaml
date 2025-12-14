@@ -63,6 +63,13 @@ fields:
                 container: assets
                 instructions: 'Image for product layout (shown on right side)'
             -
+              handle: show_button
+              field:
+                type: toggle
+                display: 'Show Button'
+                default: false
+                instructions: 'Show button on the hero banner'
+            -
               handle: button_text
               field:
                 type: text

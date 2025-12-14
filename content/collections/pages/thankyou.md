@@ -15,6 +15,7 @@ page_builder:
     button_url: 'tel:08004727863'
     type: hero_banner
     enabled: true
+    show_button: false
   -
     id: mj0wpf2l
     subtitle: 'Our People'
@@ -41,6 +42,7 @@ page_builder:
     button_url: '#'
     type: hero_banner
     enabled: true
+    show_button: false
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765752563
+updated_at: 1765752718
 ---

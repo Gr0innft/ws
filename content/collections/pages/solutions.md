@@ -4,7 +4,7 @@ blueprint: page
 title: 'Our Solutions'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765335891
+updated_at: 1765753844
 page_builder:
   -
     id: mixwfw6g
@@ -18,6 +18,7 @@ page_builder:
     type: hero_banner
     enabled: true
     image: images/solutions/voyager-wholesale-solutions-overview.png
+    show_button: false
   -
     id: mixwkj4t
     image: images/solutions/network.jpg
@@ -144,4 +145,5 @@ page_builder:
     author_designation: 'CEO Voyager Internet'
     type: testimonial_single
     enabled: true
+    testimonial: b6eec9ec-6afd-4525-b824-ae8580e28139
 ---

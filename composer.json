@@ -47,6 +47,9 @@
             "@php artisan package:discover --ansi",
             "@php artisan statamic:install --ansi"
         ],
+        "post-install-cmd": [
+            "@php -r \"if (empty(env('APP_KEY'))) { file_put_contents('.env', 'APP_KEY=' . base64_encode(random_bytes(32)) . PHP_EOL, FILE_APPEND); }\""
+        ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],

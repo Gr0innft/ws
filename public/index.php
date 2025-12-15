@@ -24,6 +24,14 @@ try {
 
     $app->handleRequest(Request::capture());
 } catch (\Throwable $e) {
+    // Force error to Railway logs
+    error_log('=== LARAVEL ERROR ===');
+    error_log('Message: ' . $e->getMessage());
+    error_log('File: ' . $e->getFile());
+    error_log('Line: ' . $e->getLine());
+    error_log('Trace: ' . $e->getTraceAsString());
+    error_log('===================');
+    
     // Catch and display any errors
     http_response_code(500);
     header('Content-Type: text/plain');

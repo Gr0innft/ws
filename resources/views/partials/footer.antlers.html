@@ -1,0 +1,134 @@
+<!-- Footer -->
+<footer class="footer-area bg-secondary relative">
+    <!-- Footer Top -->
+    <div class="footer-top py-16 lg:py-24 relative">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
+                <!-- Newsletter Column -->
+                <div class="lg:col-span-5 md:col-span-2">
+                    <div class="footer-widget">
+                        <div class="newsletter-title mb-6">
+                            {{ if logo:logo }}
+                                <img src="{{ logo:logo }}" alt="Wholesale Logo" class="h-12"/>
+                            {{ /if }}
+                            {{ if footer:description }}
+                                <p class="text-white/70 text-sm w-3/4 my-8">{{ footer:description }}</p>
+                            {{ /if }}
+                        </div>
+                        <div class="footer-social">
+                            <h5 class="text-white font-semibold mb-4">Follow Us:</h5>
+                            <ul class="flex gap-3">
+                                {{ if social_media:social_links }}
+                                    {{ social_media:social_links }}
+                                        {{ if enabled }}
+                                        <li>
+                                            <a href="{{ url }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary text-white rounded-lg transition-all duration-300 hover:scale-110">
+                                                {{ if platform == "facebook" }}
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                {{ elseif platform == "instagram" }}
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                {{ elseif platform == "twitter" }}
+                                                    <i class="fa-brands fa-x-twitter"></i>
+                                                {{ elseif platform == "linkedin" }}
+                                                    <i class="fa-brands fa-linkedin-in"></i>
+                                                {{ /if }}
+                                            </a>
+                                        </li>
+                                        {{ /if }}
+                                    {{ /social_media:social_links }}
+                                {{ /if }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Services Column -->
+                <div class="lg:col-span-2">
+                    <div class="footer-widget">
+                        <div class="footer-title mb-6">
+                            <h4 class="text-xl font-bold text-white">Solutions</h4>
+                        </div>
+                        <div class="widget-menu">
+                            <ul class="space-y-3">
+                                {{ nav:solutions }}
+                                    <li><a href="{{ url }}" class="text-white/70 hover:text-primary transition-colors">{{ title }}</a></li>
+                                {{ /nav:solutions }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resources Column -->
+                <div class="lg:col-span-2">
+                    <div class="footer-widget">
+                        <div class="footer-title mb-6">
+                            <h4 class="text-xl font-bold text-white">About us</h4>
+                        </div>
+                        <div class="widget-menu">
+                            <ul class="space-y-3">
+                                {{ nav:about }}
+                                    <li><a href="{{ url }}" class="text-white/70 hover:text-primary transition-colors">{{ title }}</a></li>
+                                {{ /nav:about }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Our Offices Column -->
+                <div class="lg:col-span-3">
+                    <div class="footer-widget">
+                        <div class="footer-title mb-6">
+                            <h4 class="text-xl font-bold text-white">Contact</h4>
+                        </div>
+                        <div class="space-y-6">
+                            {{ if contact_info:phone }}
+                                <div class="infos-item">
+                                    <span class="text-white/90 font-medium block mb-2">{{ contact_info:phone }}</span>
+                                </div>
+                            {{ /if }}
+                            {{ if contact_info:locations }}
+                                {{ contact_info:locations }}
+                                    {{ if type == "location" }}
+                                    <div class="infos-item">
+                                        <span class="text-white/90 font-medium block mb-2">{{ name }}</span>
+                                        <p class="text-white/60 text-sm {{ if !is_last }}mb-2{{ /if }}">{{ address }}</p>
+                                    </div>
+                                    {{ /if }}
+                                {{ /contact_info:locations }}
+                            {{ /if }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Back to Top Button -->
+        <a href="#" id="backToTop" class="backtop fixed bottom-8 right-8 w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg hover:bg-primary-600 transition-all duration-300 opacity-0 invisible hover:scale-110 z-[1000]">
+            <i class="ph-fill ph-caret-up"></i>
+        </a>
+    </div>
+    
+    <!-- Footer Copyright -->
+    <div class="footer-copyright py-6 border-t border-white/10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="copyright-text">
+                    <p class="text-white/70 text-sm">
+                        © {{ now format="Y" }} <a href="/" class="text-white hover:text-primary transition-colors">{{ footer:copyright_text ?? 'Voyager Wholesale' }}</a> All rights reserved.
+                    </p>
+                </div>
+                <div class="copyright-menu">
+                    <ul class="flex gap-4">
+                        {{ if footer:privacy_link }}
+                            <li><a href="{{ footer:privacy_link }}" class="text-white/70 hover:text-primary transition-colors text-sm">Policy & privacy</a></li>
+                        {{ /if }}
+                        {{ if footer:terms_link }}
+                            <li><a href="{{ footer:terms_link }}" class="text-white/70 hover:text-primary transition-colors text-sm">Terms & conditions</a></li>
+                        {{ /if }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+

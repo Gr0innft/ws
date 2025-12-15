@@ -1,15 +1,251 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ site:short_locale }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title ?? site:name }}</title>
-        {{ vite src="resources/js/site.js|resources/css/site.css" }}
-    </head>
-    <body class="bg-slate-100 dark:bg-gray-800 font-sans leading-normal text-slate-800 dark:text-gray-400">
-        <div class="mx-auto px-2 lg:min-h-screen flex flex-col items-center justify-center">
-            {{ template_content }}
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {{# Set meta title - defaults to page title + site name if not set #}}
+    {{ meta_title_value = meta_title ?? (title + ' | ' + site_settings:site_name) ?? site_settings:site_name }}
+    {{# Get full URL - construct absolute URL #}}
+    {{ page_url = permalink ?? (site:absolute_url ?? (site:url + url)) }}
+    {{# Get OG image - page og_image or default to site global, ensure absolute URL #}}
+    {{ og_image_asset = og_image ?? site_settings:og_image }}
+    {{ if og_image_asset }}
+        {{# If asset path doesn't start with http/https, prepend site URL #}}
+        {{ if og_image_asset | starts_with('http') }}
+            {{ og_image_value = og_image_asset }}
+        {{ else }}
+            {{ og_image_value = (site:absolute_url ?? site:url) + og_image_asset }}
+        {{ /if }}
+    {{ else }}
+        {{ og_image_value = null }}
+    {{ /if }}
+    {{# Set meta description - use custom or default to page title + site name #}}
+    {{ meta_description_value = meta_description ?? (title + ' - ' + site_settings:site_name) ?? site_settings:site_name }}
+    
+    <title>{{ meta_title_value }}</title>
+    
+    <!-- SEO Meta Tags - Always present -->
+    <meta name="description" content="{{ meta_description_value }}">
+    {{ if meta_keywords }}
+    <meta name="keywords" content="{{ meta_keywords }}">
+    {{ /if }}
+    <meta name="author" content="{{ site_settings:site_name }}">
+    <link rel="canonical" href="{{ page_url }}">
+    {{ if site_settings:fav_icon }}
+    <link rel="shortcut icon" type="image/png" href="{{ site_settings:fav_icon }}">
+    {{ /if }}
+    
+    <!-- Open Graph Meta Tags - Always present -->
+    <meta property="og:title" content="{{ meta_title_value }}">
+    <meta property="og:url" content="{{ page_url }}">
+    <meta property="og:description" content="{{ meta_description_value }}">
+    {{ if og_image_value }}
+    <meta property="og:image" content="{{ og_image_value }}">
+    {{ /if }}
+    <meta property="og:site_name" content="{{ site_settings:site_name }}">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Meta Tags - Always present -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@voyagernz">
+    <meta name="twitter:title" content="{{ meta_title_value }}">
+    <meta name="twitter:url" content="{{ page_url }}">
+    <meta name="twitter:description" content="{{ meta_description_value }}">
+    {{ if og_image_value }}
+    <meta name="twitter:image" content="{{ og_image_value }}">
+    {{ /if }}
+    
+    <!-- Google Fonts - Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- Phosphor Icons -->
+    <link href="/assets/fonts/phosphor-icons/Fonts/regular/style.css" rel="stylesheet">
+    <link href="/assets/fonts/phosphor-icons/Fonts/fill/style.css" rel="stylesheet">
+    
+    <!-- Solvior Icons -->
+    <link href="/assets/css/solvior-icons.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    {{ vite src="resources/js/site.js|resources/css/site.css" }}
+</head>
+<body class="bg-gray-50">
+    
+    
+    <!-- Header Partial -->
+    {{ partial:partials/header }}
+    
+
+    
+    {{ template_content }}
+    
+    <!-- CTA Section Partial -->
+    {{ partial:partials/cta_section }}
+    
+    <!-- Footer Partial -->
+    {{ partial:partials/footer }}
+    
+    <!-- JavaScript -->
+    <!-- GSAP Libraries -->
+    <script src="/assets/js/gsap.min.js"></script>
+    <script src="/assets/js/gsap-scroll-to-plugin.min.js"></script>
+    <script src="/assets/js/gsap-scroll-trigger.min.js"></script>
+    <script src="/assets/js/gsap-split-text.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/animations.js"></script>
+    
+    <!-- WOW.js for scroll animations -->
+    <script src="/assets/js/wow.min.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Back to Top Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize WOW.js
+            if (typeof WOW !== 'undefined') {
+                new WOW().init();
+            }
+            
+            // Back to Top Button
+            const backToTop = document.getElementById('backToTop');
+            if (backToTop) {
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 300) {
+                        backToTop.classList.remove('opacity-0', 'invisible');
+                        backToTop.classList.add('opacity-100', 'visible');
+                    } else {
+                        backToTop.classList.add('opacity-0', 'invisible');
+                        backToTop.classList.remove('opacity-100', 'visible');
+                    }
+                });
+                
+                backToTop.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            
+            // Smooth scroll for anchor links (scroll-hero, scroll-cta)
+            document.querySelectorAll('a[href^="#scroll-hero"], a[href^="#scroll-cta"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1); // Remove the #
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Initialize Testimonial Slider
+            if (typeof Swiper !== 'undefined') {
+                const testimonialSlider = new Swiper('.tj-testimonial-slider', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: '.testimonial-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.testimonial-navigation .slider-next',
+                        prevEl: '.testimonial-navigation .slider-prev',
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        992: {
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+                        }
+                    }
+                });
+                
+                // Initialize Service Slider
+                const serviceSlider = new Swiper('.tj-service-slider', {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                    loop: true,
+                    speed: 1500,
+                    autoplay: {
+                        delay: 4500,
+                    },
+                    navigation: {
+                        nextEl: '.service-navigation .slider-next',
+                        prevEl: '.service-navigation .slider-prev',
+                    },
+                    pagination: {
+                        el: '.service-pagination',
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        0: {
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        992: {
+                            slidesPerView: 3,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                    },
+                });
+                
+                // Initialize Hero Slider
+                const heroSlider = new Swiper('.full-slider-active', {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    loop: true,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    effect: 'fade',
+                    fadeEffect: {
+                        crossFade: true
+                    },
+                    speed: 1000,
+                    pagination: {
+                        el: '.tj-sw-pagination',
+                        clickable: true,
+                        renderBullet: function (index, className) {
+                            return '<span class="' + className + ' w-2 h-2 rounded-full bg-white/50 hover:bg-primary transition-all duration-300 cursor-pointer"></span>';
+                        },
+                    },
+                    navigation: {
+                        nextEl: '.tj-btn-next',
+                        prevEl: '.tj-btn-prev',
+                    },
+                });
+            }
+        });
+    </script>
+</body>
 </html>

@@ -1,0 +1,96 @@
+{{# Dark Image Content Block - Dark background with image, stats, and button #}}
+
+<section class="h6-cta-section py-0">
+    <div class="container-fluid px-0">
+        <div class="row flex flex-col md:flex-row items-center bg-secondary">
+            {{# Left Image Layout #}}
+            {{ if image_position == "left" }}
+                <div class="col-md-6 w-full md:w-1/2 h-full">
+                    <div class="h6-cta-image relative overflow-hidden h-full">
+                        {{ if image }}
+                        <img src="{{ image }}" alt="{{ heading ?? 'Content Image' }}" class="w-full h-full object-cover min-h-[400px] md:min-h-[800px] bg-cover">
+                        {{ /if }}
+                    </div>
+                </div>
+            {{ /if }}
+            
+            <div class="col-md-6 w-full md:w-1/2 py-16 lg:py-24 px-8 lg:px-16">
+                <div class="h6-cta-content">
+                    <div class="sec-heading style-2">
+                        {{ if subtitle }}
+                        <span class="sub-title inline-block text-primary font-semibold mb-4 text-sm uppercase tracking-wider wow fadeInUp" data-wow-delay="0.1s">// {{ subtitle }}</span>
+                        {{ /if }}
+                        {{ if heading }}
+                        <h2 class="sec-title text-anim text-4xl lg:text-5xl font-bold text-white mb-6">
+                            {{ heading | raw }}
+                        </h2>
+                        {{ /if }}
+                        {{ if text }}
+                        <div class="desc wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="text-white/80 text-lg leading-relaxed my-10">{{ text }}</p>
+                        </div>
+                        {{ /if }}
+
+                        {{# Stats Section #}}
+                        {{ if stats }}
+                        <div class="progress-style-2 flex flex-wrap gap-8 lg:gap-16 mt-10 wow fadeInUp" data-wow-delay="0.5s">
+                            {{ stats }}
+                            <div class="proggess-item flex flex-col items-center">
+                                <div class="proggess-circle mb-3">
+                                    <div class="relative w-40 h-40 lg:w-44 lg:h-44">
+                                        {{# Calculate stroke-dashoffset for circular progress #}}
+                                        {{ circumference = 283 }}
+                                        {{ offset = circumference - (percentage * circumference / 100) }}
+                                        <svg class="transform -rotate-90 w-full h-full">
+                                            <circle cx="50%" cy="50%" r="45%" stroke="#e1e8f0" stroke-width="8" fill="none" class="text-gray-200"></circle>
+                                            <circle cx="50%" cy="50%" r="45%" stroke="#0075ff" stroke-width="8" fill="none" stroke-dasharray="{{ circumference }}" stroke-dashoffset="{{ offset }}" class="transition-all duration-1000"></circle>
+                                        </svg>
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <span class="text-3xl lg:text-4xl font-bold text-white">{{ percentage }}%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="proggess-text text-center">
+                                    <span class="sub-title block text-lg text-white">{{ label | raw }}</span>
+                                </div>
+                            </div>
+                            {{ /stats }}
+                        </div>
+                        {{ /if }}
+
+                        {{# Button #}}
+                        {{ if button_url }}
+                        <div class="about-button mt-10 wow fadeInUp" data-wow-delay="0.7s">
+                            <a href="{{ button_url }}" class="btn-primary inline-flex">
+                                <div class="btn_inner">
+                                    <div class="btn_icon">
+                                        <span>
+                                            <i class="ph-fill ph-caret-right"></i>
+                                            <i class="ph-fill ph-caret-right"></i>
+                                        </span>
+                                    </div>
+                                    <div class="btn_text">
+                                        <span>{{ button_text ?? 'Learn More' }}</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        {{ /if }}
+                    </div>
+                </div>
+            </div>
+
+            {{# Right Image Layout #}}
+            {{ if image_position == "right" }}
+                <div class="col-md-6 w-full md:w-1/2 h-full">
+                    <div class="h6-cta-image relative overflow-hidden h-full">
+                        {{ if image }}
+                        <img src="{{ image }}" alt="{{ heading ?? 'Content Image' }}" class="w-full h-full object-cover min-h-[400px] md:min-h-[800px] bg-cover">
+                        {{ /if }}
+                    </div>
+                </div>
+            {{ /if }}
+        </div>
+    </div>
+</section>
+

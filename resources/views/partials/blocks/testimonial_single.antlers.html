@@ -1,0 +1,65 @@
+<section class="tj-testimonial-section-two py-16 lg:py-24 bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {{ if subtitle || title }}
+                <div class="sec-heading text-center mb-12">
+                    {{ if subtitle }}
+                    <span class="sub-title inline-block text-primary font-semibold mb-4 text-sm uppercase tracking-wider wow fadeInUp" data-wow-delay="0.1s">// {{ subtitle }}</span>
+                    {{ /if }}
+                    {{ if title }}
+                    <h2 class="sec-title text-anim text-4xl lg:text-5xl font-bold text-secondary mb-6 leading-tight">{{ title }}</h2>
+                    {{ /if }}
+                </div>
+                {{ /if }}
+            </div>
+        </div>
+        {{ if testimonial }}
+            {{ testimonial }}
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="mb-8 lg:mb-0">
+                    <div class="testimonial-images-2 hover-shine">
+                        {{ if testimonial_image }}
+                        <img src="{{ testimonial_image }}" alt="Testimonial" class="w-full rounded-lg">
+                        {{ /if }}
+                        <div class="testimonial-funfact">
+                            <div class="number"><span>{{ rating_score ?? '4.7' }}</span>/5</div>
+                            <span class="sub-title">{{ rating_text ?? 'Customers survey review score' | nl2br }}</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="testimonial-style-2">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote mb-6">
+                                <i class="tji-right-quote text-6xl text-primary"></i>
+                            </div>
+                            {{ if testimonial_text }}
+                            <div class="desc mb-8">
+                                <p class="lg:text-2xl text-lg text-gray-700 font-semibold lg:!leading-[38px]">{{ testimonial_text }}</p>
+                            </div>
+                            {{ /if }}
+                            <div class="testimonial-author flex items-center gap-4 my-5">
+                                {{ if author_image }}
+                                <div class="author-images">
+                                    <img src="{{ author_image }}" alt="{{ title ?? 'Author' }}" class="w-20 h-20 rounded-full object-cover">
+                                </div>
+                                {{ /if }}
+                                <div class="author-text flex-1">
+                                    {{ if title }}
+                                    <h4 class="title text-xl font-bold text-secondary mb-1">{{ title }}</h4>
+                                    {{ /if }}
+                                    {{ if author_designation }}
+                                    <span class="designation text-gray-600">{{ author_designation }}</span>
+                                    {{ /if }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ /testimonial }}
+        {{ /if }}
+    </div>
+</section>
+

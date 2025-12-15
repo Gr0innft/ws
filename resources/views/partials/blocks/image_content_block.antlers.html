@@ -1,0 +1,267 @@
+{{# Determine section class based on style #}}
+{{ if style == "hero" }}
+    {{ if has_background }}
+        <section class="tj-about-section {{ if image_position == 'right' }}right{{ /if }} py-16 lg:py-48">
+    {{ else }}
+        <section class="tj-about-section-no-bg {{ if image_position == 'right' }}right{{ /if }} py-16 lg:py-48">
+    {{ /if }}
+{{ else }}
+    <section class="tj-feature-section pt-0{{ if add_curve_to_top }}{{ if has_background }} with-shape{{ else }} with-shape-light-grey{{ /if }}{{ /if }}">
+{{ /if }}
+
+{{# Simple style with background #}}
+{{ if style == "simple" && has_background }}
+    <div class="row bg-section-bg py-16 lg:py-24">
+        <div class="container">
+            <div class="about-wrapper-two grid grid-cols-1 lg:grid-cols-12 items-center gap-8">
+                {{# Left Image #}}
+                {{ if image_position == "left" }}
+                    <div class="about-images-group-two hover-shine lg:col-span-5">
+                        {{ if image }}
+                        <img src="{{ image }}" alt="{{ heading ?? 'Content Image' }}" class="w-full">
+                        {{ /if }}
+                        <div class="about-video-box">
+                            <div class="video-box">
+                                <a class="circle video-popup w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary/90 transition-colors" href="#">
+                                    <i class="fa-sharp fa-solid fa-play text-xl"></i>
+                                </a>
+                            </div>
+                            <span class="sub-title">Click for watch</span>
+                            <h5 class="title">See our latest video</h5>
+                        </div>
+                    </div>
+                {{ /if }}
+                
+                {{# Content #}}
+                <div class="about-content-three {{ if image_position == "left" }}lg:col-start-7 lg:col-span-6{{ else }}lg:col-span-6{{ /if }}">
+                    <div class="sec-heading style-2">
+                        {{ if subtitle }}
+                        <span class="sub-title text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">// {{ subtitle }}</span>
+                        {{ /if }}
+                        {{ if heading }}
+                        <h2 class="sec-title text-4xl lg:text-5xl font-bold text-secondary mb-6">{{ heading }}</h2>
+                        {{ /if }}
+                        {{ if text }}
+                        <div class="desc mb-8">
+                            <p class="text-lg text-gray-700 leading-relaxed">{{ text }}</p>
+                        </div>
+                        {{ /if }}
+                        {{ if link_url }}
+                        <div class="about-button">
+                            <a href="{{ link_url }}" class="btn-primary">
+                                <div class="btn_inner">
+                                    <div class="btn_icon">
+                                        <span>
+                                            <i class="ph-fill ph-caret-right"></i>
+                                            <i class="ph-fill ph-caret-right"></i>
+                                        </span>
+                                    </div>
+                                    <div class="btn_text">
+                                        <span>{{ link_text ?? 'Learn More' }}</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        {{ /if }}
+                    </div>
+                </div>
+                
+                {{# Right Image - Show after content when image is on right #}}
+                {{ if image_position == "right" }}
+                    <div class="about-images-group-two hover-shine lg:col-start-7 lg:col-span-5">
+                        {{ if image }}
+                        <img src="{{ image }}" alt="{{ heading ?? 'Content Image' }}" class="w-full">
+                        {{ /if }}
+                        <div class="about-video-box">
+                            <div class="video-box">
+                                <a class="circle video-popup w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary/90 transition-colors" href="#">
+                                    <i class="fa-sharp fa-solid fa-play text-xl"></i>
+                                </a>
+                            </div>
+                            <span class="sub-title">Click for watch</span>
+                            <h5 class="title">See our latest video</h5>
+                        </div>
+                    </div>
+                {{ /if }}
+            </div>
+        </div>
+    </div>
+
+{{# Simple style without background #}}
+{{ elseif style == "simple" && !has_background }}
+    <div class="row py-16 lg:py-24">
+        <div class="container">
+            <div class="about-wrapper-two grid grid-cols-1 lg:grid-cols-12 items-center gap-8">
+                {{# Left Image #}}
+                {{ if image_position == "left" }}
+                    <div class="about-images-group-two hover-shine lg:col-span-5">
+                        {{ if image }}
+                        <img src="{{ image }}" alt="{{ heading ?? 'Content Image' }}" class="w-full">
+                        {{ /if }}
+                        <div class="about-video-box">
+                            <div class="video-box">
+                                <a class="circle video-popup w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary/90 transition-colors" href="#">
+                                    <i class="fa-sharp fa-solid fa-play text-xl"></i>
+                                </a>
+                            </div>
+                            <span class="sub-title">Click for watch</span>
+                            <h5 class="title">See our latest video</h5>
+                        </div>
+                    </div>
+                {{ /if }}
+                
+                {{# Content #}}
+                <div class="about-content-three {{ if image_position == "left" }}lg:col-start-7 lg:col-span-6{{ else }}lg:col-span-6{{ /if }}">
+                    <div class="sec-heading style-2">
+                        {{ if subtitle }}
+                        <span class="sub-title text-primary wow fadeInUp font-semibold text-sm uppercase tracking-wider mb-4 block" data-wow-delay="0.1s">// {{ subtitle }}</span>
+                        {{ /if }}
+                        {{ if heading }}
+                        <h2 class="sec-title wow fadeInUp text-4xl lg:text-5xl font-bold text-secondary mb-6" data-wow-delay="0.2s">{{ heading }}</h2>
+                        {{ /if }}
+                        {{ if text }}
+                        <div class="desc mb-8 wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="text-lg text-gray-700 leading-relaxed">{{ text }}</p>
+                        </div>
+                        {{ /if }}
+                        {{ if link_url }}
+                        <div class="about-button wow fadeInUp" data-wow-delay="0.5s">
+                            <a href="{{ link_url }}" class="btn-primary-dark">
+                                <div class="btn_inner">
+                                    <div class="btn_icon">
+                                        <span>
+                                            <i class="ph-fill ph-caret-right"></i>
+                                            <i class="ph-fill ph-caret-right"></i>
+                                        </span>
+                                    </div>
+                                    <div class="btn_text">
+                                        <span>{{ link_text ?? 'Learn More' }}</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        {{ /if }}
+                    </div>
+                </div>
+                
+                {{# Right Image #}}
+                {{ if image_position == "right" }}
+                    <div class="about-images-group-two hover-shine lg:col-start-7 lg:col-span-5">
+                        {{ if image }}
+                        <img src="{{ image }}" alt="{{ heading ?? 'Content Image' }}" class="w-full">
+                        {{ /if }}
+                        <div class="about-video-box">
+                            <div class="video-box">
+                                <a class="circle video-popup w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary/90 transition-colors" href="#">
+                                    <i class="fa-sharp fa-solid fa-play text-xl"></i>
+                                </a>
+                            </div>
+                            <span class="sub-title">Click for watch</span>
+                            <h5 class="title">See our latest video</h5>
+                        </div>
+                    </div>
+                {{ /if }}
+            </div>
+        </div>
+    </div>
+
+{{# Hero style (with or without background) - Left Image #}}
+{{ elseif style == "hero" && image_position == "left" }}
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+            <div class="hidden lg:block lg:col-span-6"></div>
+            <div class="lg:col-span-6">
+                <div class="about-left-content">
+                    <div class="sec-heading">
+                        {{ if subtitle }}
+                        <span class="sub-title wow fadeInUp text-primary font-semibold text-sm uppercase tracking-wider mb-4 block" data-wow-delay="0.1s">// {{ subtitle }}</span>
+                        {{ /if }}
+                        {{ if heading }}
+                        <h2 class="sec-title wow fadeInUp text-4xl lg:text-5xl font-bold text-secondary mb-6" data-wow-delay="0.2s">{{ heading }}</h2>
+                        {{ /if }}
+                        {{ if text }}
+                        <div class="desc wow fadeInUp mb-8" data-wow-delay="0.3s">
+                            <p class="text-lg text-gray-700 leading-relaxed">{{ text }}</p>
+                        </div>
+                        {{ /if }}
+                    </div>
+                    {{ if link_url }}
+                    <div class="about-button wow fadeInUp" data-wow-delay="0.5s">
+                        <a href="{{ link_url }}" class="{{ if has_background }}btn-primary{{ else }}btn-primary-dark{{ /if }}">
+                            <div class="btn_inner">
+                                <div class="btn_icon">
+                                    <span>
+                                        <i class="ph-fill ph-caret-right"></i>
+                                        <i class="ph-fill ph-caret-right"></i>
+                                    </span>
+                                </div>
+                                <div class="btn_text">
+                                    <span>{{ link_text ?? 'Learn More' }}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {{ /if }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-bg-images">
+        <div class="about-shape-1 hover-shine">
+            {{ if image }}
+            <img src="{{ image }}" alt="{{ heading ?? 'Content Image' }}">
+            {{ /if }}
+        </div>
+    </div>
+
+{{# Hero style (with or without background) - Right Image #}}
+{{ else }}
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+            <div class="lg:col-span-6">
+                <div class="about-left-content">
+                    <div class="sec-heading">
+                        {{ if subtitle }}
+                        <span class="sub-title wow fadeInUp text-primary font-semibold text-sm uppercase tracking-wider mb-4 block" data-wow-delay="0.1s">// {{ subtitle }}</span>
+                        {{ /if }}
+                        {{ if heading }}
+                        <h2 class="sec-title wow fadeInUp text-4xl lg:text-5xl font-bold text-secondary mb-6" data-wow-delay="0.2s">{{ heading }}</h2>
+                        {{ /if }}
+                        {{ if text }}
+                        <div class="desc wow fadeInUp mb-8" data-wow-delay="0.3s">
+                            <p class="text-lg text-gray-700 leading-relaxed">{{ text }}</p>
+                        </div>
+                        {{ /if }}
+                    </div>
+                    {{ if link_url }}
+                    <div class="about-button wow fadeInUp" data-wow-delay="0.5s">
+                        <a href="{{ link_url }}" class="{{ if has_background }}btn-primary{{ else }}btn-primary-dark{{ /if }}">
+                            <div class="btn_inner">
+                                <div class="btn_icon">
+                                    <span>
+                                        <i class="ph-fill ph-caret-right"></i>
+                                        <i class="ph-fill ph-caret-right"></i>
+                                    </span>
+                                </div>
+                                <div class="btn_text">
+                                    <span>{{ link_text ?? 'Learn More' }}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {{ /if }}
+                </div>
+            </div>
+            <div class="hidden lg:block lg:col-span-6"></div>
+        </div>
+    </div>
+    <div class="about-bg-images">
+        <div class="about-shape-1-right right-0 hover-shine">
+            {{ if image }}
+            <img src="{{ image }}" alt="{{ heading ?? 'Content Image' }}">
+            {{ /if }}
+        </div>
+    </div>
+{{ /if }}
+
+</section>

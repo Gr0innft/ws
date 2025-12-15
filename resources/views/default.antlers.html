@@ -1,1 +1,34 @@
-{{ content }}
+
+
+{{# Render Page Builder Blocks (Replicator) #}}
+{{ if page_builder }}
+    {{ page_builder }}
+        {{ if type == "hero_banner" }}
+            {{ partial:partials/blocks/hero_banner }}
+        {{ elseif type == "image_content_block" }}
+            {{ partial:partials/blocks/image_content_block }}
+        {{ elseif type == "card_block" }}
+            {{ partial:partials/blocks/card_block }}
+        {{ elseif type == "testimonial_single" }}
+            {{ partial:partials/blocks/testimonial_single }}
+        {{ elseif type == "testimonial_slider" }}
+            {{ partial:partials/blocks/testimonial_slider }}
+        {{ elseif type == "service_block" }}
+            {{ partial:partials/blocks/service_block }}
+        {{ elseif type == "hero_slider" }}
+            {{ partial:partials/blocks/hero_slider }}
+        {{ elseif type == "stats_block" }}
+            {{ partial:partials/blocks/stats_block }}
+        {{ elseif type == "text_content_block" }}
+            {{ partial:partials/blocks/text_content_block }}
+        {{ elseif type == "dark_image_content_block" }}
+            {{ partial:partials/blocks/dark_image_content_block }}
+        {{ elseif type == "team_members_block" }}
+            {{ partial:partials/blocks/team_members_block }}
+        {{ elseif type == "enquiry_cta_form" }}
+            {{ partial:partials/blocks/enquiry_cta_form }}
+        {{ elseif type == "service_grid_block" }}
+            {{ partial:partials/blocks/service_grid_block }}
+        {{ /if }}
+    {{ /page_builder }}
+{{ /if }}

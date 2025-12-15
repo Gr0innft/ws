@@ -1,0 +1,77 @@
+{{# Testimonial Detail Page #}}
+<section class="pt-[140px] sm:pt-[140px] md:pt-[179px] lg:pt-[190px] pb-[100px] sm:pb-[80px] md:pb-[100px] lg:pb-[100px] bg-cover bg-center bg-no-repeat bg-secondary relative overflow-hidden z-[2]" style="background-image: url('/assets/images/bg/download.webp');">
+    <div class="absolute inset-0 bg-secondary/85 z-[-1]"></div>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center">
+            <div class="tj-page-link inline-flex flex-wrap items-center justify-center gap-2.5 mb-5 relative rounded-[50px] bg-white/10 px-[15px] py-2 z-[2] mt-6 wow fadeInUp" data-wow-delay="0.1s">
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <a href="/" class="hover:text-primary transition-colors">
+                        <span>Home</span>
+                    </a>
+                </span>
+                <span class="text-white text-sm relative inline-block leading-none">/</span>
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <span>{{ title }}</span>
+                </span>
+            </div>
+            <h1 class="hero-title text-anim text-4xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                Testimonial
+            </h1>
+        </div>
+    </div>
+</section>
+
+{{# Testimonial Content #}}
+<section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <div class="testimonial-detail">
+            {{ if testimonial_text }}
+            <div class="testimonial-quote mb-8">
+                <i class="tji-right-quote text-6xl text-primary"></i>
+            </div>
+            <div class="desc mb-8">
+                <p class="text-2xl text-gray-700 font-semibold leading-relaxed">{{ testimonial_text }}</p>
+            </div>
+            {{ /if }}
+            
+            <div class="testimonial-author flex items-center gap-4 mb-8 pb-8 border-b border-gray-200">
+                {{ if author_image }}
+                <div class="author-images">
+                    <img src="{{ author_image }}" alt="{{ title }}" class="w-20 h-20 rounded-full object-cover">
+                </div>
+                {{ /if }}
+                <div class="author-text flex-1">
+                    {{ if title }}
+                    <h4 class="title text-xl font-bold text-secondary mb-1">{{ title }}</h4>
+                    {{ /if }}
+                    {{ if author_designation }}
+                    <span class="designation text-gray-600">{{ author_designation }}</span>
+                    {{ /if }}
+                </div>
+            </div>
+            
+            {{ if rating }}
+            <div class="rating mb-4">
+                <div class="star-ratings relative inline-block">
+                    <span class="inline-block text-lg px-3 py-1 text-primary bg-gray-100 rounded-2xl">
+                        {{# Show filled stars #}}
+                        {{ if rating == "5" || rating == 5 }}★★★★★
+                        {{ elseif rating == "4" || rating == 4 }}★★★★<span class="text-gray-300">★</span>
+                        {{ elseif rating == "3" || rating == 3 }}★★★<span class="text-gray-300">★★</span>
+                        {{ elseif rating == "2" || rating == 2 }}★★<span class="text-gray-300">★★★</span>
+                        {{ elseif rating == "1" || rating == 1 }}★<span class="text-gray-300">★★★★</span>
+                        {{ /if }}
+                    </span>
+                </div>
+            </div>
+            {{ /if }}
+        </div>
+        
+        {{# Page Builder Content #}}
+        {{ if page_builder }}
+            {{ page_builder }}
+                {{ partial src="partials/blocks/{type}" }}
+            {{ /page_builder }}
+        {{ /if }}
+    </div>
+</section>

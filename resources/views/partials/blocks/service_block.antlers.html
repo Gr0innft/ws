@@ -1,0 +1,247 @@
+{{# Service Block - Unified block for Grid, Slider, and Vertical layouts #}}
+
+{{# Grid Layout (Static) #}}
+{{ if layout == "grid" }}
+<section class="tj-feature-section py-16 lg:py-24{{ if add_curve_to_top }} with-shape-light-grey{{ /if }}">
+    <div class="container mx-auto px-4 pt-20">
+        <div class="row">
+            <div class="col-12">
+                <div class="sec-heading-wrap text-center mb-12">
+                    <div class="sec-heading text-center md:text-left">
+                        {{ if subtitle || title || description }}
+                        <div class="mb-0">
+                            {{ if subtitle }}
+                            <span class="sub-title inline-block text-primary font-semibold mb-4 text-sm uppercase wow fadeInUp" data-wow-delay="0.1s">// {{ subtitle }}</span>
+                            {{ /if }}
+                            {{ if title }}
+                            <h2 class="sec-title text-4xl lg:text-5xl font-bold text-secondary mb-6 max-w-3xl mx-auto md:mx-0 leading-relaxed">{{ title }}</h2>
+                            {{ /if }}
+                            {{ if description }}
+                            <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto md:mx-0">{{ description }}</p>
+                            {{ /if }}
+                        </div>
+                        {{ /if }}
+                    </div>
+                    {{ if show_rating && customer_rating:rating_score }}
+                    <div class="service-rating flex-shrink-0 text-left md:text-right flex flex-col items-start md:items-end justify-start md:justify-end">
+                        <div class="star-fill inline-block bg-primary rounded-full mb-4 star-fill-padding md:self-end">
+                            <div class="star-ratings relative text-white text-base tracking-[5px] leading-none star-ratings-text">
+                                <div class="fill-ratings absolute top-0 left-0 overflow-hidden text-white z-10 fill-ratings-width">
+                                    <span class="inline-block">★★★★★</span>
+                                </div>
+                                <div class="empty-ratings relative text-white z-0">
+                                    <span>★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review text-sm sm:text-sm md:text-base lg:text-base text-secondary leading-none">
+                            {{ customer_rating:rating_text ?? 'Customers review' }} (<strong class="text-secondary">{{ customer_rating:rating_score ?? '4.7' }}</strong>/5.0)
+                        </div>
+                    </div>
+                    {{ /if }}
+                </div>
+            </div>
+        </div>
+        {{ if services }}
+        <div class="row grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            {{ services }}
+            <div class="feature-item hover-bg border border-gray-200 p-8 lg:p-10 bg-white relative overflow-hidden z-[1] group transition-all duration-300">
+                <div class="feature-icon max-w-[80px] w-full mb-9">
+                    <div class="w-20 h-20 flex items-center justify-center text-primary group-hover:animate-pulse">
+                        <i class="{{ icon }} text-6xl"></i>
+                    </div>
+                </div>
+                <div class="feature-content relative z-10">
+                    {{ if title }}
+                    <h5 class="title text-xl font-bold text-secondary mb-5 tracking-tight">{{ title }}</h5>
+                    {{ /if }}
+                    {{ if text }}
+                    <div class="desc">
+                        <p class="text-gray-600 leading-relaxed">{{ text }}</p>
+                    </div>
+                    {{ /if }}
+                </div>
+                <div class="absolute top-0 left-auto right-0 w-0 h-full bg-section-bg transition-all duration-300 ease-in-out z-[-1] group-hover:w-full group-hover:left-0 group-hover:right-auto"></div>
+            </div>
+            {{ /services }}
+        </div>
+        {{ /if }}
+        {{ if show_button && button_url }}
+        <div class="about-btn wow fadeInUp mx-auto py-12 justify-center flex" data-wow-delay="0.5s">
+            <a href="{{ button_url }}" class="btn-primary-dark hidden lg:inline-flex">
+                <div class="btn_inner">
+                    <div class="btn_icon">
+                        <span>
+                            <i class="ph-fill ph-caret-right"></i>
+                            <i class="ph-fill ph-caret-right"></i>
+                        </span>
+                    </div>
+                    <div class="btn_text">
+                        <span>{{ button_text ?? 'Learn More' }}</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {{ /if }}
+    </div>
+</section>
+
+{{# Slider Layout (Scrolling) #}}
+{{ elseif layout == "slider" }}
+<section class="py-16 lg:py-24 bg-white overflow-hidden">
+    <div class="container">
+        <div class="mb-12 flex flex-wrap items-center justify-between gap-6">
+            <div class="sec-text max-w-[700px]">
+                {{ if subtitle }}
+                <span class="sub-title inline-block text-primary font-semibold mb-4 text-sm uppercase tracking-wider">// {{ subtitle }}</span>
+                {{ /if }}
+                {{ if title }}
+                <h2 class="sec-title text-anim text-4xl lg:text-5xl font-bold text-secondary mb-0 leading-tight">{{ title }}</h2>
+                {{ /if }}
+                {{ if description }}
+                <p class="text-gray-600 leading-relaxed mt-4">{{ description }}</p>
+                {{ /if }}
+            </div>
+            <div class="flex items-end gap-4">
+                {{ if show_rating && customer_rating:rating_score }}
+                <div class="service-rating flex-shrink-0 text-right flex flex-col items-end justify-end hidden md:flex">
+                    <div class="star-fill inline-block bg-primary rounded-full mb-4 star-fill-padding">
+                        <div class="star-ratings relative text-white text-base tracking-[5px] leading-none star-ratings-text">
+                            <div class="fill-ratings absolute top-0 left-0 overflow-hidden text-white z-10 fill-ratings-width">
+                                <span class="inline-block">★★★★★</span>
+                            </div>
+                            <div class="empty-ratings relative text-white z-0">
+                                <span>★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review text-sm sm:text-sm md:text-base lg:text-base text-secondary leading-none">
+                        {{ customer_rating:rating_text ?? 'Customers review' }} (<strong class="text-secondary">{{ customer_rating:rating_score ?? '4.7' }}</strong>/5.0)
+                    </div>
+                </div>
+                {{ /if }}
+                <div class="swiper_navigations service-navigation hidden md:inline-flex gap-4">
+                    <button class="navigation slider-prev w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 hover:bg-primary text-secondary hover:text-white transition-all duration-300">
+                        <i class="ph-fill ph-caret-left"></i>
+                    </button>
+                    <button class="navigation slider-next w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 hover:bg-primary text-secondary hover:text-white transition-all duration-300">
+                        <i class="ph-fill ph-caret-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        {{ if services }}
+        <div class="swiper swiper-container tj-service-slider">
+            <div class="swiper-wrapper">
+                {{ services }}
+                <div class="swiper-slide">
+                    <div class="service-style-2 border border-gray-200 p-8 lg:p-10 relative bg-white overflow-hidden group transition-all duration-300">
+                        <div class="service-icon mb-6 relative z-10">
+                            <i class="{{ icon }} text-6xl text-primary"></i>
+                        </div>
+                        <div class="service-content relative z-10">
+                            {{ if title }}
+                            <h4 class="title text-2xl font-bold text-secondary mb-4 leading-tight group-hover:text-white transition-colors">
+                                {{ if link_url }}
+                                <a href="{{ link_url }}" class="hover:text-white transition-colors">{{ title }}</a>
+                                {{ else }}
+                                {{ title }}
+                                {{ /if }}
+                            </h4>
+                            {{ /if }}
+                            {{ if text }}
+                            <div class="desc mb-6">
+                                <p class="text-gray-600 group-hover:text-white transition-colors">{{ text }}</p>
+                            </div>
+                            {{ /if }}
+                        </div>
+                        <div class="absolute top-0 left-auto right-0 w-0 h-full bg-primary transition-all duration-300 ease-in-out z-0 group-hover:w-full group-hover:left-0 group-hover:right-auto"></div>
+                    </div>
+                </div>
+                {{ /services }}
+            </div>
+            <div class="swiper_pagination service-pagination"></div>
+        </div>
+        {{ /if }}
+    </div>
+</section>
+
+{{# Vertical Layout (List) #}}
+{{ else }}
+<section class="py-24 lg:pt-30 bg-section-bg">
+    <div class="container">
+        <div class="sec-heading-wrap mb-12 lg:mb-15 flex items-end justify-between gap-6 lg:gap-8">
+            <div class="sec-heading max-w-[650px]">
+                {{ if subtitle }}
+                <span class="sub-title inline-block text-primary font-semibold mb-4 text-sm uppercase tracking-wider px-2.5 py-1">// {{ subtitle }}</span>
+                {{ /if }}
+                {{ if title }}
+                <h2 class="sec-title text-anim text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-0 leading-tight tracking-tight">{{ title }}</h2>
+                {{ /if }}
+            </div>
+            {{ if show_rating && customer_rating:rating_score }}
+            <div class="service-rating flex-shrink-0 text-left md:text-right flex flex-col items-start md:items-end justify-start md:justify-end">
+                <div class="star-fill inline-block bg-primary rounded-full mb-4 star-fill-padding md:self-end">
+                    <div class="star-ratings relative text-white text-base tracking-[5px] leading-none star-ratings-text">
+                        <div class="fill-ratings absolute top-0 left-0 overflow-hidden text-white z-10 fill-ratings-width">
+                            <span class="inline-block">★★★★★</span>
+                        </div>
+                        <div class="empty-ratings relative text-white z-0">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review text-sm sm:text-sm md:text-base lg:text-base text-secondary leading-none">
+                    {{ customer_rating:rating_text ?? 'Customers review' }} (<strong class="text-secondary">{{ customer_rating:rating_score ?? '4.7' }}</strong>/5.0)
+                </div>
+            </div>
+            {{ /if }}
+        </div>
+        {{ if services }}
+        <div class="service-wrapper-two flex flex-col gap-3">
+            {{ services }}
+            <div class="service-style-3 bg-white p-6 lg:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 md:gap-6 relative overflow-hidden transition-all duration-300 group wow fadeInUp" data-wow-delay="0.1s">
+                <div class="flex items-start gap-4 md:gap-5 flex-1 relative z-10">
+                    <div class="service-icon w-20 h-20 flex-shrink-0 self-center">
+                        <span class="w-20 h-20 flex items-center justify-center rounded-full bg-primary text-white text-[52px] leading-none group-hover:bg-white group-hover:text-primary transition-all duration-300">
+                            <i class="{{ icon }} text-4xl"></i>
+                        </span>
+                    </div>
+                    <div class="sm:flex-1 md:flex self-center items-center">
+                        {{ if title }}
+                        <h4 class="title text-xl lg:text-2xl font-bold text-secondary mb-0 leading-tight group-hover:text-white transition-colors md:min-w-[200px] md:max-w-[200px] lg:max-w-[400px] lg:min-w-[400px]">
+                            {{ if link_url }}
+                            <a href="{{ link_url }}" class="hover:text-white transition-colors">{{ title }}</a>
+                            {{ else }}
+                            {{ title }}
+                            {{ /if }}
+                        </h4>
+                        {{ /if }}
+                        {{ if text }}
+                        <p class="mt-2 md:mt-0 text-gray-600 mb-0 group-hover:text-white transition-colors text-sm md:text-base">{{ text }}</p>
+                        {{ /if }}
+                    </div>
+                </div>
+                {{ if link_url }}
+                <div class="service-right flex items-center justify-start sm:justify-end hidden sm:block relative z-10">
+                    <div class="service-button h7-service-button">
+                        <a class="blog-btn-2 inline-flex items-center justify-center gap-2" href="{{ link_url }}">
+                            <span class="btn-text text-sm font-medium text-secondary opacity-0 group-hover:opacity-100 group-hover:text-white transition-all duration-300">
+                                {{ link_text ?? "Let's Talk" }}
+                            </span>
+                            <span class="btn-icon text-[28px] text-secondary group-hover:text-white transition-all duration-300 transform -rotate-45 group-hover:rotate-0">
+                                <i class="ph ph-arrow-right text-4xl"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                {{ /if }}
+                <div class="absolute top-0 left-auto right-0 w-0 h-full bg-primary transition-all duration-300 ease-in-out z-0 group-hover:w-full group-hover:left-0 group-hover:right-auto"></div>
+            </div>
+            {{ /services }}
+        </div>
+        {{ /if }}
+    </div>
+</section>
+{{ /if }}
+

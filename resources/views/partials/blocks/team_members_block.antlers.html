@@ -1,0 +1,117 @@
+{{# Team Members Block - Displays selected team members from the team collection #}}
+
+<section class="py-24 lg:py-30 bg-white mb-10">
+    <div class="container mx-auto px-4">
+        <div class="row flex items-center justify-between gap-6 lg:gap-8 mb-10">
+            <div class="col-9">
+                <div class="sec-heading">
+                    {{ if subtitle }}
+                    <span class="sub-title inline-block text-primary font-semibold mb-4 text-sm uppercase tracking-wider max-w-[585px]">
+                        // {{ subtitle }}
+                    </span>
+                    {{ /if }}
+                    {{ if heading }}
+                    <h2 class="sec-title text-4xl md:text-5xl font-bold text-secondary mb-4">
+                        {{ heading | raw }}
+                    </h2>
+                    {{ /if }}
+                    {{ if description }}
+                    <p>{{ description }}</p>
+                    {{ /if }}
+                </div>
+            </div>
+            <div class="col-3 self-end">
+                {{# Desktop Button #}}
+                {{ if button_url }}
+                <div class="service-rating flex-shrink-0 text-right">
+                    <a href="{{ button_url }}" class="btn-primary-dark hidden lg:inline-flex">
+                        <div class="btn_inner">
+                            <div class="btn_icon">
+                                <span>
+                                    <i class="ph-fill ph-caret-right"></i>
+                                    <i class="ph-fill ph-caret-right"></i>
+                                </span>
+                            </div>
+                            <div class="btn_text">
+                                <span>{{ button_text ?? 'More members' }}</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {{ /if }}
+            </div>
+        </div>
+        
+        {{# Team Members Grid #}}
+        {{ if team_members }}
+        <div class="row grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            {{ team_members }}
+            <div class="h5-team-item pb-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="h5-team-item-inner w-full border border-gray-200 flex flex-col items-center relative z-[1] px-5 pt-[30px] pb-[25px] bg-white hover:shadow-lg transition-shadow duration-300">
+                    {{# Team Image #}}
+                    {{ if image }}
+                    <div class="team_image inline-flex items-center w-[220px] h-[220px] rounded-full overflow-hidden">
+                        <img src="{{ image }}" alt="{{ title }}" class="w-full h-full object-cover object-[center_top] transition-transform duration-500 hover:scale-110">
+                    </div>
+                    {{ /if }}
+                    
+                    {{# Team Content #}}
+                    <div class="team-content mt-[30px] text-center">
+                        {{ if title }}
+                        <h5 class="title text-xl font-bold text-secondary mb-0 tracking-[0.02em]">
+                            <a href="{{ url }}" class="hover:text-primary transition-colors">{{ title }}</a>
+                        </h5>
+                        {{ /if }}
+                        {{ if job_title }}
+                        <span class="designation inline-block mt-[7px] text-gray-600">{{ job_title }}</span>
+                        {{ /if }}
+                    </div>
+                    
+                    {{# Social Links #}}
+                    <ul class="team-socials list-none flex items-center gap-1.5 absolute left-1/2 bottom-[-12px] z-[2] -translate-x-1/2 bg-white px-[15px] py-0">
+                        {{ if linkedin_url }}
+                        <li>
+                            <a href="{{ linkedin_url }}" target="_blank" rel="noopener noreferrer" class="w-7 h-7 flex items-center justify-center text-secondary hover:text-white hover:bg-primary transition-all duration-300 rounded">
+                                <i class="fa-brands fa-linkedin-in text-base"></i>
+                            </a>
+                        </li>
+                        {{ /if }}
+                        {{ if email }}
+                        <li>
+                            <a href="mailto:{{ email }}" class="w-7 h-7 flex items-center justify-center text-secondary hover:text-white hover:bg-primary transition-all duration-300 rounded">
+                                <i class="fa-solid fa-envelope text-base"></i>
+                            </a>
+                        </li>
+                        {{ /if }}
+                    </ul>
+                </div>
+            </div>
+            {{ /team_members }}
+        </div>
+        {{ /if }}
+        
+        {{# Mobile Button #}}
+        {{ if button_url }}
+        <div class="row lg:hidden mt-10">
+            <div class="col-12">
+                <div class="teams_btn text-center">
+                    <a href="{{ button_url }}" class="btn-primary-dark inline-flex">
+                        <div class="btn_inner">
+                            <div class="btn_icon">
+                                <span>
+                                    <i class="ph-fill ph-caret-right"></i>
+                                    <i class="ph-fill ph-caret-right"></i>
+                                </span>
+                            </div>
+                            <div class="btn_text">
+                                <span>{{ button_text ?? 'More Members' }}</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{ /if }}
+    </div>
+</section>
+

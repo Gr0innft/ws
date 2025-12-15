@@ -1,0 +1,233 @@
+<section class="pt-[140px] sm:pt-[140px] md:pt-[179px] lg:pt-[190px] pb-[100px] sm:pb-[80px] md:pb-[100px] lg:pb-[100px] bg-cover bg-center bg-no-repeat bg-secondary relative overflow-hidden z-[2]" style="background-image: url('/assets/images/bg/download.webp');">
+    <div class="absolute inset-0 bg-secondary/85 z-[-1]"></div>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center">
+            
+            <div class="tj-page-link inline-flex flex-wrap items-center justify-center gap-2.5 mb-5 relative rounded-[50px] bg-white/10 px-[15px] py-2 z-[2] mt-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <a href="/" class="hover:text-primary transition-colors">
+                        <span>Home</span>
+                    </a>
+                </span>
+                <span class="text-white text-sm relative inline-block leading-none">/</span>
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <a href="/team" class="hover:text-primary transition-colors">
+                        <span>Team</span>
+                    </a>
+                </span>
+                <span class="text-white text-sm relative inline-block leading-none">/</span>
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <span>{{ title }}</span>
+                </span>
+                
+            </div>
+            
+            
+            <h1 class="hero-title text-anim text-4xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                Voyager {{ category:title }}
+            </h1>
+            <a href="#" class="btn-primary inline-flex wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="btn_inner">
+                    <div class="btn_icon">
+                        <span>
+                            <i class="ph-fill ph-caret-right"></i>
+                            <i class="ph-fill ph-caret-right"></i>
+                        </span>
+                    </div>
+                    <div class="btn_text">
+                        <span>Let's talk</span>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+</section>
+
+{{# Team Details Section #}}
+<section class="team-details py-16 lg:py-24">
+    <div class="container mx-auto px-4 max-w-7xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+            <!-- Left - Image -->
+            <div class="lg:col-span-5">
+                <div class="team-details__img hover-shine relative overflow-hidden rounded-lg shadow-lg">
+                    {{ if image }}
+                    <img src="{{ image }}" alt="{{ title }}" class="w-full h-auto object-cover">
+                    {{ /if }}
+                </div>
+            </div>
+            
+            <!-- Right - Content -->
+            <div class="lg:col-span-7">
+                <div class="team-details__content">
+                    {{ if title }}
+                    <h2 class="text-3xl lg:text-4xl font-bold text-secondary mb-2">Hello, I am {{ title }}</h2>
+                    {{ /if }}
+                    {{ if job_title }}
+                    <span class="text-md text-black/50 font-semibold block mb-6">{{ job_title }}</span>
+                    {{ /if }}
+                    
+                    <!-- Contact Info -->
+                    {{ if email || phone }}
+                    <div class="team-details__contact-info mb-8">
+                        <ul class="flex border border-gray-300 rounded-lg my-6 list-none">
+                            {{ if email }}
+                            <li class="flex-1 flex flex-col items-start p-6 lg:p-7 border-r border-gray-300 last:border-r-0">
+                                <span class="text-gray-500 text-sm mb-1">Email address</span>
+                                <a href="mailto:{{ email }}" class="text-secondary hover:text-primary transition-colors font-semibold text-lg lg:text-xl relative inline-block">
+                                    {{ email }}
+                                </a>
+                            </li>
+                            {{ /if }}
+                            {{ if phone }}
+                            <li class="flex-1 flex flex-col items-start p-6 lg:p-7 border-r border-gray-300 last:border-r-0">
+                                <span class="text-gray-500 text-sm mb-1">Phone number</span>
+                                <a href="tel:{{ phone | replace(' ', '') | replace('+', '') | replace('-', '') }}" class="text-secondary hover:text-primary transition-colors font-semibold text-lg lg:text-xl relative inline-block">
+                                    {{ phone }}
+                                </a>
+                            </li>
+                            {{ /if }}
+                        </ul>
+                    </div>
+                    {{ /if }}
+                    
+                    <!-- Social Links -->
+                    {{ if linkedin_url || facebook_url || twitter_url }}
+                    <div class="tj-socials mb-12">
+                        <ul class="flex gap-4">
+                            {{ if linkedin_url }}
+                            <li>
+                                <a href="{{ linkedin_url }}" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-primary text-secondary hover:text-white rounded-lg transition-all duration-300 hover:scale-110">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            {{ /if }}
+                            {{ if facebook_url }}
+                            <li>
+                                <a href="{{ facebook_url }}" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-primary text-secondary hover:text-white rounded-lg transition-all duration-300 hover:scale-110">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            {{ /if }}
+                            {{ if twitter_url }}
+                            <li>
+                                <a href="{{ twitter_url }}" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-primary text-secondary hover:text-white rounded-lg transition-all duration-300 hover:scale-110">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            {{ /if }}
+                        </ul>
+                    </div>
+                    {{ /if }}
+                    
+                    <!-- Bio -->
+                    {{ if bio }}
+                    <div class="bio-content">
+                        {{ bio | nl2br }}
+                    </div>
+                    {{ /if }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- start: Team Contact Section -->
+<section class="contact-team-details py-12 lg:py-16" id="scroll-cta">
+    <div class="container mx-auto px-4">
+        <div class="contact-team-details__inner bg-section-bg rounded-2xl p-6 md:p-8 lg:p-12 xl:p-16 lg:pl-12 xl:pl-16">
+            <div class="row flex flex-col lg:flex-row gap-8 lg:gap-12">
+                <!-- Left Content -->
+                <div class="w-full lg:w-5/12">
+                    <div class="sec-heading style-2">
+                        <span class="sub-title inline-block text-primary font-semibold mb-4 text-sm uppercase tracking-wider wow fadeInUp" data-wow-delay="0.1s">// CONTACT US</span>
+                        {{ if contact_info:team_contact_title }}
+                        <h2 class="sec-title text-anim text-3xl lg:text-4xl font-bold text-secondary mb-6">{{ contact_info:team_contact_title }}</h2>
+                        {{ /if }}
+                        {{ if contact_info:team_contact_description }}
+                        <p class="desc text-gray-600 text-base leading-relaxed mb-6 wow fadeInUp" data-wow-delay="0.3s">
+                            {{ contact_info:team_contact_description }}
+                        </p>
+                        {{ /if }}
+                        {{ if contact_info:email }}
+                        <h6 class="contact-team-details__message text-base font-medium text-secondary mt-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <a href="mailto:{{ contact_info:email }}" class="inline-flex items-center gap-2 hover:text-primary transition-colors">
+                                <i class="tji-chat text-primary"></i>
+                                <span>{{ contact_info:email }}</span>
+                            </a>
+                        </h6>
+                        {{ /if }}
+                    </div>
+                </div>
+                <!-- Right Form -->
+                <div class="w-full lg:w-7/12">
+                    <form action="#0" class="contact-team-details__form grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 mt-0 lg:mt-0 lg:pl-16 xl:pl-24 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="tj-input__wrapper w-full">
+                            <input class="tj-input w-full px-6 py-4 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder:text-gray-500 focus:outline-none focus:border-primary focus:bg-white transition-colors" type="text" placeholder="Full name*" required>
+                        </div>
+                        <div class="tj-input__wrapper w-full">
+                            <input class="tj-input w-full px-6 py-4 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder:text-gray-500 focus:outline-none focus:border-primary focus:bg-white transition-colors" type="email" placeholder="Email address*" required>
+                        </div>
+                        <div class="tj-input__wrapper w-full">
+                            <input class="tj-input w-full px-6 py-4 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder:text-gray-500 focus:outline-none focus:border-primary focus:bg-white transition-colors" type="tel" placeholder="Phone number*" required>
+                        </div>
+                        <div class="tj-input__wrapper w-full relative">
+                            <select class="tj-input w-full px-6 py-4 bg-white border border-gray-200 rounded-lg text-gray-900 focus:outline-none focus:border-primary focus:bg-white transition-colors appearance-none cursor-pointer pr-10" name="input-options" id="input-options" required>
+                                <option value="">Choose an option</option>
+                                <option value="cloud">Cloud Solutions</option>
+                                <option value="connectivity">Connectivity</option>
+                                <option value="communication">Communication</option>
+                                <option value="cybersecurity">Cybersecurity</option>
+                            </select>
+                            <div class="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                                <i class="ph-fill ph-caret-down text-gray-400"></i>
+                            </div>
+                        </div>
+                        <div class="tj-input__wrapper tj-input__wrapper--message w-full md:col-span-2">
+                            <textarea class="tj-input w-full px-6 py-4 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder:text-gray-500 focus:outline-none focus:border-primary focus:bg-white transition-colors resize-none min-h-[200px]" placeholder="Type message" rows="6" required></textarea>
+                        </div>
+                        <div class="w-full md:col-span-2 mt-2">
+                            <button type="submit" class="btn-primary inline-flex">
+                                <div class="btn_inner">
+                                    <div class="btn_icon">
+                                        <span>
+                                            <i class="ph-fill ph-caret-right"></i>
+                                            <i class="ph-fill ph-caret-right"></i>
+                                        </span>
+                                    </div>
+                                    <div class="btn_text">
+                                        <span>Send message</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: Team Contact Section -->
+
+
+{{# Team Member Single Page #}}
+
+{{# Render Page Builder Blocks (Hero Banner, etc.) #}}
+{{ if page_builder }}
+    {{ page_builder }}
+        {{ if type == "hero_banner" }}
+            {{ partial:partials/blocks/hero_banner }}
+        {{ elseif type == "text_content_block" }}
+            {{ partial:partials/blocks/text_content_block }}
+        {{ elseif type == "image_content_block" }}
+            {{ partial:partials/blocks/image_content_block }}
+        {{ elseif type == "enquiry_cta_form" }}
+            {{ partial:partials/blocks/enquiry_cta_form }}
+        {{ /if }}
+    {{ /page_builder }}
+{{ /if }}
+
+{{# Contact Form Section - Left out for now as requested #}}
+

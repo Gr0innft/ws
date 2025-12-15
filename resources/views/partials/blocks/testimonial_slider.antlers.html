@@ -1,0 +1,97 @@
+<section class="tj-testimonial-section py-16 lg:py-24">
+    <div class="container mx-auto px-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="sec-heading flex flex-col md:flex-row items-start md:items-end justify-between mb-12">
+                    <div class="sec-text mb-6 md:mb-0">
+                        {{ if subtitle }}
+                        <span class="sub-title inline-block text-primary font-semibold mb-4 text-sm uppercase tracking-wider wow fadeInUp" data-wow-delay="0.1s">// {{ subtitle }}</span>
+                        {{ /if }}
+                        {{ if title }}
+                        <h2 class="sec-title text-anim text-4xl lg:text-5xl font-bold text-secondary">{{ title }}</h2>
+                        {{ /if }}
+                    </div>
+                    <div class="swiper_navigations testimonial-navigation hidden md:inline-flex gap-4">
+                        <div class="navigation slider-prev w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-primary text-secondary hover:text-white rounded-full cursor-pointer transition-all duration-300">
+                            <i class="ph-fill ph-caret-left"></i>
+                        </div>
+                        <div class="navigation slider-next w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-primary text-secondary hover:text-white rounded-full cursor-pointer transition-all duration-300">
+                            <i class="ph-fill ph-caret-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="testimonial-slider-wrapper">
+                    <div class="swiper swiper-container tj-testimonial-slider">
+                        <div class="swiper-wrapper rightSwipeWrap">
+                            {{ if testimonials }}
+                                {{ testimonials }}
+                                {{# Handle both old format (replicator arrays) and new format (entry objects) #}}
+                                {{# Old format has author_name, new format uses title for author name #}}
+                                {{ if author_name }}
+                                    {{# Old format: direct fields from replicator #}}
+                                    {{ $author_name = author_name }}
+                                {{ else }}
+                                    {{# New format: entry object - title is the author name #}}
+                                    {{ $author_name = title }}
+                                {{ /if }}
+                                <div class="swiper-slide right-swipe">
+                                    <div class="testimonial-item bg-section-bg p-8 lg:p-10 rounded-lg">
+                                        <div class="testimonial-content flex flex-col md:flex-row gap-6 md:gap-8 items-start pb-8 border-b border-gray-200">
+                                            <div class="testimonial-quote text-primary text-6xl lg:text-7xl leading-none">
+                                                <i class="tji-right-quote"></i>
+                                            </div>
+                                            {{ if testimonial_text }}
+                                            <div class="desc flex-1 max-w-2xl">
+                                                <p class="text-gray-700 text-lg leading-relaxed">{{ testimonial_text }}</p>
+                                            </div>
+                                            {{ /if }}
+                                        </div>
+                                        <div class="tj-testimonial-author flex flex-wrap gap-4 md:gap-5 items-center mt-4 md:mt-6">
+                                            {{ if author_image }}
+                                            <div class="author-images max-w-[90px] md:max-w-[118px] w-full h-[80px] md:h-[106px] relative flex-shrink-0">
+                                                <img src="{{ author_image }}" alt="{{ $author_name ?? 'Author' }}" class="w-26 h-26 rounded-full object-cover">
+                                            </div>
+                                            {{ /if }}
+                                            <div class="author-content flex-1 min-w-0">
+                                                {{ if rating }}
+                                                <div class="author-rating mb-2 md:mb-3">
+                                                    <div class="star-ratings relative inline-block">
+                                                        <span class="inline-block text-sm md:text-base px-2 py-1 text-primary bg-white rounded-2xl">
+                                                            {{# Show filled stars #}}
+                                                            {{ if rating == "5" || rating == 5 }}★★★★★
+                                                            {{ elseif rating == "4" || rating == 4 }}★★★★<span class="text-gray-300">★</span>
+                                                            {{ elseif rating == "3" || rating == 3 }}★★★<span class="text-gray-300">★★</span>
+                                                            {{ elseif rating == "2" || rating == 2 }}★★<span class="text-gray-300">★★★</span>
+                                                            {{ elseif rating == "1" || rating == 1 }}★<span class="text-gray-300">★★★★</span>
+                                                            {{ /if }}
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                {{ /if }}
+                                                <div class="author-text">
+                                                    {{ if $author_name }}
+                                                    <h4 class="author-name text-lg md:text-xl font-bold text-secondary mb-1">{{ $author_name }}</h4>
+                                                    {{ /if }}
+                                                    {{ if author_designation }}
+                                                    <span class="sub-title text-gray-600 text-sm md:text-base">{{ author_designation }}</span>
+                                                    {{ /if }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{ /testimonials }}
+                            {{ /if }}
+                        </div>
+                        <div class="swiper_pagination testimonial-pagination mt-12 flex justify-center gap-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,201 @@
+{{# Hero Banner - Three Layout Variations #}}
+
+{{# Centered Layout (with breadcrumb) #}}
+{{ if layout == "centered" }}
+<section class="pt-[140px] sm:pt-[140px] md:pt-[179px] lg:pt-[190px] pb-[100px] sm:pb-[80px] md:pb-[100px] lg:pb-[100px] bg-cover bg-center bg-no-repeat bg-secondary relative overflow-hidden z-[2]" style="background-image: url('{{ background_image }}');">
+    <div class="absolute inset-0 bg-secondary/85 z-[-1]"></div>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center">
+            {{ if show_breadcrumb }}
+            <div class="tj-page-link inline-flex flex-wrap items-center justify-center gap-2.5 mb-5 relative rounded-[50px] bg-white/10 px-[15px] py-2 z-[2] mt-6 wow fadeInUp" data-wow-delay="0.1s">
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <a href="/" class="hover:text-primary transition-colors">
+                        <span>Home</span>
+                    </a>
+                </span>
+                {{# Build breadcrumb from page ancestors #}}
+                {{ if ancestors }}
+                    {{ ancestors }}
+                    <span class="text-white text-sm relative inline-block leading-none">/</span>
+                    <span class="text-white text-sm relative inline-block leading-none">
+                        <a href="{{ url }}" class="hover:text-primary transition-colors">
+                            <span>{{ title }}</span>
+                        </a>
+                    </span>
+                    {{ /ancestors }}
+                {{ /if }}
+                {{# Current page (not home) #}}
+                {{ if uri != '/' }}
+                <span class="text-white text-sm relative inline-block leading-none">/</span>
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <span>{{ title }}</span>
+                </span>
+                {{ /if }}
+            </div>
+            {{ /if }}
+            {{ if heading }}
+            <h1 class="hero-title text-anim text-4xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight wow fadeInUp" data-wow-delay="0.2s">
+                {{ heading | raw }}
+            </h1>
+            {{ /if }}
+            {{ if show_button }}
+            <a href="{{ button_url }}" class="btn-primary inline-flex wow fadeInUp" data-wow-delay="0.3s">
+                <div class="btn_inner">
+                    <div class="btn_icon">
+                        <span>
+                            <i class="ph-fill ph-caret-right"></i>
+                            <i class="ph-fill ph-caret-right"></i>
+                        </span>
+                    </div>
+                    <div class="btn_text">
+                        <span>{{ button_text ?? "Let's talk" }}</span>
+                    </div>
+                </div>
+            </a>
+            {{ /if }}
+        </div>
+    </div>
+</section>
+
+{{# Split Text Layout (left title, right text with breadcrumb) #}}
+{{ elseif layout == "split_text" }}
+<section class="pt-[140px] sm:pt-[140px] md:pt-[179px] lg:pt-[190px] pb-[80px] sm:pb-[80px] md:pb-[80px] lg:pb-[80px] bg-cover bg-center bg-no-repeat bg-secondary relative overflow-hidden z-[2]" style="background-image: url('{{ background_image }}');">
+    <div class="absolute inset-0 bg-secondary/85 z-[-1]"></div>
+    <div class="container mx-auto px-4">
+        <div class="hero-wrapper flex flex-wrap gap-5 md:gap-[60px] justify-between">
+            <div class="flex-1 min-w-0 z-[1] md:self-center pb-10">
+                {{ if show_breadcrumb }}
+                <div class="tj-page-link inline-flex flex-wrap items-center justify-center gap-2.5 mb-5 relative rounded-[50px] bg-white/10 px-[15px] py-2 z-[2] mt-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <span class="text-white text-sm relative inline-block leading-none">
+                        <a href="/" class="hover:text-primary transition-colors">
+                            <span>Home</span>
+                        </a>
+                    </span>
+                    {{# Build breadcrumb from page ancestors #}}
+                    {{ if ancestors }}
+                        {{ ancestors }}
+                        <span class="text-white text-sm relative inline-block leading-none">/</span>
+                        <span class="text-white text-sm relative inline-block leading-none">
+                            <a href="{{ url }}" class="hover:text-primary transition-colors">
+                                <span>{{ title }}</span>
+                            </a>
+                        </span>
+                        {{ /ancestors }}
+                    {{ /if }}
+                    {{# Current page (not home) #}}
+                    {{ if uri != '/' }}
+                    <span class="text-white text-sm relative inline-block leading-none">/</span>
+                    <span class="text-white text-sm relative inline-block leading-none">
+                        <span>{{ title }}</span>
+                    </span>
+                    {{ /if }}
+                </div>
+                {{ /if }}
+                {{ if heading }}
+                <h1 class="hero-title text-anim text-4xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight wow fadeInUp" data-wow-delay="0.2s">
+                    {{ heading | raw }}
+                </h1>
+                {{ /if }}
+                {{ if show_button }}
+                <a href="{{ button_url }}" class="btn-primary inline-flex mt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="btn_inner">
+                        <div class="btn_icon">
+                            <span>
+                                <i class="ph-fill ph-caret-right"></i>
+                                <i class="ph-fill ph-caret-right"></i>
+                            </span>
+                        </div>
+                        <div class="btn_text">
+                            <span>{{ button_text ?? "Let's talk" }}</span>
+                        </div>
+                    </div>
+                </a>
+                {{ /if }}
+            </div>
+            {{ if text }}
+            <div class="hero-images-box self-center">
+                <p class="text-gray-200 md:text-md lg:text-lg leading-relaxed mb-8 wow fadeInUp" data-wow-delay="0.4s">
+                    {{ text }}
+                </p>
+            </div>
+            {{ /if }}
+        </div>
+    </div>
+</section>
+
+{{# Product Layout (left content, right image) #}}
+{{ else }}
+<div class="heroStack relative z-10 bg-secondary bg-cover bg-overlay" style="background-image: url('{{ background_image }}');">
+    <div class="absolute inset-0 bg-secondary/70 z-0"></div>
+    <section class="pt-[120px] sm:pt-[100px] md:pt-[140px] lg:pt-[170px] relative z-[1] overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="hero-wrapper flex flex-wrap gap-5 md:gap-[60px] justify-between">
+                <div class="flex-1 min-w-0 z-[1] md:self-center pb-10">
+                    {{ if show_breadcrumb }}
+                    <div class="tj-page-link inline-flex flex-wrap items-center justify-center gap-2.5 mb-5 relative rounded-[50px] bg-white/10 px-[15px] py-2 z-[2] mt-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <span class="text-white text-sm relative inline-block leading-none">
+                            <a href="/" class="hover:text-primary transition-colors">
+                                <span>Home</span>
+                            </a>
+                        </span>
+                        {{# Build breadcrumb from page ancestors #}}
+                        {{ if ancestors }}
+                            {{ ancestors }}
+                            <span class="text-white text-sm relative inline-block leading-none">/</span>
+                            <span class="text-white text-sm relative inline-block leading-none">
+                                <a href="{{ url }}" class="hover:text-primary transition-colors">
+                                    <span>{{ title }}</span>
+                                </a>
+                            </span>
+                            {{ /ancestors }}
+                        {{ /if }}
+                        {{# Current page (not home) #}}
+                        {{ if uri != '/' }}
+                        <span class="text-white text-sm relative inline-block leading-none">/</span>
+                        <span class="text-white text-sm relative inline-block leading-none">
+                            <span>{{ title }}</span>
+                        </span>
+                        {{ /if }}
+                    </div>
+                    {{ /if }}
+                    {{ if heading }}
+                    <h1 class="hero-title text-anim text-4xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                        {{ heading | raw }}
+                    </h1>
+                    {{ /if }}
+                    {{ if text }}
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                        {{ text }}
+                    </p>
+                    {{ /if }}
+                    {{ if show_button }}
+                    <div>
+                        <a href="{{ button_url }}" class="btn-primary hero-button">
+                            <div class="btn_inner">
+                                <div class="btn_icon">
+                                    <span>
+                                        <i class="ph-fill ph-caret-right"></i>
+                                        <i class="ph-fill ph-caret-right"></i>
+                                    </span>
+                                </div>
+                                <div class="btn_text">
+                                    <span>{{ button_text ?? "Let's talk" }}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {{ /if }}
+                </div>
+                {{ if image }}
+                <div class="hero-images-box">
+                    <div class="hero-images">
+                        <img src="{{ image }}" alt="{{ heading | strip_tags ?? 'Hero Image' }}">
+                    </div>
+                </div>
+                {{ /if }}
+            </div>
+        </div>
+    </section>
+</div>
+{{ /if }}
+<div id="scroll-hero"></div>

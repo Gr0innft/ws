@@ -1,0 +1,62 @@
+{{# Hero Slider Section #}}
+{{ if slides }}
+<section class="tj-hero-slider style-1 relative">
+    <div class="swiper full-slider-active">
+        <div class="swiper-wrapper">
+            {{ slides }}
+            <div class="swiper-slide">
+                <section class="tj-slider-section relative min-h-[600px] md:min-h-[700px] lg:min-h-[800px] bg-cover bg-center bg-no-repeat flex items-center" style="background-image: url('{{ background_image }}');">
+                    <div class="absolute inset-0 bg-secondary/70 z-0"></div>
+                    <div class="container mx-auto px-4 relative z-10 pt-[120px] sm:pt-[100px] md:pt-[140px] lg:pt-[170px] pb-20">
+                        <div class="row">
+                            <div class="slider-wrapper flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-12">
+                                <div class="slider-content md:w-3/4 lg:w-1/2 w-full">
+                                    {{ if subtitle }}
+                                    <span class="sub-title inline-block text-primary font-semibold mb-4 text-sm uppercase tracking-wider">// {{ subtitle }}</span>
+                                    {{ /if }}
+                                    {{ if title }}
+                                    <h1 class="slider-title text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                                        {{ title | raw }}
+                                    </h1>
+                                    {{ /if }}
+                                    {{ if text }}
+                                    <p class="text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
+                                        {{ text }}
+                                    </p>
+                                    {{ /if }}
+                                    {{ if button_url }}
+                                    <a href="{{ button_url }}" class="btn-primary inline-flex">
+                                        <div class="btn_inner">
+                                            <div class="btn_icon">
+                                                <span>
+                                                    <i class="ph-fill ph-caret-right"></i>
+                                                    <i class="ph-fill ph-caret-right"></i>
+                                                </span>
+                                            </div>
+                                            <div class="btn_text">
+                                                <span>{{ button_text ?? 'Discover Voyager Solutions' }}</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    {{ /if }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            {{ /slides }}
+        </div>
+        <div class="tj-navigation absolute bottom-8 mb-5 left-1/2 transform -translate-x-1/2 z-20 flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
+            <div class="tj-btn tj-btn-prev w-10 h-10 flex items-center justify-center bg-white/20 hover:bg-primary text-white rounded-full cursor-pointer transition-all duration-300">
+                <i class="tji-angle-left"></i>
+            </div>
+            <div class="tj-sw-pagination flex items-center gap-2"></div>
+            <div class="tj-btn tj-btn-next w-10 h-10 flex items-center justify-center bg-white/20 hover:bg-primary text-white rounded-full cursor-pointer transition-all duration-300">
+                <i class="tji-angle-right"></i>
+            </div>
+        </div>
+    </div>
+</section>
+{{ /if }}
+

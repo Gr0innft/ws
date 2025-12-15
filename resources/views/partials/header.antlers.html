@@ -1,0 +1,339 @@
+<!-- Body Overlay -->
+<div class="body-overlay" id="bodyOverlay"></div>
+
+<!-- Hamburger Menu -->
+<div class="hamburger-area" id="hamburgerMenu">
+    <div class="hamburger_bg"></div>
+    <div class="hamburger_wrapper py-10 px-8">
+        <!-- Top Section -->
+        <div class="flex items-center justify-between mb-8">
+            <div class="hamburger_logo">
+                <a href="/">
+                    {{ if logo:logo }}
+                        <img src="{{ logo:logo }}" alt="Wholesale Logo" class="h-8"/>
+                    {{ else }}
+                        <img src="/assets/images/logos/ws-logo-dark.png" alt="Wholesale Logo" class="h-8"/>
+                    {{ /if }}
+                </a>
+            </div>
+            <button class="text-white text-2xl hover:text-primary transition-colors" id="hamburgerCloseBtn">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hamburger_menu mb-8">
+            <nav class="space-y-2">
+                {{ nav:main }}
+                    {{ if children }}
+                        <div class="mobile-menu-item">
+                            <a href="{{ url }}" class="mobile-dropdown-toggle w-full flex items-center justify-between text-white hover:text-primary py-3 text-lg transition-colors">
+                                <span>{{ title }}</span>
+                                <i class="ph-fill ph-caret-down"></i>
+                            </a>
+                            <div class="mobile-dropdown pl-4 space-y-1">
+                               
+                                {{ children }}
+                                    <a href="{{ url }}" class="block text-gray-300 hover:text-primary py-2 transition-colors">{{ title }}</a>
+                                {{ /children }}
+                            </div>
+                        </div>
+                    {{ else }}
+                        <div>
+                            <a href="{{ url }}" class="block text-white hover:text-primary py-3 text-lg transition-colors">
+                                {{ title }}
+                            </a>
+                        </div>
+                    {{ /if }}
+                {{ /nav:main }}
+            </nav>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="hamburger-infos mb-8 border-gray-700 pt-8">
+            <h4 class="text-white text-xl font-semibold mb-4">Contact info</h4>
+            <div class="space-y-4">
+                {{ if contact_info:email }}
+                    <div>
+                        <span class="text-gray-400 text-sm block mb-1">Email</span>
+                        <a href="mailto:{{ contact_info:email }}" class="text-white hover:text-primary transition-colors">
+                            {{ contact_info:email }}
+                        </a>
+                    </div>
+                {{ /if }}
+                {{ if contact_info:phone }}
+                    <div>
+                        <span class="text-gray-400 text-sm block mb-1">Phone</span>
+                        <a href="{{ contact_info:phone_url ?? 'tel:' + contact_info:phone }}" class="text-white hover:text-primary transition-colors">
+                            {{ contact_info:phone }}
+                        </a>
+                    </div>
+                {{ /if }}
+                {{ if contact_info:locations }}
+                    {{ contact_info:locations }}
+                        {{ if type == "location" }}
+                        <div>
+                            <span class="text-gray-400 text-sm block mb-1">{{ name }}</span>
+                            <div class="text-white">{{ address }}</div>
+                        </div>
+                        {{ /if }}
+                    {{ /contact_info:locations }}
+                {{ /if }}
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="hamburger-socials border-t border-gray-700 pt-8">
+            <h4 class="text-white text-xl font-semibold mb-4">Follow us</h4>
+            <ul class="flex gap-4">
+                {{ if social_media:social_links }}
+                    {{ social_media:social_links }}
+                        {{ if enabled }}
+                        <li>
+                            <a href="{{ url }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary text-white rounded-lg transition-all duration-300 hover:scale-110">
+                                {{ if platform == "facebook" }}
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                {{ elseif platform == "instagram" }}
+                                    <i class="fa-brands fa-instagram"></i>
+                                {{ elseif platform == "twitter" }}
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                {{ elseif platform == "linkedin" }}
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                {{ /if }}
+                            </a>
+                        </li>
+                        {{ /if }}
+                    {{ /social_media:social_links }}
+                {{ /if }}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Main Header -->
+<header class="header-absolute w-full">
+    <!-- Top Bar -->
+    <div class="header-topbar bg-primary py-3 text-white hidden lg:block">
+        <div class="w-full px-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <i class="tji-check text-white"></i>
+                    {{ if header_bar:top_bar_text }}
+                        <span class="text-sm">{{ header_bar:top_bar_text }}</span>
+                    {{ /if }}
+                    {{ if header_bar:link_text && header_bar:link_url }}
+                        <a href="{{ header_bar:link_url }}" class="ml-4 text-sm hover:text-white transition-colors inline-flex items-center gap-2">
+                            <span>{{ header_bar:link_text }}</span>
+                            <i class="tji-angle-right"></i>
+                        </a>
+                    {{ /if }}
+                </div>
+                <div class="flex items-center gap-6">
+                    {{ if contact_info:hours }}
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="tji-clock"></i>
+                            <span>{{ contact_info:hours }}</span>
+                        </div>
+                    {{ /if }}
+                    {{ if contact_info:email }}
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="tji-email"></i>
+                            <a href="mailto:{{ contact_info:email }}" class="hover:text-white transition-colors">
+                                {{ contact_info:email }}
+                            </a>
+                        </div>
+                    {{ /if }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <div class="header-bottom shadow-sm border-b border-gray-200/20">
+        <div class="w-full px-4 mx-auto">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="site-logo">
+                    <a href="/">
+                        {{ if logo:logo }}
+                        <img src="{{ logo:logo }}" alt="Wholesale Logo" class="h-8"/>
+                    {{ else }}
+                        <img src="/assets/images/logos/ws-logo-dark.png" alt="Wholesale Logo" class="h-8"/>
+                    {{ /if }}
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    {{ nav:main }}
+                        {{ if children }}
+                            <div class="relative has-dropdown group">
+                                <a href="{{ url }}" class="flex items-center gap-2 text-white hover:text-primary transition-colors font-medium">
+                                    <span>{{ if menu_title }}{{ menu_title }}{{ else }}{{ title }}{{ /if }}</span>
+                                    <i class="ph-fill ph-caret-down text-sm"></i>
+                                </a>
+                                {{ children limit="1" }}
+                                    {{ if icon }}
+                                        <ul class="dropdown-menu mega-menu-service">
+                                    {{ else }}
+                                        <div class="dropdown-menu">
+                                    {{ /if }}
+                                {{ /children }}
+                                {{ children }}
+                                    {{ if icon }}
+                                        <li>
+                                            <a href="{{ url }}" class="mega-menu-service-single">
+                                                <span class="mega-menu-service-icon">
+                                                    <i class="{{ icon }} text-3xl"></i>
+                                                </span>
+                                                <span class="mega-menu-service-title font-semibold ml-3">{{ if menu_title }}{{ menu_title }}{{ else }}{{ title }}{{ /if }}</span>
+                                            </a>
+                                        </li>
+                                    {{ else }}
+                                        <a href="{{ url }}" class="block px-4 py-2 text-secondary-700 hover:text-primary hover:bg-gray-50 transition-colors">
+                                            {{ if menu_title }}{{ menu_title }}{{ else }}{{ title }}{{ /if }}
+                                        </a>
+                                    {{ /if }}
+                                {{ /children }}
+                                {{ children limit="1" }}
+                                    {{ if icon }}
+                                        </ul>
+                                    {{ else }}
+                                        </div>
+                                    {{ /if }}
+                                {{ /children }}
+                            </div>
+                        {{ else }}
+                            <a href="{{ url }}" class="text-white hover:text-primary transition-colors font-medium">{{ title }}</a>
+                        {{ /if }}
+                    {{ /nav:main }}
+                </nav>
+
+                <!-- Right Side -->
+                <div class="flex items-center gap-4">
+                    <!-- CTA Button -->
+                    {{ if header_bar:cta_button_url }}
+                    <a href="{{ header_bar:cta_button_url }}" class="hidden md:inline-flex btn-primary">
+                        <div class="btn_inner">
+                            <div class="btn_icon">
+                                <span>
+                                    <i class="ph-fill ph-caret-right"></i>
+                                    <i class="ph-fill ph-caret-right"></i>
+                                </span>
+                            </div>
+                            <div class="btn_text">
+                                <span>{{ header_bar:cta_button_text ?? "Let's Talk" }}</span>
+                            </div>
+                        </div>
+                    </a>
+                    {{ /if }}
+
+                    <!-- Mobile Menu Button -->
+                    <button class="lg:hidden flex items-center gap-2 text-white font-medium" id="menuToggle">
+                        <div class="menu-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Sticky Header (Duplicate for scroll) -->
+<header class="header-sticky header-bottom py-0">
+    <div class="w-full px-4">
+        <div class="flex items-center justify-between py-4">
+            <!-- Logo -->
+            <div class="site-logo">
+                <a href="/">
+                    {{ if logo:logo }}
+                        <img src="{{ logo:logo }}" alt="Wholesale Logo" class="h-8"/>
+                    {{ else }}
+                        <img src="/assets/images/logos/ws-logo-dark.png" alt="Wholesale Logo" class="h-8"/>
+                    {{ /if }}
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center gap-8">
+                {{ nav:main }}
+                    {{ if children }}
+                        <div class="relative has-dropdown group flex-shrink-0">
+                            <a href="{{ url }}" class="flex items-center gap-2 text-white hover:text-primary transition-colors font-medium">
+                                <span>{{ if menu_title }}{{ menu_title }}{{ else }}{{ title }}{{ /if }}</span>
+                                <i class="ph-fill ph-caret-down text-sm"></i>
+                            </a>
+                            {{ children limit="1" }}
+                                {{ if icon }}
+                                    <ul class="dropdown-menu mega-menu-service">
+                                {{ else }}
+                                    <div class="dropdown-menu">
+                                {{ /if }}
+                            {{ /children }}
+                            {{ children }}
+                                {{ if icon }}
+                                    <li>
+                                        <a href="{{ url }}" class="mega-menu-service-single">
+                                            <span class="mega-menu-service-icon">
+                                                <i class="{{ icon }} text-3xl"></i>
+                                            </span>
+                                            <span class="mega-menu-service-title font-semibold ml-3">{{ if menu_title }}{{ menu_title }}{{ else }}{{ title }}{{ /if }}</span>
+                                        </a>
+                                    </li>
+                                {{ else }}
+                                    <a href="{{ url }}" class="block px-4 py-2 text-secondary-700 hover:text-primary hover:bg-gray-50 transition-colors">
+                                        {{ if menu_title }}{{ menu_title }}{{ else }}{{ title }}{{ /if }}
+                                    </a>
+                                {{ /if }}
+                            {{ /children }}
+                            {{ children limit="1" }}
+                                {{ if icon }}
+                                    </ul>
+                                {{ else }}
+                                    </div>
+                                {{ /if }}
+                            {{ /children }}
+                        </div>
+                    {{ else }}
+                        <a href="{{ url }}" class="text-white hover:text-primary transition-colors font-medium">
+                            {{ title }}
+                        </a>
+                    {{ /if }}
+                {{ /nav:main }}
+            </nav>
+
+            <!-- Right Side -->
+            <div class="flex items-center gap-4">
+                <!-- CTA Button -->
+                {{ if header_bar:cta_button_url }}
+                <a href="{{ header_bar:cta_button_url }}" class="hidden md:inline-flex btn-primary">
+                    <div class="btn_inner">
+                        <div class="btn_icon">
+                            <span>
+                                <i class="ph-fill ph-caret-right"></i>
+                                <i class="ph-fill ph-caret-right"></i>
+                            </span>
+                        </div>
+                        <div class="btn_text">
+                            <span>{{ header_bar:cta_button_text ?? "Let's Talk" }}</span>
+                        </div>
+                    </div>
+                </a>
+                {{ /if }}
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden flex items-center gap-2 text-white font-medium" id="menuToggleSticky">
+                    <span class="text-sm">Menu</span>
+                    <div class="menu-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>

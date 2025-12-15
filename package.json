@@ -5,7 +5,8 @@
     "scripts": {
         "build": "vite build",
         "dev": "vite",
-        "watch": "vite"
+        "watch": "vite",
+        "netlify-build": "npm ci && npm run build"
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.16",

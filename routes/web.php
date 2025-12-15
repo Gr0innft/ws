@@ -9,6 +9,9 @@ Route::get('/test', function () {
         'app_debug' => config('app.debug'),
         'app_env' => config('app.env'),
         'has_app_key' => !empty(config('app.key')),
+        'app_key_from_env' => env('APP_KEY') ? 'SET' : 'NOT SET',
+        'app_key_length' => env('APP_KEY') ? strlen(env('APP_KEY')) : 0,
+        'app_key_preview' => env('APP_KEY') ? substr(env('APP_KEY'), 0, 20) . '...' : 'NOT SET',
     ]);
 });
 

@@ -4,7 +4,7 @@ blueprint: page
 title: Communication
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765754029
+updated_at: 1765759162
 page_builder:
   -
     id: mixzg7va
@@ -202,4 +202,6 @@ page_builder:
     type: testimonial_single
     enabled: true
     testimonial: b6eec9ec-6afd-4525-b824-ae8580e28139
+meta_title: 'Communication Solutions'
+meta_description: 'Wholesale voice infrastructure from Voyager: SIP trunking, Cloud PBX and Teams integration with call analytics, fraud protection and geo-redundant resilience.'
 ---

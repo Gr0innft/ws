@@ -7,9 +7,8 @@ author: 356414f5-9cc4-49da-9bea-35e11000edbb
 seo_title: 'Home Page - Voyager Wholesale'
 seo_description: 'Welcome to Voyager Wholesale. Your trusted partner for business excellence in New Zealand.'
 seo_keywords: 'wholesale, business, New Zealand, Voyager'
-meta_title: 'Voyager Wholesale testing title'
-meta_description: 'testing decription'
-meta_keywords: 'testing keywords'
+meta_title: Home
+meta_description: 'Voyager Wholesale helps MSPs and resellers deliver cloud, connectivity, voice and security on a trusted NZ network - with tools, training and expert support.'
 content_blocks:
   -
     type: paragraph
@@ -219,8 +218,9 @@ page_builder:
     author_designation: 'CEO Voyager Internet'
     type: testimonial_single
     enabled: true
+    testimonial: a31a7528-9574-4074-bb74-b78cb359eec9
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765336172
+updated_at: 1765758955
 ---
 ## Welcome to your brand new Statamic site!
 

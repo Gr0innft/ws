@@ -4,7 +4,7 @@ blueprint: page
 title: 'Why Partner'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765753547
+updated_at: 1765759208
 template: default
 page_builder:
   -
@@ -174,4 +174,6 @@ page_builder:
       - b20dc857-5925-4f74-85ee-3a72d0c7baaf
     type: testimonial_slider
     enabled: true
+meta_title: 'Partner Benefits'
+meta_description: 'Why partner with Voyager Wholesale: carrier-grade network, expert access, self-service portals, flexible month-to-month terms, and NZ-owned support.'
 ---

@@ -18,5 +18,7 @@ page_builder:
     show_button: true
 template: contact
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765753579
+updated_at: 1765759235
+meta_title: 'Contact us'
+meta_description: 'Contact Voyager Wholesale to become a partner. Chat about cloud, connectivity, communications and cybersecurity - email, call or visit Auckland/Christchurch.'
 ---

@@ -111,26 +111,10 @@ page_builder:
     subtitle: Testimonials
     title: 'Listening to our clients'
     testimonials:
-      -
-        id: miz9w6vh
-        testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
-        author_image: images/seeby-profile.jpg
-        author_name: 'John Doe'
-        author_designation: 'Business Owner'
-        rating: '5'
-        type: testimonial
-        enabled: true
-      -
-        id: miz9wxmy
-        testimonial_text: 'Our goal is simple — to help our partners grow revenue and deliver outstanding outcomes for their customers. We focus on building strong commercial relationships, backed by products that perform and support that delivers. When our partners succeed, Voyager succeeds.'
-        author_image: images/angela-profile.jpg
-        author_name: 'Jane Doe'
-        author_designation: 'Business Owner'
-        rating: '5'
-        type: testimonial
-        enabled: true
+      - b20dc857-5925-4f74-85ee-3a72d0c7baaf
+      - c5f97c48-4a19-4c0e-b625-8e646b026c25
     type: testimonial_slider
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765334873
+updated_at: 1765759381
 ---

@@ -4,7 +4,7 @@ blueprint: page
 title: Cloud
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765753929
+updated_at: 1765759077
 page_builder:
   -
     id: mixxoyce
@@ -201,4 +201,6 @@ page_builder:
     type: testimonial_single
     enabled: true
     testimonial: a31a7528-9574-4074-bb74-b78cb359eec9
+meta_title: 'Cloud Solutions'
+meta_description: 'Enterprise grade cloud from Voyager: Virtual Data Centre and colocation with high availability, flexible storage, SDN control and automation-ready APIs.'
 ---

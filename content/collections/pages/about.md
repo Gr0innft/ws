@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765754129
+updated_at: 1765758883
 page_builder:
   -
     id: mixuk0yc
@@ -147,6 +147,8 @@ page_builder:
     description: 'Talk to our team today about how Voyager can help you grow your business and deliver more for your customers.'
     type: enquiry_cta_form
     enabled: true
+meta_title: 'Our Story'
+meta_description: 'Learn the Voyager Wholesale story: NZ-owned Tier 2 telco built on partnership, nationwide network ownership, and a team that helps partners win.'
 ---
 ## Welcome to your brand new Statamic site!
 

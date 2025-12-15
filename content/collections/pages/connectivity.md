@@ -4,7 +4,7 @@ blueprint: page
 title: Connectivity
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765753985
+updated_at: 1765759141
 page_builder:
   -
     id: mixyfpls
@@ -159,4 +159,6 @@ page_builder:
     type: testimonial_single
     enabled: true
     testimonial: a31a7528-9574-4074-bb74-b78cb359eec9
+meta_title: 'Connectivity Solutions'
+meta_description: 'Wholesale connectivity from Voyager: Juniper-powered national backbone with dual routes, multi-100Gbps capacity and resilient trans-Tasman links for uptime.'
 ---

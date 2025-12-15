@@ -116,5 +116,7 @@ page_builder:
     type: testimonial_slider
     enabled: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765759381
+updated_at: 1765759481
+meta_title: 'Management Portals'
+meta_description: 'Voyager Wholesale portal logins for managing services—order and provision connections, manage voice and hosting, access domains, iSMS, and the knowledgebase.'
 ---

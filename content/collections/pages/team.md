@@ -18,5 +18,7 @@ page_builder:
     enabled: true
     show_button: true
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765754148
+updated_at: 1765758984
+meta_title: 'Our Team'
+meta_description: 'Meet the Voyager Wholesale partner team - execs, partner managers and customer success specialists dedicated to supporting your growth and delivery'
 ---

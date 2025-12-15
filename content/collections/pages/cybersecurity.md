@@ -4,7 +4,7 @@ blueprint: page
 title: Cybersecurity
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765754049
+updated_at: 1765759187
 page_builder:
   -
     id: mixzy2rq
@@ -177,4 +177,6 @@ page_builder:
     type: testimonial_single
     enabled: true
     testimonial: b6eec9ec-6afd-4525-b824-ae8580e28139
+meta_title: 'Cybersecurity Solutions'
+meta_description: 'Managed cybersecurity from Voyager, powered by Fortinet, Acronis and Cloudflare - backup, endpoint and email security with scalable protection.'
 ---

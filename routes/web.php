@@ -2,6 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Debug route to test if routing works
+Route::get('/test', function () {
+    return response()->json([
+        'status' => 'ok',
+        'app_debug' => config('app.debug'),
+        'app_env' => config('app.env'),
+        'has_app_key' => !empty(config('app.key')),
+    ]);
+});
+
 // Route::statamic('example', 'example-view', [
 //    'title' => 'Example'
 // ]);

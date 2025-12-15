@@ -14,5 +14,17 @@ return Application::configure(basePath: dirname(__DIR__))
         //
     })
     ->withExceptions(function (Exceptions $exceptions): void {
-        //
+        // Force display errors in development
+        if (config('app.debug')) {
+            $exceptions->render(function (\Throwable $e, $request) {
+                if ($request->expectsJson()) {
+                    return response()->json([
+                        'error' => $e->getMessage(),
+                        'file' => $e->getFile(),
+                        'line' => $e->getLine(),
+                        'trace' => $e->getTraceAsString(),
+                    ], 500);
+                }
+            });
+        }
     })->create();

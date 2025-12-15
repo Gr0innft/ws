@@ -30,19 +30,8 @@ page_builder:
       - b9b0ce8e-f3bf-4cfc-87b5-d2d106284a70
     type: team_members_block
     enabled: true
-  -
-    id: mj6baag7
-    background_image: images/bg/enquirybg.jpg
-    layout: product
-    show_breadcrumb: false
-    heading: test
-    text: test
-    image: images/solutions/communication-hero.jpg
-    button_text: test
-    button_url: '#'
-    type: hero_banner
-    enabled: true
-    show_button: false
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765752718
+updated_at: 1765758802
+meta_title: 'Thanks for your enquiry'
+meta_description: 'Your details have been received. A Voyager Wholesale team member will be in touch shortly to help with next steps.'
 ---

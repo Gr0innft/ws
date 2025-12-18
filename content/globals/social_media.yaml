@@ -4,7 +4,7 @@ data:
     -
       id: rAI3nWKC
       type: social
-      enabled: true
+      enabled: false
       platform: facebook
       url: 'https://www.facebook.com/voyagernz'
     -

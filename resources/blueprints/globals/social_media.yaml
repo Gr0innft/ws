@@ -10,6 +10,13 @@ fields:
           display: Social Link
           fields:
             -
+              handle: enabled
+              field:
+                type: toggle
+                display: Enabled
+                default: true
+                instructions: 'Show this social link'
+            -
               handle: platform
               field:
                 type: select

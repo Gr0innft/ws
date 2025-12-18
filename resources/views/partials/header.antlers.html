@@ -86,25 +86,23 @@
         <div class="hamburger-socials border-t border-gray-700 pt-8">
             <h4 class="text-white text-xl font-semibold mb-4">Follow us</h4>
             <ul class="flex gap-4">
-                {{ if social_media:social_links }}
-                    {{ social_media:social_links }}
-                        {{ if enabled }}
-                        <li>
-                            <a href="{{ url }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary text-white rounded-lg transition-all duration-300 hover:scale-110">
-                                {{ if platform == "facebook" }}
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                {{ elseif platform == "instagram" }}
-                                    <i class="fa-brands fa-instagram"></i>
-                                {{ elseif platform == "twitter" }}
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                {{ elseif platform == "linkedin" }}
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                {{ /if }}
-                            </a>
-                        </li>
-                        {{ /if }}
-                    {{ /social_media:social_links }}
-                {{ /if }}
+                {{ social_media:social_links }}
+                    {{ if enabled != false }}
+                    <li>
+                        <a href="{{ url }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary text-white rounded-lg transition-all duration-300 hover:scale-110">
+                            {{ if platform == "facebook" }}
+                                <i class="fa-brands fa-facebook-f"></i>
+                            {{ elseif platform == "instagram" }}
+                                <i class="fa-brands fa-instagram"></i>
+                            {{ elseif platform == "twitter" }}
+                                <i class="fa-brands fa-x-twitter"></i>
+                            {{ elseif platform == "linkedin" }}
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            {{ /if }}
+                        </a>
+                    </li>
+                    {{ /if }}
+                {{ /social_media:social_links }}
             </ul>
         </div>
     </div>

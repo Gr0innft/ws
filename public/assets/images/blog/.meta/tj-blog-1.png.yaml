@@ -1,4 +1,5 @@
-data: {  }
+data:
+  alt: 'blog featured test'
 size: 7470
 last_modified: 1768444507
 width: 870

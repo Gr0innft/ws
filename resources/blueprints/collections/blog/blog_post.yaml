@@ -1,0 +1,102 @@
+title: Blog Post
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+              required: true
+              validate:
+                - required
+              instructions: 'Blog post title'
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              default: blog_post
+              localizable: true
+      -
+        display: Blog Content
+        fields:
+          -
+            handle: image
+            field:
+              type: assets
+              display: Featured Image
+              max_files: 1
+              container: assets
+              validate:
+                - required
+              instructions: 'Main image for the blog post'
+          -
+            handle: description
+            field:
+              type: textarea
+              display: Description
+              validate:
+                - required
+              instructions: 'Short description/excerpt for the blog post'
+          -
+            handle: content
+            field:
+              type: markdown
+              display: Content
+              instructions: 'Full blog post content (markdown supported)'
+      -
+        display: Blog Meta
+        fields:
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+              instructions: 'Author of the blog post'
+          -
+            handle: date
+            field:
+              type: date
+              display: Publish Date
+              required: true
+              time_enabled: false
+              instructions: 'Date the blog post was published'
+          -
+            handle: categories
+            field:
+              type: terms
+              display: Categories
+              taxonomies:
+                - categories
+              instructions: 'Select one or more categories'
+          -
+            handle: tags
+            field:
+              type: terms
+              display: Tags
+              taxonomies:
+                - tags
+              instructions: 'Select tags for this blog post'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+      -
+        display: Meta
+        fields:
+          -
+            import: seo

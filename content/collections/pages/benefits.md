@@ -4,7 +4,7 @@ blueprint: page
 title: 'Why Partner'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765759208
+updated_at: 1768774866
 template: default
 page_builder:
   -
@@ -87,7 +87,7 @@ page_builder:
     heading: 'Do more, faster with smart self service portals'
     text: 'We put the control and visibility in your hands with Voyager’s partner portals. Easily order, manage, and support broadband, voice, hosting, iSMS, and security solutions - all backed by detailed billing files and reports that make on-billing your customers effortless.'
     button_text: 'Our portals'
-    button_url: '#'
+    button_url: /portals
     type: dark_image_content_block
     enabled: true
   -

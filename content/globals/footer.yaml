@@ -4,5 +4,5 @@ data:
   solutions_menu: solutions
   about_menu: about
   copyright_text: 'Voyager Wholesale'
-  privacy_link: /privacy
-  terms_link: /terms
+  privacy_link: 'https://voyager.nz/terms/privacy'
+  terms_link: 'https://voyager.nz/terms'

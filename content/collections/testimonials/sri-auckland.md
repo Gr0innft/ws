@@ -4,7 +4,7 @@ blueprint: testimonial
 title: Sri
 template: testimonial
 testimonial_text: 'Working with Voyager is like having an extra team beside us - helpful engineers, fast support and people who genuinely care about getting it right.'
-author_image: thumbs-up.jpg
+author_image: images/testimonials/thumbs-up.jpg
 author_designation: Auckland
 rating: '5'
 rating_score: '4.7'

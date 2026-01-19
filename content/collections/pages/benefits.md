@@ -4,7 +4,7 @@ blueprint: page
 title: 'Why Partner'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1768774866
+updated_at: 1768794813
 template: default
 page_builder:
   -
@@ -172,6 +172,8 @@ page_builder:
     testimonials:
       - c5f97c48-4a19-4c0e-b625-8e646b026c25
       - b20dc857-5925-4f74-85ee-3a72d0c7baaf
+      - 1ed65eb5-4f56-41d1-8497-18a482f4db00
+      - be99888f-e227-48fa-be11-541badaa09f0
     type: testimonial_slider
     enabled: true
 meta_title: 'Partner Benefits'

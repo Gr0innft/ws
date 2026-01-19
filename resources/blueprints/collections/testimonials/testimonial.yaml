@@ -39,9 +39,7 @@ tabs:
               display: 'Author Image'
               max_files: 1
               container: assets
-              validate:
-                - required
-              instructions: 'Photo of the testimonial author'
+              instructions: 'Photo of the testimonial author (optional)'
           -
             handle: author_designation
             field:

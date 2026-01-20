@@ -1,0 +1,142 @@
+{{# Blog Post Detail Page #}}
+
+{{# Hero Section #}}
+<section class="pt-[140px] sm:pt-[140px] md:pt-[179px] lg:pt-[190px] pb-[100px] sm:pb-[80px] md:pb-[100px] lg:pb-[100px] bg-cover bg-center bg-no-repeat bg-secondary relative overflow-hidden z-[2]" style="background-image: url('/assets/images/bg/download.webp');">
+    <div class="absolute inset-0 bg-secondary/85 z-[-1]"></div>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center">
+            
+            <div class="tj-page-link inline-flex flex-wrap items-center justify-center gap-2.5 mb-5 relative rounded-[50px] bg-white/10 px-[15px] py-2 z-[2] mt-6 wow fadeInUp" data-wow-delay="0.1s">
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <a href="/" class="hover:text-primary transition-colors">
+                        <span>Home</span>
+                    </a>
+                </span>
+                <span class="text-white text-sm relative inline-block leading-none">/</span>
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <a href="/blog" class="hover:text-primary transition-colors">
+                        <span>Blog</span>
+                    </a>
+                </span>
+                <span class="text-white text-sm relative inline-block leading-none">/</span>
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <span>Post Details</span>
+                </span>
+            </div>
+            
+            <h1 class="hero-title text-anim text-4xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight wow fadeInUp" data-wow-delay="0.2s">
+                {{ title }}
+            </h1>
+            
+            <a href="#blog-content" class="btn-primary inline-flex wow fadeInUp" data-wow-delay="0.3s">
+                <div class="btn_inner">
+                    <div class="btn_icon">
+                        <span>
+                            <i class="ph-fill ph-caret-right"></i>
+                            <i class="ph-fill ph-caret-right"></i>
+                        </span>
+                    </div>
+                    <div class="btn_text">
+                        <span>Read Article</span>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+</section>
+
+{{# Blog Post Content Section #}}
+<section id="blog-content" class="tj-post-details-area section-space py-16 lg:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <article class="tj-post-details bg-white rounded-lg shadow-lg p-8 lg:p-12">
+            {{# Featured Image #}}
+            {{ if image }}
+            <div class="blog-featured-image mb-8 rounded-lg overflow-hidden shadow-md">
+                <img src="{{ image }}" alt="{{ title }}" class="w-full h-auto">
+            </div>
+            {{ /if }}
+            
+            {{# Post Meta #}}
+            <div class="blog-post-meta mb-8 flex flex-wrap items-center gap-6 text-sm text-gray-600 border-b border-gray-200 pb-6">
+                {{ if date }}
+                <div class="flex items-center gap-2">
+                    <i class="ph ph-calendar text-primary text-lg"></i>
+                    <span class="font-medium">{{ date format="F j, Y" }}</span>
+                </div>
+                {{ /if }}
+                {{ if author }}
+                <div class="flex items-center gap-2">
+                    <i class="ph ph-user text-primary text-lg"></i>
+                    <span>By <span class="font-semibold text-secondary">{{ author:name }}</span></span>
+                </div>
+                {{ /if }}
+                {{ if categories }}
+                <div class="flex items-center gap-2">
+                    <i class="ph ph-folder text-primary text-lg"></i>
+                    <div class="flex flex-wrap gap-2">
+                        {{ categories }}
+                            <a href="/blog/category/{{ slug }}" class="text-primary hover:text-secondary transition-colors font-medium">
+                                {{ title }}
+                            </a>
+                        {{ /categories }}
+                    </div>
+                </div>
+                {{ /if }}
+            </div>
+            
+            {{# Post Content #}}
+            <div class="blog-post-content prose prose-lg prose-headings:text-secondary prose-headings:font-bold prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-secondary prose-strong:font-semibold prose-ul:text-gray-700 prose-ol:text-gray-700 prose-li:my-2 max-w-none">
+                {{ if content }}
+                    {{ content | markdown }}
+                {{ else }}
+                    {{ description | markdown }}
+                {{ /if }}
+            </div>
+            
+            {{# Tags #}}
+            {{ if tags }}
+            <div class="blog-post-tags mt-8 pt-8 border-t border-gray-200">
+                <h3 class="text-lg font-semibold text-secondary mb-4 flex items-center gap-2">
+                    <i class="ph ph-tag text-primary"></i>
+                    Tags:
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    {{ tags }}
+                        <a href="/blog/tag/{{ slug }}" class="px-4 py-2 bg-gray-100 text-secondary rounded-lg hover:bg-primary hover:text-white transition-colors text-sm font-medium">
+                            {{ title }}
+                        </a>
+                    {{ /tags }}
+                </div>
+            </div>
+            {{ /if }}
+            
+            {{# Back to Blog Link #}}
+            <div class="blog-post-back mt-8 pt-8 border-t border-gray-200">
+                <a href="/blog" class="btn-primary inline-flex">
+                    <div class="btn_inner">
+                        <div class="btn_icon">
+                            <span>
+                                <i class="ph-fill ph-caret-left"></i>
+                                <i class="ph-fill ph-caret-left"></i>
+                            </span>
+                        </div>
+                        <div class="btn_text">
+                            <span>Back to Blog</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </article>
+    </div>
+</section>
+
+{{# Related Posts Section (Optional - can be added later) #}}
+{{# <section class="related-posts py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-secondary mb-8">Related Posts</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            Related posts logic here
+        </div>
+    </div>
+</section> #}}

@@ -3,7 +3,7 @@ id: b9b0ce8e-f3bf-4cfc-87b5-d2d106284a70
 blueprint: team_member
 title: 'Chenye Benzin'
 template: team_member
-image: images/team/chenye-lg.jpg
+image: images/team/chenyen-lg.jpg
 job_title: 'Wholesale Partner Manager'
 email: chenye.benzin@voyager.nz
 phone: '0800 638 436'
@@ -14,5 +14,5 @@ bio: |-
 category: wholesale-team
 linkedin_url: 'https://www.linkedin.com/in/chenye-benzin-829414212/'
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765164671
+updated_at: 1768960151
 ---

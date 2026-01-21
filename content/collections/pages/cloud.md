@@ -4,7 +4,7 @@ blueprint: page
 title: Cloud
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765759077
+updated_at: 1768962159
 page_builder:
   -
     id: mixxoyce
@@ -129,7 +129,7 @@ page_builder:
         id: mixya3cg
         icon: 'ph-fill ph-fingerprint'
         title: '24/7 Security'
-        text: "In today's dynamic business environment, the key to success lies strategics our planning and operational business.Enterprise-grade uptime with dual mains feeds, UPS backup, and on-site generators."
+        text: 'Enterprise-grade security with 24/7 monitoring, restricted access, and resilient power infrastructure (dual mains, UPS, generators) to protect your environment.'
         link_url: '#scroll-cta'
         link_text: "Let's Talk"
         type: service

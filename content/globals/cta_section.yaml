@@ -1,7 +1,7 @@
 title: 'CTA Section'
 data:
   title: 'Interested in partnering with Voyager?'
-  text: 'Send us your details and we’ll connect with you to talk about what you need.'
+  text: 'Contact us today to connect and talk about what you need.'
   email_button_text: "Let's talk"
   email_button_url: '#scroll-cta'
   phone_button_text: '0800 472 7863'

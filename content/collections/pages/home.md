@@ -99,7 +99,7 @@ page_builder:
         id: miwaxmfh
         icon: 'ph ph-cards'
         title: 'Marketing Support'
-        text: 'Co-branded one-pagers, sales collateral, and partner events that strengthen your brand presence.'
+        text: 'White-labelled one-pagers, sales collateral, and partner events that strengthen your brand presence.'
         type: service
         enabled: true
         link_text: "Let's Talk"
@@ -220,7 +220,7 @@ page_builder:
     enabled: true
     testimonial: a31a7528-9574-4074-bb74-b78cb359eec9
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1769049693
+updated_at: 1769049750
 ---
 ## Welcome to your brand new Statamic site!
 

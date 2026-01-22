@@ -55,7 +55,7 @@ page_builder:
         id: miwe8iyg
         background_image: images/home/slider-2.jpg
         subtitle: 'Voyager Wholesale'
-        title: 'Built for Partners Backed by Experts'
+        title: 'Built for Partners Backed by Experts.'
         text: 'A smarter, faster way to deliver cloud, communication, connectivity, and security - all on a network you can trust.'
         button_text: 'Discover Voyager Solutions'
         button_url: /solutions
@@ -220,7 +220,7 @@ page_builder:
     enabled: true
     testimonial: a31a7528-9574-4074-bb74-b78cb359eec9
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765758955
+updated_at: 1769048294
 ---
 ## Welcome to your brand new Statamic site!
 

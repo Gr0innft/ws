@@ -4,7 +4,7 @@ blueprint: page
 title: 'Our Solutions'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1769048164
+updated_at: 1769050519
 page_builder:
   -
     id: mixwfw6g
@@ -52,9 +52,9 @@ page_builder:
       -
         id: mixwop5i
         icon: 'ph ph-phone-call'
-        label: Communications
+        label: Communication
         text: 'Deliver reliable, feature-rich voice solutions with Voyager’s wholesale platform. From SIP trunks and Cloud PBX to Teams integration, partners gain resilient, scalable communication built for business.'
-        button_text: 'Communications Solutions'
+        button_text: 'Communication Solutions'
         link_url: /solutions/communication
         image: images/home/voyager-wholesale-communication.jpg
         type: card

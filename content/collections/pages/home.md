@@ -113,7 +113,7 @@ page_builder:
     image: images/home/partnership-benefits.png
     subtitle: 'Why Partner with Voyager'
     heading: 'Your Partner in Performance and Growth'
-    text: 'Voyager partners with service providers, MSPs, and technology resellers to help them scale faster and serve customers better. With direct access to our engineers, product owners, and partner managers, you get the tools, flexibility, and support to grow with confidence.'
+    text: 'Voyager partners with service providers, MSPs, and technology resellers, Voyager helps you scale faster and deliver better customer outcomes, backed by direct access to engineers, product owners, and partner managers invested in your success.'
     link_url: /benefits
     link_text: 'Partnership Benefits'
     image_position: left
@@ -220,7 +220,7 @@ page_builder:
     enabled: true
     testimonial: a31a7528-9574-4074-bb74-b78cb359eec9
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1769049874
+updated_at: 1769049895
 ---
 ## Welcome to your brand new Statamic site!
 

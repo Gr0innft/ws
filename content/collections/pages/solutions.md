@@ -4,7 +4,7 @@ blueprint: page
 title: 'Our Solutions'
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765759036
+updated_at: 1769048159
 page_builder:
   -
     id: mixwfw6g
@@ -23,8 +23,8 @@ page_builder:
     id: mixwkj4t
     image: images/solutions/network.jpg
     subtitle: 'SOLUTIONS OVERVIEW'
-    heading: 'A Unified Platform for Performance and Growth'
-    text: 'Voyager delivers a comprehensive suite of carrier-grade solutions across four core technology pillars — Cloud, Communication, Connectivity, and Cybersecurity. Each pillar is designed to help partners scale faster, operate smarter, and deliver exceptional experiences to their customers, powered by Voyager’s nationwide network and expert support.'
+    heading: 'A Unified Network for Performance and Growth'
+    text: 'Voyager delivers a comprehensive suite of carrier-grade solutions across four core technology pillars — Cloud, Communication, Connectivity, and Cybersecurity. Each pillar is designed to help partners scale faster, operate smarter, and deliver exceptional customer experiences, powered by Voyager’s nationwide network and expert support.'
     link_url: /benefits
     link_text: 'Learn More'
     image_position: left

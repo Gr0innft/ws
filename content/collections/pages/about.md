@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1765758883
+updated_at: 1769047979
 page_builder:
   -
     id: mixuk0yc
@@ -121,7 +121,7 @@ page_builder:
     image_position: left
     subtitle: 'RECOGNITION & TRUST'
     heading: 'Proudly recognised by our partners and industry'
-    text: 'We’re proud to have been recognised with four consecutive NZ Compare People’s Choice Awards, a reflection of our investment in infrastructure, service and support. Our latest partner survey returned a great satisfaction score, demonstrating the trust and loyalty of our partner community.'
+    text: 'We’re proud to have been recognised with four consecutive NZ Compare People’s Choice Awards, a reflection of our investment in infrastructure, service and support. We consistently receive great scores from our annual partner satisfaction surveys, demonstrating the trust and loyalty of our partner community.'
     button_text: 'Learn More'
     type: dark_image_content_block
     enabled: true

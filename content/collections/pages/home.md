@@ -141,7 +141,7 @@ page_builder:
       -
         id: mis6s99w
         icon: 'ph ph-phone-call'
-        label: Communications
+        label: Communication
         text: 'Reliable wholesale voice and collaboration services that help you connect customers anywhere, anytime.'
         button_text: 'Communication Solutions'
         link_url: /solutions/communication
@@ -220,7 +220,7 @@ page_builder:
     enabled: true
     testimonial: a31a7528-9574-4074-bb74-b78cb359eec9
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1769049895
+updated_at: 1769050588
 ---
 ## Welcome to your brand new Statamic site!
 

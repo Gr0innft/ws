@@ -3,8 +3,8 @@ data:
   subtitle: 'Contact us'
   heading: 'Our contact information'
   email: partners@voyager.nz
-  phone: '0800 472 786'
-  phone_url: 'tel:0800472786'
+  phone: '0800 472 7863'
+  phone_url: 'tel:08004727863'
   locations:
     -
       id: location-1

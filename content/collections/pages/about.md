@@ -6,7 +6,7 @@ slug: about
 author: 356414f5-9cc4-49da-9bea-35e11000edbb
 template: default
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1769047979
+updated_at: 1769051153
 page_builder:
   -
     id: mixuk0yc
@@ -34,7 +34,7 @@ page_builder:
     id: mixunry5
     image: images/home/partnership-benefits.png
     subtitle: 'Our Vision'
-    heading: 'To be the partner of choice for New Zealand businesses.'
+    heading: 'To be the partner of choice for NZ & AUS businesses.'
     text: |-
       To provide innovative solutions that enable our customers to communicate and connect like never before, delivering exceptional value through unparalleled customer experience.
 

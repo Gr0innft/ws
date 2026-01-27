@@ -1,0 +1,58 @@
+title: Term
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+              required: true
+              validate:
+                - required
+              instructions: 'Title of the term page (e.g., Terms & Conditions, Privacy Policy)'
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              default: term
+              localizable: true
+      -
+        display: Content
+        fields:
+          -
+            handle: content
+            field:
+              type: markdown
+              display: Content
+              required: true
+              validate:
+                - required
+              instructions: 'Full content of the term page (markdown supported)'
+          -
+            handle: last_updated
+            field:
+              type: date
+              display: Last Updated
+              time_enabled: false
+              instructions: 'Date this page was last updated'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+      -
+        display: Meta
+        fields:
+          -
+            import: seo

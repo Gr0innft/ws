@@ -110,6 +110,8 @@
                             {{ contact_info:team_contact_description }}
                         </p>
                         {{ /if }}
+                        <div class="flex flex-row gap-3">
+                        <div>
                         {{ if contact_info:email }}
                         <h6 class="contact-team-details__message text-base font-medium text-secondary mt-6 wow fadeInUp" data-wow-delay="0.5s">
                             <a href="mailto:{{ contact_info:email }}" class="inline-flex items-center gap-2 hover:text-primary transition-colors">
@@ -118,6 +120,18 @@
                             </a>
                         </h6>
                         {{ /if }}
+                    </div>    
+                    <div>
+                        {{ if contact_info:phone }}
+                        <h6 class="contact-team-details__message text-base font-medium text-secondary mt-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <a href="tel:{{ contact_info:phone }}" class="inline-flex items-center gap-2 hover:text-primary transition-colors">
+                                <i class="tji-phone text-primary"></i>
+                                <span>{{ contact_info:phone }}</span>
+                            </a>
+                        </h6>
+                        {{ /if }}
+                    </div>                      
+                        </div>
                     </div>
                 </div>
                 <!-- Right Form -->

@@ -23,8 +23,8 @@
                         <img src="{{ testimonial_image }}" alt="Testimonial" class="w-full rounded-lg">
                         {{ /if }}
                         <div class="testimonial-funfact">
-                            <div class="number"><span>{{ rating_score ?? '4.7' }}</span>/5</div>
-                            <span class="sub-title">{{ rating_text ?? 'Customers survey review score' | nl2br }}</span>
+                            <div class="number"><span>{{ customer_rating:rating_score ?? '4.7' }}</span>/5</div>
+                            <span class="sub-title">{{ customer_rating:rating_text ?? 'Customers survey review score' | nl2br }}</span>
                         </div>
                     </div>
                 </div>

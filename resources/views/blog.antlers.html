@@ -1,13 +1,10 @@
 {{# Blog Listing Page #}}
 
 {{# Page Header Section #}}
-
-
 <section class="pt-[140px] sm:pt-[140px] md:pt-[179px] lg:pt-[190px] pb-[100px] sm:pb-[80px] md:pb-[100px] lg:pb-[100px] bg-cover bg-center bg-no-repeat bg-secondary relative overflow-hidden z-[2]" style="background-image: url('/assets/images/bg/download.webp');">
     <div class="absolute inset-0 bg-secondary/85 z-[-1]"></div>
     <div class="container mx-auto px-4 relative z-10">
         <div class="text-center">
-            
             <div class="tj-page-link inline-flex flex-wrap items-center justify-center gap-2.5 mb-5 relative rounded-[50px] bg-white/10 px-[15px] py-2 z-[2] mt-6 wow fadeInUp" data-wow-delay="0.1s">
                 <span class="text-white text-sm relative inline-block leading-none">
                     <a href="/" class="hover:text-primary transition-colors">
@@ -16,147 +13,113 @@
                 </span>
                 <span class="text-white text-sm relative inline-block leading-none">/</span>
                 <span class="text-white text-sm relative inline-block leading-none">
-                    <a href="/blog" class="hover:text-primary transition-colors">
-                        <span>Blog</span>
-                    </a>
-                </span>
-                <span class="text-white text-sm relative inline-block leading-none">/</span>
-                <span class="text-white text-sm relative inline-block leading-none">
-                    <span>Post Details</span>
+                    <span>Blog</span>
                 </span>
             </div>
-            
             <h1 class="hero-title text-anim text-4xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight wow fadeInUp" data-wow-delay="0.2s">
-                {{ title }}
+                Voyager Wholesale Blog
             </h1>
-            
-            <!--<a href="#blog-content" class="btn-primary inline-flex wow fadeInUp" data-wow-delay="0.3s">
-                <div class="btn_inner">
-                    <div class="btn_icon">
-                        <span>
-                            <i class="ph-fill ph-caret-right"></i>
-                            <i class="ph-fill ph-caret-right"></i>
-                        </span>
-                    </div>
-                    <div class="btn_text">
-                        <span>Read Article</span>
-                    </div>
-                </div>
-            </a>-->
-            
         </div>
     </div>
 </section>
 
-
-<section class="tj-page-header" data-bg-image="/assets/images/bg/pheader-bg.webp">
-    <div class="container mx-auto px-4">
-        <div class="text-center">
-            <div class="tj-page-header-content">
-                <h1 class="tj-page-title text-anim text-4xl lg:text-5xl font-bold text-white mb-4">Blog</h1>
-                <div class="tj-page-link wow fadeInUp" data-wow-delay="0.1s">
-                    <span>
-                        <a href="/" class="text-white hover:text-primary transition-colors">
-                            <span>Home</span>
-                        </a>
-                    </span>
-                    <span class="text-white mx-2">/</span>
-                    <span class="text-white">
-                        <span>Blog</span>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-{{# Blog Grid Section #}}
+{{# Blog Grid Section with Sidebar #}}
 <section class="tj-post-area section-space py-16 lg:py-24">
     <div class="container mx-auto px-4">
-        {{ collection:blog as="posts" }}
-            {{ if posts | count > 0 }}
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {{ posts }}
-                        <div class="mb-8">
-                    <div class="blog-style-2 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="blog-images relative overflow-hidden rounded-lg">
-                            {{ if image }}
-                            <a href="{{ url }}">
-                                <img src="{{ image }}" alt="{{ title }}" class="w-full h-[250px] object-cover transition-transform duration-300 hover:scale-110">
-                            </a>
-                            {{ /if }}
-                            {{ if date }}
-                            <div class="blog-date absolute top-4 left-4 bg-primary text-white text-center rounded-lg p-3 min-w-[60px] shadow-lg">
-                                <span class="date block text-2xl font-bold">{{ date format="d" }}</span>
-                                <span class="month block text-sm uppercase">{{ date format="M" }}</span>
-                            </div>
-                            {{ /if }}
-                        </div>
-                        <div class="blog-content bg-white p-6 shadow-lg rounded-lg mt-[-20px] relative z-10">
-                            <div class="blog-two-meta mb-4">
-                                <ul class="flex flex-wrap gap-4 text-sm text-gray-600">
-                                    {{ if categories }}
-                                        {{ categories }}
-                                            <li>
-                                                <a class="meta-link text-primary hover:text-secondary transition-colors font-medium" href="/blog/category/{{ slug }}">
-                                                    {{ title }}
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+            {{# Main Content Column #}}
+            <div class="lg:col-span-8">
+                {{ collection:blog as="posts" }}
+                    {{ if posts | count > 0 }}
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            {{ posts }}
+                                <div class="mb-8">
+                                    <div class="blog-style-2 wow fadeInUp" data-wow-delay="0.1s">
+                                        <div class="blog-images relative overflow-hidden rounded-lg">
+                                            {{ if image }}
+                                            <a href="{{ url }}">
+                                                <img src="{{ image }}" alt="{{ title }}" class="w-full h-[250px] object-cover transition-transform duration-300 hover:scale-110">
+                                            </a>
+                                            {{ /if }}
+                                            {{ if date }}
+                                            <div class="blog-date absolute top-4 left-4 bg-primary text-white text-center rounded-lg p-3 min-w-[60px] shadow-lg">
+                                                <span class="date block text-2xl font-bold">{{ date format="d" }}</span>
+                                                <span class="month block text-sm uppercase">{{ date format="M" }}</span>
+                                            </div>
+                                            {{ /if }}
+                                        </div>
+                                        <div class="blog-content bg-white p-6 shadow-lg rounded-lg mt-[-20px] relative z-10">
+                                            <div class="blog-two-meta mb-4">
+                                                <ul class="flex flex-wrap gap-4 text-sm text-gray-600">
+                                                    {{ if categories }}
+                                                        {{ categories }}
+                                                            <li>
+                                                                <a class="meta-link text-primary hover:text-secondary transition-colors font-medium" href="/blog/category/{{ slug }}">
+                                                                    {{ title }}
+                                                                </a>
+                                                            </li>
+                                                        {{ /categories }}
+                                                    {{ /if }}
+                                                    {{ if date }}
+                                                    <li>{{ date format="F j, Y" }}</li>
+                                                    {{ /if }}
+                                                </ul>
+                                            </div>
+                                            <h4 class="title text-xl font-bold text-secondary mb-4 hover:text-primary transition-colors">
+                                                <a href="{{ url }}">{{ title }}</a>
+                                            </h4>
+                                            {{ if description }}
+                                            <div class="desc mb-4">
+                                                <p class="text-gray-700 leading-relaxed line-clamp-3">{{ description | truncate:150 }}</p>
+                                            </div>
+                                            {{ /if }}
+                                            {{ if author }}
+                                            <div class="blog-author mb-4 flex items-center gap-2 text-sm text-gray-600">
+                                                <span>By</span>
+                                                <span class="font-semibold">{{ author:name }}</span>
+                                            </div>
+                                            {{ /if }}
+                                            <div class="blog-button">
+                                                <a class="blog-btn text-btn text-primary hover:text-secondary font-semibold inline-flex items-center gap-2 transition-colors" href="{{ url }}">
+                                                    Read more 
+                                                    <i class="ph ph-arrow-right"></i>
                                                 </a>
-                                            </li>
-                                        {{ /categories }}
-                                    {{ /if }}
-                                    {{ if date }}
-                                    <li>{{ date format="F j, Y" }}</li>
-                                    {{ /if }}
-                                </ul>
-                            </div>
-                            <h4 class="title text-xl font-bold text-secondary mb-4 hover:text-primary transition-colors">
-                                <a href="{{ url }}">{{ title }}</a>
-                            </h4>
-                            {{ if description }}
-                            <div class="desc mb-4">
-                                <p class="text-gray-700 leading-relaxed line-clamp-3">{{ description | truncate:150 }}</p>
-                            </div>
-                            {{ /if }}
-                            {{ if author }}
-                            <div class="blog-author mb-4 flex items-center gap-2 text-sm text-gray-600">
-                                <span>By</span>
-                                <span class="font-semibold">{{ author:name }}</span>
-                            </div>
-                            {{ /if }}
-                            <div class="blog-button">
-                                <a class="blog-btn text-btn text-primary hover:text-secondary font-semibold inline-flex items-center gap-2 transition-colors" href="{{ url }}">
-                                    Read more 
-                                    <i class="ph ph-arrow-right"></i>
-                                </a>
-                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{ /posts }}
                         </div>
-                    </div>
+                    {{ else }}
+                        <div class="text-center py-16">
+                            <p class="text-gray-600 text-lg mb-4">No blog posts found.</p>
+                            <p class="text-gray-500 text-sm">Make sure your blog posts are published and have a date set.</p>
                         </div>
-                    {{ /posts }}
-                </div>
-            {{ else }}
-                <div class="text-center py-16">
-                    <p class="text-gray-600 text-lg mb-4">No blog posts found.</p>
-                    <p class="text-gray-500 text-sm">Make sure your blog posts are published and have a date set.</p>
-                </div>
-            {{ /if }}
-        {{ /collection:blog }}
-        
-        {{# Pagination - if needed in future #}}
-        {{# <div class="tj-pagination d-flex justify-content-center mt-12">
-            <ul class="flex gap-2">
-                <li>
-                    <span aria-current="page" class="page-numbers current bg-primary text-white px-4 py-2 rounded">01</span>
-                </li>
-                <li>
-                    <a class="page-numbers px-4 py-2 rounded hover:bg-primary hover:text-white transition-colors" href="#">02</a>
-                </li>
-                <li>
-                    <a class="next page-numbers px-4 py-2 rounded hover:bg-primary hover:text-white transition-colors" href="#">
-                        <i class="ph ph-arrow-right"></i>
-                    </a>
-                </li>
-            </ul>
-        </div> #}}
+                    {{ /if }}
+                {{ /collection:blog }}
+                
+                {{# Pagination - if needed in future #}}
+                {{# <div class="tj-pagination d-flex justify-content-center mt-12">
+                    <ul class="flex gap-2">
+                        <li>
+                            <span aria-current="page" class="page-numbers current bg-primary text-white px-4 py-2 rounded">01</span>
+                        </li>
+                        <li>
+                            <a class="page-numbers px-4 py-2 rounded hover:bg-primary hover:text-white transition-colors" href="#">02</a>
+                        </li>
+                        <li>
+                            <a class="next page-numbers px-4 py-2 rounded hover:bg-primary hover:text-white transition-colors" href="#">
+                                <i class="ph ph-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div> #}}
+            </div>
+
+            {{# Sidebar Column #}}
+            <div class="lg:col-span-4">
+                {{ partial:partials/blog_sidebar }}
+            </div>
+        </div>
     </div>
 </section>

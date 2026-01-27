@@ -1,0 +1,96 @@
+{{# Blog Sidebar #}}
+<aside class="tj-post-sidebar">
+    {{# Recent Posts Widget #}}
+    <div class="tj-sidebar-widget wow fadeInUp mb-6 border border-gray-200 bg-white rounded-lg p-6 shadow-sm" data-wow-delay="0.1s">
+        <h5 class="tj-sidebar-widget-title mb-4 text-lg font-bold text-secondary relative pb-3">
+            Recent Post
+            <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-primary"></span>
+        </h5>
+        <div class="sidebar-recent-post">
+            {{ collection:blog limit="3" sort="date:desc" }}
+                <div class="single-post flex items-center mb-4 pb-4 last:mb-0 last:pb-0">
+                    {{ if image }}
+                    <div class="post-image flex-shrink-0 mr-4">
+                        <a href="{{ url }}">
+                            <img src="{{ image }}" alt="{{ title }}" class="w-20 h-20 object-cover">
+                        </a>
+                    </div>
+                    {{ /if }}
+                    <div class="post-header flex-1 min-w-0">
+                        <h6 class="title-link !leading-5 text-md font-bold text-secondary hover:text-primary transition-colors mb-1">
+                            <a href="{{ url }}">{{ title | truncate:50 }}...</a>
+                        </h6>
+                        {{ if date }}
+                        <span class="date text-xs text-gray-500 block">{{ date format="M j, Y" }}</span>
+                        {{ /if }}
+                    </div>
+                </div>
+            {{ /collection:blog }}
+        </div>
+    </div>
+
+    {{# Categories Widget #}}
+    <div class="tj-sidebar-widget widget_categories wow fadeInUp mb-6 border border-gray-200 bg-white rounded-lg p-6" data-wow-delay="0.3s">
+        <h5 class="tj-sidebar-widget-title mb-4 text-lg font-bold text-secondary relative pb-3">
+            Categories
+            <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-primary"></span>
+        </h5>
+        <ul class="space-y-2 bg-white rounded-lg p-4">
+            {{ taxonomy:categories }}
+                <li class="bg-blue-50 hover:bg-blue-100 rounded-lg px-4 py-2.5 transition-colors">
+                    <a href="/blog/category/{{ slug }}" class="text-gray-700 hover:text-primary transition-colors font-medium flex items-center justify-between">
+                        <span>{{ title }}</span>
+                        <span class="text-gray-500 text-sm">(0)</span>
+                    </a>
+                </li>
+            {{ /taxonomy:categories }}
+        </ul>
+    </div>
+
+    {{# Tags Widget #}}
+    <div class="tj-sidebar-widget wow fadeInUp mb-6 border border-gray-200 bg-white rounded-lg p-6" data-wow-delay="0.5s">
+        <h5 class="tj-sidebar-widget-title mb-4 text-lg font-bold text-secondary relative pb-3">
+            Tags
+            <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-primary"></span>
+        </h5>
+        <div class="tagcloud flex flex-wrap gap-2 bg-white py-4 border-b-2 border-dashed border-primary/30 pb-4">
+            {{ taxonomy:tags limit="10" }}
+                <a href="/blog/tag/{{ slug }}" class="px-4 py-2 bg-white border border-gray-300 text-gray-700 hover:bg-primary hover:text-white hover:border-primary rounded-full text-sm font-medium transition-all duration-300 shadow-sm">
+                    {{ title }}
+                </a>
+            {{ /taxonomy:tags }}
+        </div>
+    </div>
+
+    {{# CTA Widget #}}
+    <div class="tj-sidebar-widget wow fadeInUp border border-gray-200 bg-white rounded-lg p-6" data-wow-delay="0.7s">
+        <div class="tj-sidebar-cta bg-gradient-to-b from-primary to-secondary p-6 py-10 text-white relative overflow-hidden min-h-[300px] flex flex-col justify-between" style="background-image: url('/assets/images/bg/download.webp'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/95 to-secondary/95"></div>
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="content relative z-10">
+                <div class="icon mb-4">
+                    <img src="/assets/images/shapes/widget-cta-icon.png" alt="icon" class="w-12 h-12" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <i class="ph ph-envelope-simple text-4xl text-white hidden"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 leading-tight">Need help? <br> Feel free contact us</h3>
+                <p class="text-white/80 text-sm mb-4">
+                    Our mission is to empower businesses of all sizes to thrive in an ever-changing marketplace.
+                </p>
+            </div>
+            <div class="cta-btn relative z-10 mt-4">
+                <a href="/contact" class="btn-primary inline-flex white-btn">
+                    <div class="btn_inner">
+                        <div class="btn_icon">
+                            <span>
+                                <i class="ph-fill ph-arrow-right"></i>
+                                <i class="ph-fill ph-arrow-right"></i>
+                            </span>
+                        </div>
+                        <div class="btn_text"><span>Get in touch</span></div>
+                    </div>
+                </a>
+                <img class="shapes move-anim-2 absolute right-0 bottom-0 w-16 h-16 opacity-50" src="/assets/images/shapes/carrow.png" alt="shape" onerror="this.style.display='none';">
+            </div>
+        </div>
+    </div>
+</aside>

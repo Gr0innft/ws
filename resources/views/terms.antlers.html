@@ -1,0 +1,62 @@
+{{# Terms Listing Page #}}
+
+{{# Page Header Section #}}
+<section class="pt-[140px] sm:pt-[140px] md:pt-[179px] lg:pt-[190px] pb-[100px] sm:pb-[80px] md:pb-[100px] lg:pb-[100px] bg-cover bg-center bg-no-repeat bg-secondary relative overflow-hidden z-[2]" style="background-image: url('/assets/images/bg/download.webp');">
+    <div class="absolute inset-0 bg-secondary/85 z-[-1]"></div>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center">
+            
+            <div class="tj-page-link inline-flex flex-wrap items-center justify-center gap-2.5 mb-5 relative rounded-[50px] bg-white/10 px-[15px] py-2 z-[2] mt-6 wow fadeInUp" data-wow-delay="0.1s">
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <a href="/" class="hover:text-primary transition-colors">
+                        <span>Home</span>
+                    </a>
+                </span>
+                <span class="text-white text-sm relative inline-block leading-none">/</span>
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <span>Terms & Policies</span>
+                </span>
+            </div>
+            
+            <h1 class="hero-title text-anim text-4xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight wow fadeInUp" data-wow-delay="0.2s">
+                Terms & Policies
+            </h1>
+            
+        </div>
+    </div>
+</section>
+
+{{# Terms List Section #}}
+<section class="tj-post-area section-space py-16 lg:py-24 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            {{ collection:terms as="terms_list" }}
+                {{ if terms_list | count > 0 }}
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {{ terms_list }}
+                            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                                <h3 class="text-xl font-bold text-secondary mb-3 hover:text-primary transition-colors">
+                                    <a href="{{ url }}">{{ title }}</a>
+                                </h3>
+                                {{ if last_updated }}
+                                <p class="text-sm text-gray-500 mb-4">
+                                    Last updated: {{ last_updated format="F j, Y" }}
+                                </p>
+                                {{ /if }}
+                                <a href="{{ url }}" class="text-primary hover:text-secondary font-semibold inline-flex items-center gap-2 transition-colors">
+                                    Read more 
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        {{ /terms_list }}
+                    </div>
+                {{ else }}
+                    <div class="text-center py-16 bg-white rounded-lg shadow-md">
+                        <p class="text-gray-600 text-lg mb-4">No terms pages found.</p>
+                        <p class="text-gray-500 text-sm">Create your first term page in the Statamic control panel.</p>
+                    </div>
+                {{ /if }}
+            {{ /collection:terms }}
+        </div>
+    </div>
+</section>

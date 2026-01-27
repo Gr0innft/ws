@@ -7,8 +7,8 @@
             <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-primary"></span>
         </h5>
         <div class="sidebar-recent-post">
-            {{ collection:blog limit="3" sort="date:desc" }}
-                <div class="single-post flex items-center mb-4 pb-4 last:mb-0 last:pb-0">
+            {{ collection:blog limit="3" sort_by="date" sort_dir="desc" }}
+                <div class="single-post flex items-center mb-4 pb-4">
                     {{ if image }}
                     <div class="post-image flex-shrink-0 mr-4">
                         <a href="{{ url }}">

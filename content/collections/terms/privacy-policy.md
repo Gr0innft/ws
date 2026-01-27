@@ -6,7 +6,7 @@ slug: privacy-policy
 template: term
 last_updated: '2025-01-15'
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1769482793
+updated_at: 1769483666
 ---
 At Voyager Wholesale we are committed to protecting the privacy of our customers. Our policy below sets out what information we gather, how we may use it, and how you may correct or change, which we do in strict compliance with the Privacy Act 1993.
 
@@ -164,10 +164,8 @@ If you have a complaint about how we collect, use, disclose, manage or protect y
 Please forward all correspondence in respect of this Privacy Policy by mail, phone or email Voyager Wholesale:
 
 **Mail:** Privacy Officer, PO Box 911190, Victoria Street West, Auckland 1142
-
 **Phone:** 0800477333
-
-**Email:** service@voyagerwholesale.nz
+**Email:** service@voyager.nz
 
 ## 10. Interpretation and Definitions
 

@@ -6,10 +6,8 @@ slug: terms-and-conditions
 template: term
 last_updated: '2025-01-15'
 updated_by: 356414f5-9cc4-49da-9bea-35e11000edbb
-updated_at: 1769482793
-published: true
+updated_at: 1769484209
 ---
-
 ## 1. Definitions
 
 "we", "our", or "us" refers to Voyager Wholesale, and "you" or "your" refers to the Customer (as referred to in a Service Agreement).
@@ -66,7 +64,7 @@ Our Product(s) and Service(s) are provided to you for business purposes and you 
 
 ## 7. Fair/Acceptable Use Policy
 
-You acknowledge that you have read and understood Voyager Wholesale's fair and acceptable use Policy that applies to Voyager Wholesale's end users/customers, available on our website at www.voyagerwholesale.nz/terms/privacy/fairuse
+You acknowledge that you have read and understood Voyager Wholesale's fair and acceptable use Policy that applies to Voyager Wholesale's end users/customers, available on our website at www.voyager.nz/terms/privacy/fairuse
 
 ## 8. Subcontract & Assignment
 

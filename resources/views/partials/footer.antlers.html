@@ -8,9 +8,13 @@
                 <div class="lg:col-span-5 md:col-span-2">
                     <div class="footer-widget">
                         <div class="newsletter-title mb-6">
-                            {{ if logo:logo }}
-                                <img src="{{ logo:logo }}" alt="Wholesale Logo" class="h-12"/>
-                            {{ /if }}
+                            <div class="footer-logo mb-6">
+                                {{ if logo:logo }}
+                                    <img src="{{ logo:logo }}" alt="Wholesale Logo" class="h-12"/>
+                                {{ else }}
+                                    <img src="/assets/images/logos/ws-logo-dark.png" alt="Wholesale Logo" class="h-12"/>
+                                {{ /if }}
+                            </div>
                             {{ if footer:description }}
                                 <p class="text-white/70 text-sm w-3/4 my-8">{{ footer:description }}</p>
                             {{ /if }}

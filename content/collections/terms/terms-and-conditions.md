@@ -64,7 +64,7 @@ Our Product(s) and Service(s) are provided to you for business purposes and you 
 
 ## 7. Fair/Acceptable Use Policy
 
-You acknowledge that you have read and understood Voyager Wholesale's fair and acceptable use Policy that applies to Voyager Wholesale's end users/customers, available on our website at www.voyager.nz/terms/privacy/fairuse
+You acknowledge that you have read and understood Voyager Wholesale's fair and acceptable use Policy that applies to Voyager Wholesale's end users/customers, available on our website at www.voyagerwholesale.nz/terms/privacy/fairuse
 
 ## 8. Subcontract & Assignment
 

@@ -165,7 +165,7 @@ Please forward all correspondence in respect of this Privacy Policy by mail, pho
 
 **Mail:** Privacy Officer, PO Box 911190, Victoria Street West, Auckland 1142
 **Phone:** 0800477333
-**Email:** service@voyager.nz
+**Email:** service@voyagerwholesale.nz
 
 ## 10. Interpretation and Definitions
 

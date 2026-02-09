@@ -1,7 +1,1 @@
 title: 'Header Bar'
-data:
-  top_bar_text: 'Trusted partner in business excellence'
-  link_text: 'Join us now'
-  link_url: /contact
-  cta_button_text: "Let's Talk"
-  cta_button_url: '#scroll-cta'

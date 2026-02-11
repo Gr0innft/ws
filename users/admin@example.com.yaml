@@ -6,3 +6,5 @@ preferences:
   collections:
     blog:
       view: list
+    pages:
+      view: tree

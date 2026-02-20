@@ -5,11 +5,12 @@ tree:
   -
     id: 84e9b709-4cb0-4d99-aa9f-eb8f076f4892
     entry: 7e0952eb-08d7-4371-b1cb-fb1c7e8c0e1f
+    title: About
     children:
       -
         id: d1122d54-cd4c-41f8-8049-19e5a1ad0ad4
         entry: 7e0952eb-08d7-4371-b1cb-fb1c7e8c0e1f
-        title: 'About us'
+        title: 'Our Story'
         data:
           icon: null
       -
@@ -20,6 +21,7 @@ tree:
   -
     id: 47ff7a46-432a-47cc-8452-529afdfc5a64
     entry: 0aecd50a-c3fd-4599-8076-27bd0174540a
+    title: Solutions
     children:
       -
         id: 395b02e6-c60e-451c-8e03-0d8d62e8cb36

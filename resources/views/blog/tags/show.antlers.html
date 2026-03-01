@@ -1,0 +1,40 @@
+{{# Collection-scoped tag term: /blog/tags/{slug} – only blog entries with this tag #}}
+
+{{# Page Header Section #}}
+<section class="pt-[140px] sm:pt-[140px] md:pt-[179px] lg:pt-[190px] pb-[100px] sm:pb-[80px] md:pb-[100px] lg:pb-[100px] bg-cover bg-center bg-no-repeat bg-secondary relative overflow-hidden z-[2]" style="background-image: url('/assets/images/bg/download.webp');">
+    <div class="absolute inset-0 bg-secondary/85 z-[-1]"></div>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center">
+            <div class="tj-page-link inline-flex flex-wrap items-center justify-center gap-2.5 mb-5 relative rounded-[50px] bg-white/10 px-[15px] py-2 z-[2] mt-6 wow fadeInUp" data-wow-delay="0.1s">
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <a href="/" class="hover:text-primary transition-colors"><span>Home</span></a>
+                </span>
+                <span class="text-white text-sm relative inline-block leading-none">/</span>
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <a href="/blog" class="hover:text-primary transition-colors"><span>Blog</span></a>
+                </span>
+                <span class="text-white text-sm relative inline-block leading-none">/</span>
+                <span class="text-white text-sm relative inline-block leading-none"><span>{{ title }}</span></span>
+            </div>
+            <h1 class="hero-title text-anim text-4xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight wow fadeInUp" data-wow-delay="0.2s">
+                {{ title }}
+            </h1>
+        </div>
+    </div>
+</section>
+
+{{# Blog Grid Section with Sidebar #}}
+<section class="tj-post-area section-space py-16 lg:py-24">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+            <div class="lg:col-span-8">
+                {{ collection:blog taxonomy:tags="{{ slug ?? handle }}" sort_by="date" sort_dir="desc" as="posts" }}
+                    {{ partial:partials/blog_post_grid }}
+                {{ /collection:blog }}
+            </div>
+            <div class="lg:col-span-4">
+                {{ partial:partials/blog_sidebar }}
+            </div>
+        </div>
+    </div>
+</section>

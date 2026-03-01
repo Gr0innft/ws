@@ -1,1 +1,45 @@
-<p>404 Page not found.</p>
+<!DOCTYPE html>
+<html lang="{{ site:short_locale ?? 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found | {{ site_settings:site_name ?? 'Home' }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    {{ if site_settings:fav_icon }}
+    <link rel="shortcut icon" type="image/png" href="{{ site_settings:fav_icon }}">
+    {{ /if }}
+    <style>
+        .error-404-content { padding: 3rem 2rem; text-align: center; }
+        .error-404-content p { color: #6b7280; margin-bottom: 1.5rem; }
+        .error-404-content a { display: inline-block; padding: 0.75rem 1.5rem; background: var(--tj-theme-primary, #2563eb); color: #fff; text-decoration: none; border-radius: 0.5rem; font-weight: 500; transition: opacity 0.2s; }
+        .error-404-content a:hover { opacity: 0.9; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    {{# Default banner with breadcrumb #}}
+    <section class="pt-[140px] sm:pt-[140px] md:pt-[179px] lg:pt-[190px] pb-[100px] sm:pb-[80px] md:pb-[100px] lg:pb-[100px] bg-cover bg-center bg-no-repeat bg-secondary relative overflow-hidden z-[2]" style="background-image: url('/assets/images/bg/download.webp');">
+        <div class="absolute inset-0 bg-secondary/85 z-[-1]"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center">
+                <div class="tj-page-link inline-flex flex-wrap items-center justify-center gap-2.5 mb-5 relative rounded-[50px] bg-white/10 px-[15px] py-2 z-[2] mt-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <span class="text-white text-sm relative inline-block leading-none">
+                        <a href="/" class="hover:text-primary transition-colors"><span>Home</span></a>
+                    </span>
+                    <span class="text-white text-sm relative inline-block leading-none">/</span>
+                    <span class="text-white text-sm relative inline-block leading-none"><span>404</span></span>
+                </div>
+                <h1 class="hero-title text-anim text-4xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight wow fadeInUp" data-wow-delay="0.2s">
+                    404
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="error-404-content">
+        <p>The page you're looking for doesn't exist or has been moved.</p>
+        <a href="/">Return to homepage</a>
+    </section>
+</body>
+</html>

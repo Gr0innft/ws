@@ -70,6 +70,22 @@ return [
             'report' => false,
         ],
 
+        /*
+        |--------------------------------------------------------------------------
+        | Assets (images only) - used by Statamic CP asset browser
+        |--------------------------------------------------------------------------
+        | Points to assets/images so the CP only lists ~220 content images,
+        | not the 54k+ font/icon files in assets/fonts (e.g. Phosphor Icons).
+        
+        'asset_images' => [
+            'driver' => 'local',
+            'root' => public_path('assets/images'),
+            'url' => '/assets/images',
+            'visibility' => 'public',
+            'throw' => false,
+            'report' => false,
+        ],*/
+
     ],
 
     /*

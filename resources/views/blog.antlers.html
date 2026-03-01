@@ -1,4 +1,4 @@
-{{# Blog Listing Page #}}
+{{# Blog Listing Page (also used for tag/category term pages via template: blog on terms) #}}
 
 {{# Page Header Section #}}
 <section class="pt-[140px] sm:pt-[140px] md:pt-[179px] lg:pt-[190px] pb-[100px] sm:pb-[80px] md:pb-[100px] lg:pb-[100px] bg-cover bg-center bg-no-repeat bg-secondary relative overflow-hidden z-[2]" style="background-image: url('/assets/images/bg/download.webp');">
@@ -13,11 +13,23 @@
                 </span>
                 <span class="text-white text-sm relative inline-block leading-none">/</span>
                 <span class="text-white text-sm relative inline-block leading-none">
-                    <span>Blog</span>
+                    <a href="/blog" class="hover:text-primary transition-colors">
+                        <span>Blog</span>
+                    </a>
                 </span>
+                {{ if taxonomy }}
+                <span class="text-white text-sm relative inline-block leading-none">/</span>
+                <span class="text-white text-sm relative inline-block leading-none">
+                    <span>{{ title }}</span>
+                </span>
+                {{ /if }}
             </div>
             <h1 class="hero-title text-anim text-4xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight wow fadeInUp" data-wow-delay="0.2s">
-                Voyager Wholesale Blog
+                {{ if taxonomy }}
+                    {{ title }}
+                {{ else }}
+                    Voyager Wholesale Blog
+                {{ /if }}
             </h1>
         </div>
     </div>
@@ -29,74 +41,20 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
             {{# Main Content Column #}}
             <div class="lg:col-span-8">
-                {{ collection:blog as="posts" }}
-                    {{ if posts | count > 0 }}
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            {{ posts }}
-                                <div class="mb-8">
-                                    <div class="blog-style-2 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="blog-images relative overflow-hidden rounded-lg">
-                                            {{ if image }}
-                                            <a href="{{ url }}">
-                                                <img src="{{ image }}" alt="{{ title }}" class="w-full h-[250px] object-cover transition-transform duration-300 hover:scale-110">
-                                            </a>
-                                            {{ /if }}
-                                            {{ if date }}
-                                            <div class="blog-date absolute top-4 left-4 bg-primary text-white text-center rounded-lg p-3 min-w-[60px] shadow-lg">
-                                                <span class="date block text-2xl font-bold">{{ date format="d" }}</span>
-                                                <span class="month block text-sm uppercase">{{ date format="M" }}</span>
-                                            </div>
-                                            {{ /if }}
-                                        </div>
-                                        <div class="blog-content bg-white p-6 shadow-lg rounded-lg mt-[-20px] relative z-10">
-                                            <div class="blog-two-meta mb-4">
-                                                <ul class="flex flex-wrap gap-4 text-sm text-gray-600">
-                                                    {{ if categories }}
-                                                        {{ categories }}
-                                                            <li>
-                                                                <a class="meta-link text-primary hover:text-secondary transition-colors font-medium" href="/blog/category/{{ slug }}">
-                                                                    {{ title }}
-                                                                </a>
-                                                            </li>
-                                                        {{ /categories }}
-                                                    {{ /if }}
-                                                    {{ if date }}
-                                                    <li>{{ date format="F j, Y" }}</li>
-                                                    {{ /if }}
-                                                </ul>
-                                            </div>
-                                            <h4 class="title text-xl font-bold text-secondary mb-4 hover:text-primary transition-colors">
-                                                <a href="{{ url }}">{{ title }}</a>
-                                            </h4>
-                                            {{ if description }}
-                                            <div class="desc mb-4">
-                                                <p class="text-gray-700 leading-relaxed line-clamp-3">{{ description | truncate:150 }}</p>
-                                            </div>
-                                            {{ /if }}
-                                            {{ if author }}
-                                            <div class="blog-author mb-4 flex items-center gap-2 text-sm text-gray-600">
-                                                <span>By</span>
-                                                <span class="font-semibold">{{ author:name }}</span>
-                                            </div>
-                                            {{ /if }}
-                                            <div class="blog-button">
-                                                <a class="blog-btn text-btn text-primary hover:text-secondary font-semibold inline-flex items-center gap-2 transition-colors" href="{{ url }}">
-                                                    Read more 
-                                                    <i class="ph ph-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            {{ /posts }}
-                        </div>
-                    {{ else }}
-                        <div class="text-center py-16">
-                            <p class="text-gray-600 text-lg mb-4">No blog posts found.</p>
-                            <p class="text-gray-500 text-sm">Make sure your blog posts are published and have a date set.</p>
-                        </div>
-                    {{ /if }}
-                {{ /collection:blog }}
+                {{# Use handle for filter (term file = handle.yaml, entries store term handle) #}}
+                {{ if taxonomy == 'tags' }}
+                    {{ collection:blog taxonomy:tags="{{ handle }}" sort_by="date" sort_dir="desc" as="posts" }}
+                        {{ partial:partials/blog_post_grid }}
+                    {{ /collection:blog }}
+                {{ elseif taxonomy == 'categories' }}
+                    {{ collection:blog taxonomy:categories="{{ handle }}" sort_by="date" sort_dir="desc" as="posts" }}
+                        {{ partial:partials/blog_post_grid }}
+                    {{ /collection:blog }}
+                {{ else }}
+                    {{ collection:blog as="posts" }}
+                        {{ partial:partials/blog_post_grid }}
+                    {{ /collection:blog }}
+                {{ /if }}
                 
                 {{# Pagination - if needed in future #}}
                 {{# <div class="tj-pagination d-flex justify-content-center mt-12">

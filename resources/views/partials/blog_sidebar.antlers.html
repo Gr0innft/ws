@@ -36,13 +36,15 @@
             <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-primary"></span>
         </h5>
         <ul class="space-y-2 bg-white rounded-lg p-4">
-            {{ taxonomy:categories }}
+            {{ taxonomy:categories collection="blog" }}
+                {{ if entries_count > 0 }}
                 <li class="bg-blue-50 hover:bg-blue-100 rounded-lg px-4 py-2.5 transition-colors">
-                    <a href="/blog/category/{{ slug }}" class="text-gray-700 hover:text-primary transition-colors font-medium flex items-center justify-between">
+                    <a href="{{ url }}" class="text-gray-700 hover:text-primary transition-colors font-medium flex items-center justify-between">
                         <span>{{ title }}</span>
-                        <span class="text-gray-500 text-sm">(0)</span>
+                        <span class="text-gray-500 text-sm">({{ entries_count }})</span>
                     </a>
                 </li>
+                {{ /if }}
             {{ /taxonomy:categories }}
         </ul>
     </div>
@@ -54,10 +56,12 @@
             <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-primary"></span>
         </h5>
         <div class="tagcloud flex flex-wrap gap-2 bg-white py-4 border-b-2 border-dashed border-primary/30 pb-4">
-            {{ taxonomy:tags limit="10" }}
-                <a href="/blog/tag/{{ slug }}" class="px-4 py-2 bg-white border border-gray-300 text-gray-700 hover:bg-primary hover:text-white hover:border-primary rounded-full text-sm font-medium transition-all duration-300 shadow-sm">
+            {{ taxonomy:tags collection="blog" limit="10" }}
+                {{ if entries_count > 0 }}
+                <a href="{{ url }}" class="px-4 py-2 bg-white border border-gray-300 text-gray-700 hover:bg-primary hover:text-white hover:border-primary rounded-full text-sm font-medium transition-all duration-300 shadow-sm">
                     {{ title }}
                 </a>
+                {{ /if }}
             {{ /taxonomy:tags }}
         </div>
     </div>
